@@ -1,6 +1,6 @@
 ﻿namespace USAADemoApp
 {
-    partial class Create_Issue
+    partial class formCreateIssue
     {
         /// <summary>
         /// Required designer variable.
@@ -33,21 +33,23 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(262, 319);
+            this.button1.Location = new System.Drawing.Point(110, 138);
+            this.button1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 67);
+            this.button1.Size = new System.Drawing.Size(90, 29);
             this.button1.TabIndex = 0;
             this.button1.Text = "Post Issue";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Create_Issue
+            // formCreateIssue
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(337, 195);
             this.Controls.Add(this.button1);
-            this.Name = "Create_Issue";
-            this.Text = "Create_Issue";
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Name = "formCreateIssue";
+            this.Text = "Create Issue";
             this.ResumeLayout(false);
 
         }

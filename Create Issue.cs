@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace USAADemoApp
 {
-    public partial class Create_Issue : Form
+    public partial class formCreateIssue : Form
     {
-        public Create_Issue()
+        public formCreateIssue()
         {
             InitializeComponent();
         }

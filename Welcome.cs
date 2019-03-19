@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace USAADemoApp
 {
-    public partial class Welcome : Form
+    public partial class formWelcome : Form
     {
         public List<string> Animals = new List<string>();
         public List<string> Colors = new List<string>();
 
         public bool isManager = false;
 
-        public Welcome()
+        public formWelcome()
         {
             InitializeComponent();
         }

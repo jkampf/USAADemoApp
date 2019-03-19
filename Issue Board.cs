@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace USAADemoApp
 {
-    public partial class Form1 : Form
+    public partial class formIssueBoard : Form
     {
         public bool upVote = false;
         public bool downVote = false;
         public List<string> Animals = new List<string>();
         public List<string> Colors = new List<string>();
 
-        public Form1()
+        public formIssueBoard()
         {
             InitializeComponent();
         }
@@ -25,7 +25,6 @@ namespace USAADemoApp
         private void Form1_Load(object sender, EventArgs e)
         {
            
-
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

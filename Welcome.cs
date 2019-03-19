@@ -66,7 +66,7 @@ namespace USAADemoApp
 
         private void viewTopIssuesButton_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            formIssueBoard form1 = new formIssueBoard();
             form1.Show();
         }
     }

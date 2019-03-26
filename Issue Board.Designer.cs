@@ -1,6 +1,6 @@
 ﻿namespace USAADemoApp
 {
-    partial class formIssueBoard
+    partial class issueBoardForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formIssueBoard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(issueBoardForm));
             this.buttonComment = new System.Windows.Forms.Button();
-            this.textboxIssue = new System.Windows.Forms.TextBox();
-            this.pictureboxUpvote = new System.Windows.Forms.PictureBox();
-            this.pictureboxDownvote = new System.Windows.Forms.PictureBox();
+            this.issueTextBox = new System.Windows.Forms.TextBox();
+            this.upvotePictureBox = new System.Windows.Forms.PictureBox();
+            this.downvotePictureBox = new System.Windows.Forms.PictureBox();
             this.labelVoteCount = new System.Windows.Forms.Label();
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolstripmenuitemIssue1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolstripmenuitemIssue2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolstripmenuitemIssue3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelUsername = new System.Windows.Forms.Label();
-            this.labelssue = new System.Windows.Forms.Label();
-            this.listComment = new System.Windows.Forms.ListBox();
+            this.issue1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.issue2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.issue3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usernameLabel = new System.Windows.Forms.Label();
+            this.issueLabel = new System.Windows.Forms.Label();
+            this.commentListBox = new System.Windows.Forms.ListBox();
             this.webBrowser = new System.Windows.Forms.WebBrowser();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxUpvote)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxDownvote)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upvotePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downvotePictureBox)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,41 +57,42 @@
             this.buttonComment.TabIndex = 0;
             this.buttonComment.Text = "Comment";
             this.buttonComment.UseVisualStyleBackColor = true;
+            this.buttonComment.Click += new System.EventHandler(this.buttonComment_Click);
             // 
-            // textboxIssue
+            // issueTextBox
             // 
-            this.textboxIssue.Location = new System.Drawing.Point(113, 120);
-            this.textboxIssue.Margin = new System.Windows.Forms.Padding(1);
-            this.textboxIssue.Multiline = true;
-            this.textboxIssue.Name = "textboxIssue";
-            this.textboxIssue.ReadOnly = true;
-            this.textboxIssue.Size = new System.Drawing.Size(487, 86);
-            this.textboxIssue.TabIndex = 1;
-            this.textboxIssue.Text = resources.GetString("textboxIssue.Text");
+            this.issueTextBox.Location = new System.Drawing.Point(113, 120);
+            this.issueTextBox.Margin = new System.Windows.Forms.Padding(1);
+            this.issueTextBox.Multiline = true;
+            this.issueTextBox.Name = "issueTextBox";
+            this.issueTextBox.ReadOnly = true;
+            this.issueTextBox.Size = new System.Drawing.Size(487, 86);
+            this.issueTextBox.TabIndex = 1;
+            this.issueTextBox.Text = resources.GetString("issueTextBox.Text");
             // 
-            // pictureboxUpvote
+            // upvotePictureBox
             // 
-            this.pictureboxUpvote.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureboxUpvote.BackgroundImage")));
-            this.pictureboxUpvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureboxUpvote.Location = new System.Drawing.Point(73, 128);
-            this.pictureboxUpvote.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureboxUpvote.Name = "pictureboxUpvote";
-            this.pictureboxUpvote.Size = new System.Drawing.Size(27, 44);
-            this.pictureboxUpvote.TabIndex = 3;
-            this.pictureboxUpvote.TabStop = false;
-            this.pictureboxUpvote.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.upvotePictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("upvotePictureBox.BackgroundImage")));
+            this.upvotePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.upvotePictureBox.Location = new System.Drawing.Point(73, 128);
+            this.upvotePictureBox.Margin = new System.Windows.Forms.Padding(1);
+            this.upvotePictureBox.Name = "upvotePictureBox";
+            this.upvotePictureBox.Size = new System.Drawing.Size(27, 44);
+            this.upvotePictureBox.TabIndex = 3;
+            this.upvotePictureBox.TabStop = false;
+            this.upvotePictureBox.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureboxDownvote
+            // downvotePictureBox
             // 
-            this.pictureboxDownvote.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureboxDownvote.BackgroundImage")));
-            this.pictureboxDownvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureboxDownvote.Location = new System.Drawing.Point(22, 128);
-            this.pictureboxDownvote.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureboxDownvote.Name = "pictureboxDownvote";
-            this.pictureboxDownvote.Size = new System.Drawing.Size(27, 44);
-            this.pictureboxDownvote.TabIndex = 4;
-            this.pictureboxDownvote.TabStop = false;
-            this.pictureboxDownvote.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.downvotePictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("downvotePictureBox.BackgroundImage")));
+            this.downvotePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.downvotePictureBox.Location = new System.Drawing.Point(22, 128);
+            this.downvotePictureBox.Margin = new System.Windows.Forms.Padding(1);
+            this.downvotePictureBox.Name = "downvotePictureBox";
+            this.downvotePictureBox.Size = new System.Drawing.Size(27, 44);
+            this.downvotePictureBox.TabIndex = 4;
+            this.downvotePictureBox.TabStop = false;
+            this.downvotePictureBox.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // labelVoteCount
             // 
@@ -116,9 +117,9 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(48, 48);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolstripmenuitemIssue1,
-            this.toolstripmenuitemIssue2,
-            this.toolstripmenuitemIssue3});
+            this.issue1ToolStripMenuItem,
+            this.issue2ToolStripMenuItem,
+            this.issue3ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
@@ -126,58 +127,58 @@
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // toolstripmenuitemIssue1
+            // issue1ToolStripMenuItem
             // 
-            this.toolstripmenuitemIssue1.Name = "toolstripmenuitemIssue1";
-            this.toolstripmenuitemIssue1.Size = new System.Drawing.Size(65, 24);
-            this.toolstripmenuitemIssue1.Text = "Issue 1";
+            this.issue1ToolStripMenuItem.Name = "issue1ToolStripMenuItem";
+            this.issue1ToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.issue1ToolStripMenuItem.Text = "Issue 1";
             // 
-            // toolstripmenuitemIssue2
+            // issue2ToolStripMenuItem
             // 
-            this.toolstripmenuitemIssue2.Name = "toolstripmenuitemIssue2";
-            this.toolstripmenuitemIssue2.Size = new System.Drawing.Size(65, 24);
-            this.toolstripmenuitemIssue2.Text = "Issue 2";
-            this.toolstripmenuitemIssue2.Click += new System.EventHandler(this.issue2ToolStripMenuItem_Click);
+            this.issue2ToolStripMenuItem.Name = "issue2ToolStripMenuItem";
+            this.issue2ToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.issue2ToolStripMenuItem.Text = "Issue 2";
+            this.issue2ToolStripMenuItem.Click += new System.EventHandler(this.issue2ToolStripMenuItem_Click);
             // 
-            // toolstripmenuitemIssue3
+            // issue3ToolStripMenuItem
             // 
-            this.toolstripmenuitemIssue3.Name = "toolstripmenuitemIssue3";
-            this.toolstripmenuitemIssue3.Size = new System.Drawing.Size(65, 24);
-            this.toolstripmenuitemIssue3.Text = "Issue 3";
+            this.issue3ToolStripMenuItem.Name = "issue3ToolStripMenuItem";
+            this.issue3ToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.issue3ToolStripMenuItem.Text = "Issue 3";
             // 
-            // labelUsername
+            // usernameLabel
             // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.Location = new System.Drawing.Point(22, 39);
-            this.labelUsername.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(66, 17);
-            this.labelUsername.TabIndex = 8;
-            this.labelUsername.Text = "RedDog";
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.Location = new System.Drawing.Point(22, 39);
+            this.usernameLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(66, 17);
+            this.usernameLabel.TabIndex = 8;
+            this.usernameLabel.Text = "RedDog";
             // 
-            // labelssue
+            // issueLabel
             // 
-            this.labelssue.AutoSize = true;
-            this.labelssue.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelssue.ForeColor = System.Drawing.Color.Black;
-            this.labelssue.Location = new System.Drawing.Point(18, 63);
-            this.labelssue.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelssue.Name = "labelssue";
-            this.labelssue.Size = new System.Drawing.Size(410, 36);
-            this.labelssue.TabIndex = 9;
-            this.labelssue.Text = "No time for skills development";
-            this.labelssue.Click += new System.EventHandler(this.label2_Click);
+            this.issueLabel.AutoSize = true;
+            this.issueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issueLabel.ForeColor = System.Drawing.Color.Black;
+            this.issueLabel.Location = new System.Drawing.Point(18, 63);
+            this.issueLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.issueLabel.Name = "issueLabel";
+            this.issueLabel.Size = new System.Drawing.Size(410, 36);
+            this.issueLabel.TabIndex = 9;
+            this.issueLabel.Text = "No time for skills development";
+            this.issueLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // listComment
+            // commentListBox
             // 
-            this.listComment.FormattingEnabled = true;
-            this.listComment.ItemHeight = 16;
-            this.listComment.Location = new System.Drawing.Point(113, 248);
-            this.listComment.Margin = new System.Windows.Forms.Padding(1);
-            this.listComment.Name = "listComment";
-            this.listComment.Size = new System.Drawing.Size(487, 68);
-            this.listComment.TabIndex = 10;
+            this.commentListBox.FormattingEnabled = true;
+            this.commentListBox.ItemHeight = 16;
+            this.commentListBox.Location = new System.Drawing.Point(113, 248);
+            this.commentListBox.Margin = new System.Windows.Forms.Padding(1);
+            this.commentListBox.Name = "commentListBox";
+            this.commentListBox.Size = new System.Drawing.Size(487, 68);
+            this.commentListBox.TabIndex = 10;
             // 
             // webBrowser
             // 
@@ -189,29 +190,29 @@
             this.webBrowser.TabIndex = 11;
             this.webBrowser.Url = new System.Uri("http://google.com", System.UriKind.Absolute);
             // 
-            // formIssueBoard
+            // issueBoardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 456);
             this.Controls.Add(this.webBrowser);
-            this.Controls.Add(this.listComment);
-            this.Controls.Add(this.labelssue);
-            this.Controls.Add(this.labelUsername);
+            this.Controls.Add(this.commentListBox);
+            this.Controls.Add(this.issueLabel);
+            this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.labelVoteCount);
-            this.Controls.Add(this.pictureboxDownvote);
-            this.Controls.Add(this.pictureboxUpvote);
-            this.Controls.Add(this.textboxIssue);
+            this.Controls.Add(this.downvotePictureBox);
+            this.Controls.Add(this.upvotePictureBox);
+            this.Controls.Add(this.issueTextBox);
             this.Controls.Add(this.buttonComment);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(1);
-            this.Name = "formIssueBoard";
+            this.Name = "issueBoardForm";
             this.Text = "Issue Board";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxUpvote)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxDownvote)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upvotePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downvotePictureBox)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -222,18 +223,18 @@
         #endregion
 
         private System.Windows.Forms.Button buttonComment;
-        private System.Windows.Forms.TextBox textboxIssue;
-        private System.Windows.Forms.PictureBox pictureboxUpvote;
-        private System.Windows.Forms.PictureBox pictureboxDownvote;
+        private System.Windows.Forms.TextBox issueTextBox;
+        private System.Windows.Forms.PictureBox upvotePictureBox;
+        private System.Windows.Forms.PictureBox downvotePictureBox;
         private System.Windows.Forms.Label labelVoteCount;
         private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolstripmenuitemIssue1;
-        private System.Windows.Forms.ToolStripMenuItem toolstripmenuitemIssue2;
-        private System.Windows.Forms.ToolStripMenuItem toolstripmenuitemIssue3;
-        private System.Windows.Forms.Label labelUsername;
-        private System.Windows.Forms.Label labelssue;
-        private System.Windows.Forms.ListBox listComment;
+        private System.Windows.Forms.ToolStripMenuItem issue1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem issue2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem issue3ToolStripMenuItem;
+        private System.Windows.Forms.Label usernameLabel;
+        private System.Windows.Forms.Label issueLabel;
+        private System.Windows.Forms.ListBox commentListBox;
         private System.Windows.Forms.WebBrowser webBrowser;
     }
 }

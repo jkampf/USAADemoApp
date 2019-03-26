@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace USAADemoApp
 {
-    public partial class formIssueBoard : Form
+    public partial class issueBoardForm : Form
     {
         public bool upVote = false;
         public bool downVote = false;
         public List<string> Animals = new List<string>();
         public List<string> Colors = new List<string>();
 
-        public formIssueBoard()
+        public issueBoardForm()
         {
             InitializeComponent();
         }
@@ -35,7 +35,7 @@ namespace USAADemoApp
                 voteCount = voteCount - 1;
                 labelVoteCount.Text = Convert.ToString(voteCount);
                 upVote = false;
-                pictureboxUpvote.BackgroundImage = Properties.Resources.upArrowBasae;
+                upvotePictureBox.BackgroundImage = Properties.Resources.upArrowBasae;
                
             }
             else if (upVote == false)
@@ -44,8 +44,8 @@ namespace USAADemoApp
                 labelVoteCount.Text = Convert.ToString(voteCount);
                 upVote = true;
                 downVote = false;
-                pictureboxUpvote.BackgroundImage = Properties.Resources.upArrowVoted;
-                pictureboxDownvote.BackgroundImage = Properties.Resources.downArrowBase;
+                upvotePictureBox.BackgroundImage = Properties.Resources.upArrowVoted;
+                downvotePictureBox.BackgroundImage = Properties.Resources.downArrowBase;
             }
  
         }
@@ -59,7 +59,7 @@ namespace USAADemoApp
                 voteCount = voteCount + 1;
                 labelVoteCount.Text = Convert.ToString(voteCount);
                 downVote = false;
-                pictureboxDownvote.BackgroundImage = Properties.Resources.downArrowBase;
+                downvotePictureBox.BackgroundImage = Properties.Resources.downArrowBase;
             }
             else if (downVote == false)
             {
@@ -68,8 +68,8 @@ namespace USAADemoApp
                 downVote = true;
                 upVote = false;
                
-                pictureboxDownvote.BackgroundImage = Properties.Resources.downArrowVoted;
-                pictureboxUpvote.BackgroundImage = Properties.Resources.upArrowBasae;
+                downvotePictureBox.BackgroundImage = Properties.Resources.downArrowVoted;
+                upvotePictureBox.BackgroundImage = Properties.Resources.upArrowBasae;
 
             }
         }
@@ -80,6 +80,11 @@ namespace USAADemoApp
         }
 
         private void issue2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonComment_Click(object sender, EventArgs e)
         {
 
         }

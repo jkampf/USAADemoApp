@@ -1,6 +1,6 @@
 ﻿namespace USAADemoApp
 {
-    partial class formCreateIssue
+    partial class createIssueForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonPostIssue = new System.Windows.Forms.Button();
+            this.postIssueButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // buttonPostIssue
+            // postIssueButton
             // 
-            this.buttonPostIssue.Location = new System.Drawing.Point(109, 138);
-            this.buttonPostIssue.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonPostIssue.Name = "buttonPostIssue";
-            this.buttonPostIssue.Size = new System.Drawing.Size(91, 30);
-            this.buttonPostIssue.TabIndex = 0;
-            this.buttonPostIssue.Text = "Post Issue";
-            this.buttonPostIssue.UseVisualStyleBackColor = true;
+            this.postIssueButton.Location = new System.Drawing.Point(109, 138);
+            this.postIssueButton.Margin = new System.Windows.Forms.Padding(1);
+            this.postIssueButton.Name = "postIssueButton";
+            this.postIssueButton.Size = new System.Drawing.Size(91, 30);
+            this.postIssueButton.TabIndex = 0;
+            this.postIssueButton.Text = "Post Issue";
+            this.postIssueButton.UseVisualStyleBackColor = true;
+            this.postIssueButton.Click += new System.EventHandler(this.buttonPostIssue_Click);
             // 
-            // formCreateIssue
+            // createIssueForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(337, 194);
-            this.Controls.Add(this.buttonPostIssue);
+            this.Controls.Add(this.postIssueButton);
             this.Margin = new System.Windows.Forms.Padding(1);
-            this.Name = "formCreateIssue";
+            this.Name = "createIssueForm";
             this.Text = "Create Issue";
             this.ResumeLayout(false);
 
@@ -56,6 +57,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonPostIssue;
+        private System.Windows.Forms.Button postIssueButton;
     }
 }

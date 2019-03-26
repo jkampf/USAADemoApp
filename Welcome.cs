@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace USAADemoApp
 {
-    public partial class formWelcome : Form
+    public partial class welcomeForm : Form
     {
         public List<string> Animals = new List<string>();
         public List<string> Colors = new List<string>();
 
         public bool isManager = false;
 
-        public formWelcome()
+        public welcomeForm()
         {
             InitializeComponent();
         }
@@ -42,20 +42,20 @@ namespace USAADemoApp
             int randomColorIndex = randColor.Next(Colors.Count);
             int randomAnimalIndex = randColor.Next(Colors.Count);
             string userName = "Welcome, " + Colors[randomColorIndex] + Animals[randomAnimalIndex];
-            labelWelcome.Text = userName;
+            welcomeLabel.Text = userName;
 
 
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkboxManager.Checked == true)
+            if(managerCheckBox.Checked == true)
             {
-                buttonPost.Enabled = false;
+                postButton.Enabled = false;
             }
-            if(checkboxManager.Checked == false)
+            if(managerCheckBox.Checked == false)
             {
-                buttonPost.Enabled = true;
+                postButton.Enabled = true;
             }
         }
 
@@ -66,8 +66,13 @@ namespace USAADemoApp
 
         private void viewTopIssuesButton_Click(object sender, EventArgs e)
         {
-            formIssueBoard form1 = new formIssueBoard();
+            issueBoardForm form1 = new issueBoardForm();
             form1.Show();
+        }
+
+        private void buttonGenerateReport_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

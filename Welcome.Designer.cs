@@ -1,6 +1,6 @@
 ﻿namespace USAADemoApp
 {
-    partial class formWelcome
+    partial class welcomeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,93 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelWelcome = new System.Windows.Forms.Label();
-            this.checkboxManager = new System.Windows.Forms.CheckBox();
-            this.buttonPost = new System.Windows.Forms.Button();
-            this.buttonViewIssue = new System.Windows.Forms.Button();
-            this.buttonGenerateReport = new System.Windows.Forms.Button();
-            this.labelEmployeeFeedback = new System.Windows.Forms.Label();
+            this.welcomeLabel = new System.Windows.Forms.Label();
+            this.managerCheckBox = new System.Windows.Forms.CheckBox();
+            this.postButton = new System.Windows.Forms.Button();
+            this.viewIssueButton = new System.Windows.Forms.Button();
+            this.generateReportButton = new System.Windows.Forms.Button();
+            this.employeeFeedbackLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // labelWelcome
+            // welcomeLabel
             // 
-            this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Location = new System.Drawing.Point(5, 6);
-            this.labelWelcome.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(46, 17);
-            this.labelWelcome.TabIndex = 0;
-            this.labelWelcome.Text = "label1";
+            this.welcomeLabel.AutoSize = true;
+            this.welcomeLabel.Location = new System.Drawing.Point(5, 6);
+            this.welcomeLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.welcomeLabel.Name = "welcomeLabel";
+            this.welcomeLabel.Size = new System.Drawing.Size(46, 17);
+            this.welcomeLabel.TabIndex = 0;
+            this.welcomeLabel.Text = "label1";
             // 
-            // checkboxManager
+            // managerCheckBox
             // 
-            this.checkboxManager.AutoSize = true;
-            this.checkboxManager.Location = new System.Drawing.Point(345, 6);
-            this.checkboxManager.Margin = new System.Windows.Forms.Padding(1);
-            this.checkboxManager.Name = "checkboxManager";
-            this.checkboxManager.Size = new System.Drawing.Size(94, 21);
-            this.checkboxManager.TabIndex = 2;
-            this.checkboxManager.Text = "Manager?";
-            this.checkboxManager.UseVisualStyleBackColor = true;
-            this.checkboxManager.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.managerCheckBox.AutoSize = true;
+            this.managerCheckBox.Location = new System.Drawing.Point(345, 6);
+            this.managerCheckBox.Margin = new System.Windows.Forms.Padding(1);
+            this.managerCheckBox.Name = "managerCheckBox";
+            this.managerCheckBox.Size = new System.Drawing.Size(94, 21);
+            this.managerCheckBox.TabIndex = 2;
+            this.managerCheckBox.Text = "Manager?";
+            this.managerCheckBox.UseVisualStyleBackColor = true;
+            this.managerCheckBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // buttonPost
+            // postButton
             // 
-            this.buttonPost.Location = new System.Drawing.Point(127, 114);
-            this.buttonPost.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonPost.Name = "buttonPost";
-            this.buttonPost.Size = new System.Drawing.Size(196, 29);
-            this.buttonPost.TabIndex = 3;
-            this.buttonPost.Text = "Create Issue ";
-            this.buttonPost.UseVisualStyleBackColor = true;
-            this.buttonPost.Click += new System.EventHandler(this.postButton_Click);
+            this.postButton.Location = new System.Drawing.Point(127, 114);
+            this.postButton.Margin = new System.Windows.Forms.Padding(1);
+            this.postButton.Name = "postButton";
+            this.postButton.Size = new System.Drawing.Size(196, 29);
+            this.postButton.TabIndex = 3;
+            this.postButton.Text = "Create Issue ";
+            this.postButton.UseVisualStyleBackColor = true;
+            this.postButton.Click += new System.EventHandler(this.postButton_Click);
             // 
-            // buttonViewIssue
+            // viewIssueButton
             // 
-            this.buttonViewIssue.Location = new System.Drawing.Point(127, 166);
-            this.buttonViewIssue.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonViewIssue.Name = "buttonViewIssue";
-            this.buttonViewIssue.Size = new System.Drawing.Size(196, 26);
-            this.buttonViewIssue.TabIndex = 4;
-            this.buttonViewIssue.Text = "View Issue Board";
-            this.buttonViewIssue.UseVisualStyleBackColor = true;
-            this.buttonViewIssue.Click += new System.EventHandler(this.viewTopIssuesButton_Click);
+            this.viewIssueButton.Location = new System.Drawing.Point(127, 166);
+            this.viewIssueButton.Margin = new System.Windows.Forms.Padding(1);
+            this.viewIssueButton.Name = "viewIssueButton";
+            this.viewIssueButton.Size = new System.Drawing.Size(196, 26);
+            this.viewIssueButton.TabIndex = 4;
+            this.viewIssueButton.Text = "View Issue Board";
+            this.viewIssueButton.UseVisualStyleBackColor = true;
+            this.viewIssueButton.Click += new System.EventHandler(this.viewTopIssuesButton_Click);
             // 
-            // buttonGenerateReport
+            // generateReportButton
             // 
-            this.buttonGenerateReport.Enabled = false;
-            this.buttonGenerateReport.Location = new System.Drawing.Point(127, 213);
-            this.buttonGenerateReport.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonGenerateReport.Name = "buttonGenerateReport";
-            this.buttonGenerateReport.Size = new System.Drawing.Size(196, 25);
-            this.buttonGenerateReport.TabIndex = 5;
-            this.buttonGenerateReport.Text = "Generate Monthly Report";
-            this.buttonGenerateReport.UseVisualStyleBackColor = true;
+            this.generateReportButton.Enabled = false;
+            this.generateReportButton.Location = new System.Drawing.Point(127, 213);
+            this.generateReportButton.Margin = new System.Windows.Forms.Padding(1);
+            this.generateReportButton.Name = "generateReportButton";
+            this.generateReportButton.Size = new System.Drawing.Size(196, 25);
+            this.generateReportButton.TabIndex = 5;
+            this.generateReportButton.Text = "Generate Monthly Report";
+            this.generateReportButton.UseVisualStyleBackColor = true;
+            this.generateReportButton.Click += new System.EventHandler(this.buttonGenerateReport_Click);
             // 
-            // labelEmployeeFeedback
+            // employeeFeedbackLabel
             // 
-            this.labelEmployeeFeedback.AutoSize = true;
-            this.labelEmployeeFeedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmployeeFeedback.Location = new System.Drawing.Point(5, 48);
-            this.labelEmployeeFeedback.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelEmployeeFeedback.Name = "labelEmployeeFeedback";
-            this.labelEmployeeFeedback.Size = new System.Drawing.Size(437, 42);
-            this.labelEmployeeFeedback.TabIndex = 6;
-            this.labelEmployeeFeedback.Text = "Employee Feedback App";
+            this.employeeFeedbackLabel.AutoSize = true;
+            this.employeeFeedbackLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employeeFeedbackLabel.Location = new System.Drawing.Point(5, 48);
+            this.employeeFeedbackLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.employeeFeedbackLabel.Name = "employeeFeedbackLabel";
+            this.employeeFeedbackLabel.Size = new System.Drawing.Size(437, 42);
+            this.employeeFeedbackLabel.TabIndex = 6;
+            this.employeeFeedbackLabel.Text = "Employee Feedback App";
             // 
-            // formWelcome
+            // welcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(468, 266);
-            this.Controls.Add(this.labelEmployeeFeedback);
-            this.Controls.Add(this.buttonGenerateReport);
-            this.Controls.Add(this.buttonViewIssue);
-            this.Controls.Add(this.buttonPost);
-            this.Controls.Add(this.checkboxManager);
-            this.Controls.Add(this.labelWelcome);
+            this.Controls.Add(this.employeeFeedbackLabel);
+            this.Controls.Add(this.generateReportButton);
+            this.Controls.Add(this.viewIssueButton);
+            this.Controls.Add(this.postButton);
+            this.Controls.Add(this.managerCheckBox);
+            this.Controls.Add(this.welcomeLabel);
             this.Margin = new System.Windows.Forms.Padding(1);
-            this.Name = "formWelcome";
+            this.Name = "welcomeForm";
             this.Text = "Welcome";
             this.Load += new System.EventHandler(this.Welcome_Load);
             this.ResumeLayout(false);
@@ -124,11 +125,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label labelWelcome;
-        private System.Windows.Forms.CheckBox checkboxManager;
-        private System.Windows.Forms.Button buttonPost;
-        private System.Windows.Forms.Button buttonViewIssue;
-        private System.Windows.Forms.Button buttonGenerateReport;
-        private System.Windows.Forms.Label labelEmployeeFeedback;
+        private System.Windows.Forms.Label welcomeLabel;
+        private System.Windows.Forms.CheckBox managerCheckBox;
+        private System.Windows.Forms.Button postButton;
+        private System.Windows.Forms.Button viewIssueButton;
+        private System.Windows.Forms.Button generateReportButton;
+        private System.Windows.Forms.Label employeeFeedbackLabel;
     }
 }

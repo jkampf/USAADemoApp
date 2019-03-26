@@ -42,20 +42,20 @@ namespace USAADemoApp
             int randomColorIndex = randColor.Next(Colors.Count);
             int randomAnimalIndex = randColor.Next(Colors.Count);
             string userName = "Welcome, " + Colors[randomColorIndex] + Animals[randomAnimalIndex];
-            welcomeLabel.Text = userName;
+            labelWelcome.Text = userName;
 
 
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBox1.Checked == true)
+            if(checkboxManager.Checked == true)
             {
-                postButton.Enabled = false;
+                buttonPost.Enabled = false;
             }
-            if(checkBox1.Checked == false)
+            if(checkboxManager.Checked == false)
             {
-                postButton.Enabled = true;
+                buttonPost.Enabled = true;
             }
         }
 

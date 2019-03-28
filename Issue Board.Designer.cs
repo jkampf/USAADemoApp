@@ -29,190 +29,191 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formIssueBoard));
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.voteCountLabel = new System.Windows.Forms.Label();
+            this.buttonComment = new System.Windows.Forms.Button();
+            this.textBoxIssue = new System.Windows.Forms.TextBox();
+            this.pictureBoxDownvote = new System.Windows.Forms.PictureBox();
+            this.pictureBoxUpvote = new System.Windows.Forms.PictureBox();
+            this.labelCount = new System.Windows.Forms.Label();
             this.welcomeLabel = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.issue1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.issue2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.issue3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.CommentList = new System.Windows.Forms.ListBox();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItemIssue1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemIssue2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemIssue3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelRedDog = new System.Windows.Forms.Label();
+            this.labelSkills = new System.Windows.Forms.Label();
+            this.listComment = new System.Windows.Forms.ListBox();
+            this.webBrowser = new System.Windows.Forms.WebBrowser();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).BeginInit();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonComment
             // 
-            this.button1.Location = new System.Drawing.Point(248, 176);
-            this.button1.Margin = new System.Windows.Forms.Padding(1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 20);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Comment";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonComment.Location = new System.Drawing.Point(331, 217);
+            this.buttonComment.Margin = new System.Windows.Forms.Padding(1);
+            this.buttonComment.Name = "buttonComment";
+            this.buttonComment.Size = new System.Drawing.Size(108, 25);
+            this.buttonComment.TabIndex = 0;
+            this.buttonComment.Text = "Comment";
+            this.buttonComment.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBoxIssue
             // 
-            this.textBox1.Location = new System.Drawing.Point(85, 98);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(366, 71);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.textBoxIssue.Location = new System.Drawing.Point(113, 121);
+            this.textBoxIssue.Margin = new System.Windows.Forms.Padding(1);
+            this.textBoxIssue.Multiline = true;
+            this.textBoxIssue.Name = "textBoxIssue";
+            this.textBoxIssue.ReadOnly = true;
+            this.textBoxIssue.Size = new System.Drawing.Size(487, 86);
+            this.textBoxIssue.TabIndex = 1;
+            this.textBoxIssue.Text = resources.GetString("textBoxIssue.Text");
             // 
-            // pictureBox2
+            // pictureBoxDownvote
             // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(55, 104);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(20, 36);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBoxDownvote.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxDownvote.BackgroundImage")));
+            this.pictureBoxDownvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxDownvote.Location = new System.Drawing.Point(73, 128);
+            this.pictureBoxDownvote.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBoxDownvote.Name = "pictureBoxDownvote";
+            this.pictureBoxDownvote.Size = new System.Drawing.Size(27, 44);
+            this.pictureBoxDownvote.TabIndex = 3;
+            this.pictureBoxDownvote.TabStop = false;
+            this.pictureBoxDownvote.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox1
+            // pictureBoxUpvote
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 104);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 36);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBoxUpvote.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxUpvote.BackgroundImage")));
+            this.pictureBoxUpvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxUpvote.Location = new System.Drawing.Point(21, 128);
+            this.pictureBoxUpvote.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBoxUpvote.Name = "pictureBoxUpvote";
+            this.pictureBoxUpvote.Size = new System.Drawing.Size(27, 44);
+            this.pictureBoxUpvote.TabIndex = 4;
+            this.pictureBoxUpvote.TabStop = false;
+            this.pictureBoxUpvote.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // voteCountLabel
+            // labelCount
             // 
-            this.voteCountLabel.AutoSize = true;
-            this.voteCountLabel.Location = new System.Drawing.Point(37, 118);
-            this.voteCountLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.voteCountLabel.Name = "voteCountLabel";
-            this.voteCountLabel.Size = new System.Drawing.Size(19, 13);
-            this.voteCountLabel.TabIndex = 5;
-            this.voteCountLabel.Text = "23";
+            this.labelCount.AutoSize = true;
+            this.labelCount.Location = new System.Drawing.Point(49, 145);
+            this.labelCount.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.labelCount.Name = "labelCount";
+            this.labelCount.Size = new System.Drawing.Size(24, 17);
+            this.labelCount.TabIndex = 5;
+            this.labelCount.Text = "23";
             // 
             // welcomeLabel
             // 
             this.welcomeLabel.AutoSize = true;
-            this.welcomeLabel.Location = new System.Drawing.Point(14, 15);
+            this.welcomeLabel.Location = new System.Drawing.Point(19, 18);
             this.welcomeLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(0, 13);
+            this.welcomeLabel.Size = new System.Drawing.Size(0, 17);
             this.welcomeLabel.TabIndex = 6;
             // 
-            // menuStrip1
+            // menuStrip
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(48, 48);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.issue1ToolStripMenuItem,
-            this.issue2ToolStripMenuItem,
-            this.issue3ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(2, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(608, 24);
-            this.menuStrip1.TabIndex = 7;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(48, 48);
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemIssue1,
+            this.toolStripMenuItemIssue2,
+            this.toolStripMenuItemIssue3});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
+            this.menuStrip.Size = new System.Drawing.Size(811, 26);
+            this.menuStrip.TabIndex = 7;
+            this.menuStrip.Text = "menuStrip1";
             // 
-            // issue1ToolStripMenuItem
+            // toolStripMenuItemIssue1
             // 
-            this.issue1ToolStripMenuItem.Name = "issue1ToolStripMenuItem";
-            this.issue1ToolStripMenuItem.Size = new System.Drawing.Size(54, 22);
-            this.issue1ToolStripMenuItem.Text = "Issue 1";
+            this.toolStripMenuItemIssue1.Name = "toolStripMenuItemIssue1";
+            this.toolStripMenuItemIssue1.Size = new System.Drawing.Size(65, 24);
+            this.toolStripMenuItemIssue1.Text = "Issue 1";
             // 
-            // issue2ToolStripMenuItem
+            // toolStripMenuItemIssue2
             // 
-            this.issue2ToolStripMenuItem.Name = "issue2ToolStripMenuItem";
-            this.issue2ToolStripMenuItem.Size = new System.Drawing.Size(54, 22);
-            this.issue2ToolStripMenuItem.Text = "Issue 2";
-            this.issue2ToolStripMenuItem.Click += new System.EventHandler(this.issue2ToolStripMenuItem_Click);
+            this.toolStripMenuItemIssue2.Name = "toolStripMenuItemIssue2";
+            this.toolStripMenuItemIssue2.Size = new System.Drawing.Size(65, 24);
+            this.toolStripMenuItemIssue2.Text = "Issue 2";
+            this.toolStripMenuItemIssue2.Click += new System.EventHandler(this.issue2ToolStripMenuItem_Click);
             // 
-            // issue3ToolStripMenuItem
+            // toolStripMenuItemIssue3
             // 
-            this.issue3ToolStripMenuItem.Name = "issue3ToolStripMenuItem";
-            this.issue3ToolStripMenuItem.Size = new System.Drawing.Size(54, 22);
-            this.issue3ToolStripMenuItem.Text = "Issue 3";
+            this.toolStripMenuItemIssue3.Name = "toolStripMenuItemIssue3";
+            this.toolStripMenuItemIssue3.Size = new System.Drawing.Size(65, 24);
+            this.toolStripMenuItemIssue3.Text = "Issue 3";
             // 
-            // label1
+            // labelRedDog
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "RedDog";
+            this.labelRedDog.AutoSize = true;
+            this.labelRedDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRedDog.Location = new System.Drawing.Point(21, 39);
+            this.labelRedDog.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.labelRedDog.Name = "labelRedDog";
+            this.labelRedDog.Size = new System.Drawing.Size(66, 17);
+            this.labelRedDog.TabIndex = 8;
+            this.labelRedDog.Text = "RedDog";
             // 
-            // label2
+            // labelSkills
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(14, 51);
-            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(337, 29);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "No time for skills development";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.labelSkills.AutoSize = true;
+            this.labelSkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSkills.ForeColor = System.Drawing.Color.Black;
+            this.labelSkills.Location = new System.Drawing.Point(19, 63);
+            this.labelSkills.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.labelSkills.Name = "labelSkills";
+            this.labelSkills.Size = new System.Drawing.Size(410, 36);
+            this.labelSkills.TabIndex = 9;
+            this.labelSkills.Text = "No time for skills development";
+            this.labelSkills.Click += new System.EventHandler(this.label2_Click);
             // 
-            // CommentList
+            // listComment
             // 
-            this.CommentList.FormattingEnabled = true;
-            this.CommentList.Location = new System.Drawing.Point(85, 202);
-            this.CommentList.Margin = new System.Windows.Forms.Padding(1);
-            this.CommentList.Name = "CommentList";
-            this.CommentList.Size = new System.Drawing.Size(366, 56);
-            this.CommentList.TabIndex = 10;
+            this.listComment.FormattingEnabled = true;
+            this.listComment.ItemHeight = 16;
+            this.listComment.Location = new System.Drawing.Point(113, 249);
+            this.listComment.Margin = new System.Windows.Forms.Padding(1);
+            this.listComment.Name = "listComment";
+            this.listComment.Size = new System.Drawing.Size(487, 68);
+            this.listComment.TabIndex = 10;
             // 
-            // webBrowser1
+            // webBrowser
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(78, 320);
-            this.webBrowser1.Margin = new System.Windows.Forms.Padding(1);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(6, 7);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(507, 307);
-            this.webBrowser1.TabIndex = 11;
-            this.webBrowser1.Url = new System.Uri("http://google.com", System.UriKind.Absolute);
+            this.webBrowser.Location = new System.Drawing.Point(52, 338);
+            this.webBrowser.Margin = new System.Windows.Forms.Padding(1);
+            this.webBrowser.MinimumSize = new System.Drawing.Size(8, 9);
+            this.webBrowser.Name = "webBrowser";
+            this.webBrowser.Size = new System.Drawing.Size(676, 107);
+            this.webBrowser.TabIndex = 11;
+            this.webBrowser.Url = new System.Uri("http://google.com", System.UriKind.Absolute);
             // 
             // formIssueBoard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 370);
-            this.Controls.Add(this.webBrowser1);
-            this.Controls.Add(this.CommentList);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(811, 455);
+            this.Controls.Add(this.webBrowser);
+            this.Controls.Add(this.listComment);
+            this.Controls.Add(this.labelSkills);
+            this.Controls.Add(this.labelRedDog);
             this.Controls.Add(this.welcomeLabel);
-            this.Controls.Add(this.voteCountLabel);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.labelCount);
+            this.Controls.Add(this.pictureBoxUpvote);
+            this.Controls.Add(this.pictureBoxDownvote);
+            this.Controls.Add(this.textBoxIssue);
+            this.Controls.Add(this.buttonComment);
+            this.Controls.Add(this.menuStrip);
+            this.MainMenuStrip = this.menuStrip;
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "formIssueBoard";
             this.Text = "Issue Board";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).EndInit();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,20 +221,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label voteCountLabel;
+        private System.Windows.Forms.Button buttonComment;
+        private System.Windows.Forms.TextBox textBoxIssue;
+        private System.Windows.Forms.PictureBox pictureBoxDownvote;
+        private System.Windows.Forms.PictureBox pictureBoxUpvote;
+        private System.Windows.Forms.Label labelCount;
         private System.Windows.Forms.Label welcomeLabel;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem issue1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem issue2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem issue3ToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox CommentList;
-        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemIssue1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemIssue2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemIssue3;
+        private System.Windows.Forms.Label labelRedDog;
+        private System.Windows.Forms.Label labelSkills;
+        private System.Windows.Forms.ListBox listComment;
+        private System.Windows.Forms.WebBrowser webBrowser;
     }
 }
 

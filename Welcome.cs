@@ -42,23 +42,23 @@ namespace USAADemoApp
             int randomColorIndex = randColor.Next(Colors.Count);
             int randomAnimalIndex = randColor.Next(Colors.Count);
             string userName = "Welcome, " + Colors[randomColorIndex] + Animals[randomAnimalIndex];
-            welcomeLabel.Text = userName;
+            labelWelcome.Text = userName;
 
 
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBox1.Checked == true)
+            if(checkBoxManager.Checked == true)
             {
                 postButton.Enabled = false;
-                button1.Enabled = false;
-                button2.Enabled = false;
-                button3.Enabled = false;
+                buttonPostLeft.Enabled = false;
+                buttonPostCenter.Enabled = false;
+                buttonPostRight.Enabled = false;
 
 
             }
-            if (checkBox1.Checked == false)
+            if (checkBoxManager.Checked == false)
             {
                 postButton.Enabled = true;
             }

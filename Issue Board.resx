@@ -117,11 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>Here at USAA, little to no thought goes in to empowering employees to develop skills outside of those being immediately used. This is an extremely shortsighted strategy, as we as employees are not prepared for future endeavors. I think everyone at USAA would benefit from providing more training materials as well as more time to train.</value>
+  <data name="textBoxIssue.Text" xml:space="preserve">
+    <value>Here at (company), little to no thought goes in to empowering employees to develop skills outside of those being immediately used. This is an extremely shortsighted strategy, as we as employees are not prepared for future endeavors. I think everyone at (company) would benefit from providing more training materials as well as more time to train.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxDownvote.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFoAAACoCAYAAABg8vkQAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
         EQAAFxEByibzPwAABCNJREFUeF7t291u2mYcx/EcT1U1aWRNSrMBiRlKQuZgKHQkBEKzJvQ17dayrVuj
@@ -145,7 +145,7 @@
         sQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxUpvote.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFkAAACoCAYAAACLxUITAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
         EQAAFxEByibzPwAAAyxJREFUeF7t0k9LFGEAx3FRd3xQZFdkRRTUtTfSsWud8lTHLnXoEEaQEmHgoa1D
@@ -165,7 +165,7 @@
         TkSuQmCC
 </value>
   </data>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
 </root>

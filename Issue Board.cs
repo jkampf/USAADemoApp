@@ -29,47 +29,47 @@ namespace USAADemoApp
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            int voteCount = Convert.ToInt32(voteCountLabel.Text);
+            int voteCount = Convert.ToInt32(labelCount.Text);
             if(upVote == true)
             {
                 voteCount = voteCount - 1;
-                voteCountLabel.Text = Convert.ToString(voteCount);
+                labelCount.Text = Convert.ToString(voteCount);
                 upVote = false;
-                pictureBox2.BackgroundImage = Properties.Resources.upArrowBasae;
+                pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowBasae;
                
             }
             else if (upVote == false)
             {
                 voteCount = voteCount + 1;
-                voteCountLabel.Text = Convert.ToString(voteCount);
+                labelCount.Text = Convert.ToString(voteCount);
                 upVote = true;
                 downVote = false;
-                pictureBox2.BackgroundImage = Properties.Resources.upArrowVoted;
-                pictureBox1.BackgroundImage = Properties.Resources.downArrowBase;
+                pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowVoted;
+                pictureBoxUpvote.BackgroundImage = Properties.Resources.downArrowBase;
             }
  
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            int voteCount = Convert.ToInt32(voteCountLabel.Text);
+            int voteCount = Convert.ToInt32(labelCount.Text);
 
             if (downVote == true)
             {
                 voteCount = voteCount + 2;
-                voteCountLabel.Text = Convert.ToString(voteCount);
+                labelCount.Text = Convert.ToString(voteCount);
                 downVote = false;
-                pictureBox1.BackgroundImage = Properties.Resources.downArrowBase;
+                pictureBoxUpvote.BackgroundImage = Properties.Resources.downArrowBase;
             }
             else if (downVote == false)
             {
                 voteCount = voteCount - 1;
-                voteCountLabel.Text = Convert.ToString(voteCount);
+                labelCount.Text = Convert.ToString(voteCount);
                 downVote = true;
                 upVote = false;
                
-                pictureBox1.BackgroundImage = Properties.Resources.downArrowVoted;
-                pictureBox2.BackgroundImage = Properties.Resources.upArrowBasae;
+                pictureBoxUpvote.BackgroundImage = Properties.Resources.downArrowVoted;
+                pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowBasae;
 
             }
         }

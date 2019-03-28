@@ -74,5 +74,20 @@ namespace USAADemoApp
             formIssueBoard form1 = new formIssueBoard();
             form1.Show();
         }
+
+        private void buttonPostLeft_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPostCenter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPostRight_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

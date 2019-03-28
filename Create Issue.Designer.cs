@@ -40,6 +40,7 @@
             this.buttonPostIssue.TabIndex = 0;
             this.buttonPostIssue.Text = "Post Issue";
             this.buttonPostIssue.UseVisualStyleBackColor = true;
+            this.buttonPostIssue.Click += new System.EventHandler(this.buttonPostIssue_Click);
             // 
             // formCreateIssue
             // 

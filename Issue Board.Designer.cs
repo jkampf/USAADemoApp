@@ -57,6 +57,7 @@
             this.buttonComment.TabIndex = 0;
             this.buttonComment.Text = "Comment";
             this.buttonComment.UseVisualStyleBackColor = true;
+            this.buttonComment.Click += new System.EventHandler(this.buttonComment_Click);
             // 
             // textBoxIssue
             // 

@@ -304,6 +304,7 @@
             this.buttonPostLeft.TabIndex = 29;
             this.buttonPostLeft.Text = "Post";
             this.buttonPostLeft.UseVisualStyleBackColor = true;
+            this.buttonPostLeft.Click += new System.EventHandler(this.buttonPostLeft_Click);
             // 
             // buttonPostCenter
             // 
@@ -314,6 +315,7 @@
             this.buttonPostCenter.TabIndex = 30;
             this.buttonPostCenter.Text = "Post";
             this.buttonPostCenter.UseVisualStyleBackColor = true;
+            this.buttonPostCenter.Click += new System.EventHandler(this.buttonPostCenter_Click);
             // 
             // buttonPostRight
             // 
@@ -324,6 +326,7 @@
             this.buttonPostRight.TabIndex = 31;
             this.buttonPostRight.Text = "Post";
             this.buttonPostRight.UseVisualStyleBackColor = true;
+            this.buttonPostRight.Click += new System.EventHandler(this.buttonPostRight_Click);
             // 
             // formWelcome
             // 

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace USAADemoApp
 {
-    public partial class createIssueForm : Form
+    public partial class formCreateIssue : Form
     {
-        public createIssueForm()
+        public formCreateIssue()
         {
             InitializeComponent();
-        }
-
-        private void buttonPostIssue_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

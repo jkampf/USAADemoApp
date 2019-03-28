@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace USAADemoApp
 {
-    public partial class issueBoardForm : Form
+    public partial class formIssueBoard : Form
     {
         public bool upVote = false;
         public bool downVote = false;
         public List<string> Animals = new List<string>();
         public List<string> Colors = new List<string>();
 
-        public issueBoardForm()
+        public formIssueBoard()
         {
             InitializeComponent();
         }
@@ -29,47 +29,47 @@ namespace USAADemoApp
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            int voteCount = Convert.ToInt32(labelVoteCount.Text);
+            int voteCount = Convert.ToInt32(voteCountLabel.Text);
             if(upVote == true)
             {
                 voteCount = voteCount - 1;
-                labelVoteCount.Text = Convert.ToString(voteCount);
+                voteCountLabel.Text = Convert.ToString(voteCount);
                 upVote = false;
-                upvotePictureBox.BackgroundImage = Properties.Resources.upArrowBasae;
+                pictureBox2.BackgroundImage = Properties.Resources.upArrowBasae;
                
             }
             else if (upVote == false)
             {
                 voteCount = voteCount + 1;
-                labelVoteCount.Text = Convert.ToString(voteCount);
+                voteCountLabel.Text = Convert.ToString(voteCount);
                 upVote = true;
                 downVote = false;
-                upvotePictureBox.BackgroundImage = Properties.Resources.upArrowVoted;
-                downvotePictureBox.BackgroundImage = Properties.Resources.downArrowBase;
+                pictureBox2.BackgroundImage = Properties.Resources.upArrowVoted;
+                pictureBox1.BackgroundImage = Properties.Resources.downArrowBase;
             }
  
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            int voteCount = Convert.ToInt32(labelVoteCount.Text);
+            int voteCount = Convert.ToInt32(voteCountLabel.Text);
 
             if (downVote == true)
             {
-                voteCount = voteCount + 1;
-                labelVoteCount.Text = Convert.ToString(voteCount);
+                voteCount = voteCount + 2;
+                voteCountLabel.Text = Convert.ToString(voteCount);
                 downVote = false;
-                downvotePictureBox.BackgroundImage = Properties.Resources.downArrowBase;
+                pictureBox1.BackgroundImage = Properties.Resources.downArrowBase;
             }
             else if (downVote == false)
             {
                 voteCount = voteCount - 1;
-                labelVoteCount.Text = Convert.ToString(voteCount);
+                voteCountLabel.Text = Convert.ToString(voteCount);
                 downVote = true;
                 upVote = false;
                
-                downvotePictureBox.BackgroundImage = Properties.Resources.downArrowVoted;
-                upvotePictureBox.BackgroundImage = Properties.Resources.upArrowBasae;
+                pictureBox1.BackgroundImage = Properties.Resources.downArrowVoted;
+                pictureBox2.BackgroundImage = Properties.Resources.upArrowBasae;
 
             }
         }
@@ -80,11 +80,6 @@ namespace USAADemoApp
         }
 
         private void issue2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonComment_Click(object sender, EventArgs e)
         {
 
         }

@@ -34,18 +34,13 @@
             this.viewTopIssuesButton = new System.Windows.Forms.Button();
             this.generateReportButton = new System.Windows.Forms.Button();
             this.labelEmployeeFeedback = new System.Windows.Forms.Label();
-            this.textBoxImplementations = new System.Windows.Forms.TextBox();
-            this.textBoxIssues = new System.Windows.Forms.TextBox();
-            this.textBoxSuggestions = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.labelImplementations = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.labelSuggestions = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.labelIssues = new System.Windows.Forms.Label();
-            this.buttonPostLeft = new System.Windows.Forms.Button();
             this.buttonPostCenter = new System.Windows.Forms.Button();
-            this.buttonPostRight = new System.Windows.Forms.Button();
             this.listBoxImplementations = new System.Windows.Forms.ListBox();
             this.listBoxIssues = new System.Windows.Forms.ListBox();
             this.listBoxSuggestions = new System.Windows.Forms.ListBox();
@@ -120,33 +115,6 @@
             this.labelEmployeeFeedback.TabIndex = 6;
             this.labelEmployeeFeedback.Text = "Employee Feedback App";
             // 
-            // textBoxImplementations
-            // 
-            this.textBoxImplementations.Location = new System.Drawing.Point(8, 571);
-            this.textBoxImplementations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBoxImplementations.Multiline = true;
-            this.textBoxImplementations.Name = "textBoxImplementations";
-            this.textBoxImplementations.Size = new System.Drawing.Size(280, 104);
-            this.textBoxImplementations.TabIndex = 13;
-            // 
-            // textBoxIssues
-            // 
-            this.textBoxIssues.Location = new System.Drawing.Point(287, 571);
-            this.textBoxIssues.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBoxIssues.Multiline = true;
-            this.textBoxIssues.Name = "textBoxIssues";
-            this.textBoxIssues.Size = new System.Drawing.Size(331, 104);
-            this.textBoxIssues.TabIndex = 14;
-            // 
-            // textBoxSuggestions
-            // 
-            this.textBoxSuggestions.Location = new System.Drawing.Point(615, 571);
-            this.textBoxSuggestions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBoxSuggestions.Multiline = true;
-            this.textBoxSuggestions.Name = "textBoxSuggestions";
-            this.textBoxSuggestions.Size = new System.Drawing.Size(331, 104);
-            this.textBoxSuggestions.TabIndex = 15;
-            // 
             // panel10
             // 
             this.panel10.Controls.Add(this.labelImplementations);
@@ -208,38 +176,16 @@
             this.labelIssues.TabIndex = 2;
             this.labelIssues.Text = "What issues/concerns are \r\nholding our department back";
             // 
-            // buttonPostLeft
-            // 
-            this.buttonPostLeft.Location = new System.Drawing.Point(83, 684);
-            this.buttonPostLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.buttonPostLeft.Name = "buttonPostLeft";
-            this.buttonPostLeft.Size = new System.Drawing.Size(100, 28);
-            this.buttonPostLeft.TabIndex = 29;
-            this.buttonPostLeft.Text = "Post";
-            this.buttonPostLeft.UseVisualStyleBackColor = true;
-            this.buttonPostLeft.Click += new System.EventHandler(this.buttonPostLeft_Click);
-            // 
             // buttonPostCenter
             // 
-            this.buttonPostCenter.Location = new System.Drawing.Point(392, 684);
+            this.buttonPostCenter.Location = new System.Drawing.Point(432, 650);
             this.buttonPostCenter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonPostCenter.Name = "buttonPostCenter";
             this.buttonPostCenter.Size = new System.Drawing.Size(100, 28);
             this.buttonPostCenter.TabIndex = 30;
-            this.buttonPostCenter.Text = "Post";
+            this.buttonPostCenter.Text = "Create Post";
             this.buttonPostCenter.UseVisualStyleBackColor = true;
             this.buttonPostCenter.Click += new System.EventHandler(this.buttonPostCenter_Click);
-            // 
-            // buttonPostRight
-            // 
-            this.buttonPostRight.Location = new System.Drawing.Point(726, 684);
-            this.buttonPostRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.buttonPostRight.Name = "buttonPostRight";
-            this.buttonPostRight.Size = new System.Drawing.Size(100, 28);
-            this.buttonPostRight.TabIndex = 31;
-            this.buttonPostRight.Text = "Post";
-            this.buttonPostRight.UseVisualStyleBackColor = true;
-            this.buttonPostRight.Click += new System.EventHandler(this.buttonPostRight_Click);
             // 
             // listBoxImplementations
             // 
@@ -276,15 +222,10 @@
             this.Controls.Add(this.listBoxSuggestions);
             this.Controls.Add(this.listBoxIssues);
             this.Controls.Add(this.listBoxImplementations);
-            this.Controls.Add(this.buttonPostRight);
             this.Controls.Add(this.buttonPostCenter);
-            this.Controls.Add(this.buttonPostLeft);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.textBoxSuggestions);
-            this.Controls.Add(this.textBoxIssues);
-            this.Controls.Add(this.textBoxImplementations);
             this.Controls.Add(this.labelEmployeeFeedback);
             this.Controls.Add(this.generateReportButton);
             this.Controls.Add(this.viewTopIssuesButton);
@@ -313,18 +254,13 @@
         private System.Windows.Forms.Button viewTopIssuesButton;
         private System.Windows.Forms.Button generateReportButton;
         private System.Windows.Forms.Label labelEmployeeFeedback;
-        private System.Windows.Forms.TextBox textBoxImplementations;
-        private System.Windows.Forms.TextBox textBoxIssues;
-        private System.Windows.Forms.TextBox textBoxSuggestions;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label labelImplementations;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label labelSuggestions;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label labelIssues;
-        private System.Windows.Forms.Button buttonPostLeft;
         private System.Windows.Forms.Button buttonPostCenter;
-        private System.Windows.Forms.Button buttonPostRight;
         private System.Windows.Forms.ListBox listBoxImplementations;
         private System.Windows.Forms.ListBox listBoxIssues;
         private System.Windows.Forms.ListBox listBoxSuggestions;

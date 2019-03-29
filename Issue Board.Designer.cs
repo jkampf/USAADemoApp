@@ -36,16 +36,10 @@
             this.labelCount = new System.Windows.Forms.Label();
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItemIssue1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemIssue2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemIssue3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelRedDog = new System.Windows.Forms.Label();
             this.labelSkills = new System.Windows.Forms.Label();
             this.listComment = new System.Windows.Forms.ListBox();
-            this.webBrowser = new System.Windows.Forms.WebBrowser();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).BeginInit();
-            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonComment
@@ -116,46 +110,12 @@
             // menuStrip
             // 
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(48, 48);
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItemIssue1,
-            this.toolStripMenuItemIssue2,
-            this.toolStripMenuItemIssue3});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip.Size = new System.Drawing.Size(811, 26);
+            this.menuStrip.Size = new System.Drawing.Size(634, 24);
             this.menuStrip.TabIndex = 7;
             this.menuStrip.Text = "menuStrip1";
-            // 
-            // toolStripMenuItemIssue1
-            // 
-            this.toolStripMenuItemIssue1.Name = "toolStripMenuItemIssue1";
-            this.toolStripMenuItemIssue1.Size = new System.Drawing.Size(65, 24);
-            this.toolStripMenuItemIssue1.Text = "Issue 1";
-            // 
-            // toolStripMenuItemIssue2
-            // 
-            this.toolStripMenuItemIssue2.Name = "toolStripMenuItemIssue2";
-            this.toolStripMenuItemIssue2.Size = new System.Drawing.Size(65, 24);
-            this.toolStripMenuItemIssue2.Text = "Issue 2";
-            this.toolStripMenuItemIssue2.Click += new System.EventHandler(this.issue2ToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItemIssue3
-            // 
-            this.toolStripMenuItemIssue3.Name = "toolStripMenuItemIssue3";
-            this.toolStripMenuItemIssue3.Size = new System.Drawing.Size(65, 24);
-            this.toolStripMenuItemIssue3.Text = "Issue 3";
-            // 
-            // labelRedDog
-            // 
-            this.labelRedDog.AutoSize = true;
-            this.labelRedDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRedDog.Location = new System.Drawing.Point(21, 39);
-            this.labelRedDog.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelRedDog.Name = "labelRedDog";
-            this.labelRedDog.Size = new System.Drawing.Size(66, 17);
-            this.labelRedDog.TabIndex = 8;
-            this.labelRedDog.Text = "RedDog";
             // 
             // labelSkills
             // 
@@ -180,25 +140,13 @@
             this.listComment.Size = new System.Drawing.Size(487, 68);
             this.listComment.TabIndex = 10;
             // 
-            // webBrowser
-            // 
-            this.webBrowser.Location = new System.Drawing.Point(52, 338);
-            this.webBrowser.Margin = new System.Windows.Forms.Padding(1);
-            this.webBrowser.MinimumSize = new System.Drawing.Size(8, 9);
-            this.webBrowser.Name = "webBrowser";
-            this.webBrowser.Size = new System.Drawing.Size(676, 107);
-            this.webBrowser.TabIndex = 11;
-            this.webBrowser.Url = new System.Uri("http://google.com", System.UriKind.Absolute);
-            // 
             // formIssueBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 455);
-            this.Controls.Add(this.webBrowser);
+            this.ClientSize = new System.Drawing.Size(634, 370);
             this.Controls.Add(this.listComment);
             this.Controls.Add(this.labelSkills);
-            this.Controls.Add(this.labelRedDog);
             this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.labelCount);
             this.Controls.Add(this.pictureBoxUpvote);
@@ -213,8 +161,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).EndInit();
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,13 +175,8 @@
         private System.Windows.Forms.Label labelCount;
         private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemIssue1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemIssue2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemIssue3;
-        private System.Windows.Forms.Label labelRedDog;
         private System.Windows.Forms.Label labelSkills;
         private System.Windows.Forms.ListBox listComment;
-        private System.Windows.Forms.WebBrowser webBrowser;
     }
 }
 

@@ -41,20 +41,14 @@
             this.labelImplementations = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.labelSuggestions = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.labelIssues = new System.Windows.Forms.Label();
             this.buttonPostLeft = new System.Windows.Forms.Button();
             this.buttonPostCenter = new System.Windows.Forms.Button();
             this.buttonPostRight = new System.Windows.Forms.Button();
+            this.listBoxImplementations = new System.Windows.Forms.ListBox();
+            this.listBoxIssues = new System.Windows.Forms.ListBox();
+            this.listBoxSuggestions = new System.Windows.Forms.ListBox();
             this.panel10.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -194,87 +188,6 @@
             this.labelSuggestions.Text = "What do you think can be \r\nimplemented in our department \r\nto increase effeciency" +
     " and \r\nemployee satisfaction?";
             // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(5, 434);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 129);
-            this.panel1.TabIndex = 21;
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(5, 313);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(281, 123);
-            this.panel4.TabIndex = 20;
-            // 
-            // panel7
-            // 
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Location = new System.Drawing.Point(5, 188);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(281, 126);
-            this.panel7.TabIndex = 19;
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(615, 434);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(331, 129);
-            this.panel3.TabIndex = 24;
-            // 
-            // panel6
-            // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Location = new System.Drawing.Point(615, 313);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(331, 123);
-            this.panel6.TabIndex = 23;
-            // 
-            // panel9
-            // 
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Location = new System.Drawing.Point(615, 188);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(331, 126);
-            this.panel9.TabIndex = 22;
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(295, 434);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(315, 129);
-            this.panel2.TabIndex = 27;
-            // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(295, 313);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(315, 123);
-            this.panel5.TabIndex = 26;
-            // 
-            // panel8
-            // 
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Location = new System.Drawing.Point(295, 188);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(315, 126);
-            this.panel8.TabIndex = 25;
-            // 
             // panel11
             // 
             this.panel11.Controls.Add(this.labelIssues);
@@ -328,24 +241,45 @@
             this.buttonPostRight.UseVisualStyleBackColor = true;
             this.buttonPostRight.Click += new System.EventHandler(this.buttonPostRight_Click);
             // 
+            // listBoxImplementations
+            // 
+            this.listBoxImplementations.FormattingEnabled = true;
+            this.listBoxImplementations.ItemHeight = 16;
+            this.listBoxImplementations.Location = new System.Drawing.Point(5, 197);
+            this.listBoxImplementations.Name = "listBoxImplementations";
+            this.listBoxImplementations.Size = new System.Drawing.Size(283, 356);
+            this.listBoxImplementations.TabIndex = 32;
+            // 
+            // listBoxIssues
+            // 
+            this.listBoxIssues.FormattingEnabled = true;
+            this.listBoxIssues.ItemHeight = 16;
+            this.listBoxIssues.Location = new System.Drawing.Point(304, 197);
+            this.listBoxIssues.Name = "listBoxIssues";
+            this.listBoxIssues.Size = new System.Drawing.Size(283, 356);
+            this.listBoxIssues.TabIndex = 33;
+            // 
+            // listBoxSuggestions
+            // 
+            this.listBoxSuggestions.FormattingEnabled = true;
+            this.listBoxSuggestions.ItemHeight = 16;
+            this.listBoxSuggestions.Location = new System.Drawing.Point(620, 197);
+            this.listBoxSuggestions.Name = "listBoxSuggestions";
+            this.listBoxSuggestions.Size = new System.Drawing.Size(283, 356);
+            this.listBoxSuggestions.TabIndex = 34;
+            // 
             // formWelcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1237, 746);
+            this.ClientSize = new System.Drawing.Size(998, 715);
+            this.Controls.Add(this.listBoxSuggestions);
+            this.Controls.Add(this.listBoxIssues);
+            this.Controls.Add(this.listBoxImplementations);
             this.Controls.Add(this.buttonPostRight);
             this.Controls.Add(this.buttonPostCenter);
             this.Controls.Add(this.buttonPostLeft);
             this.Controls.Add(this.panel11);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.textBoxSuggestions);
@@ -386,19 +320,13 @@
         private System.Windows.Forms.Label labelImplementations;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label labelSuggestions;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label labelIssues;
         private System.Windows.Forms.Button buttonPostLeft;
         private System.Windows.Forms.Button buttonPostCenter;
         private System.Windows.Forms.Button buttonPostRight;
+        private System.Windows.Forms.ListBox listBoxImplementations;
+        private System.Windows.Forms.ListBox listBoxIssues;
+        private System.Windows.Forms.ListBox listBoxSuggestions;
     }
 }

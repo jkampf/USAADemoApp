@@ -10,84 +10,47 @@ using System.Windows.Forms;
 
 namespace USAADemoApp
 {
-    public partial class formWelcome : Form
+    public partial class FormWelcome : Form
     {
-        public List<string> Animals = new List<string>();
-        public List<string> Colors = new List<string>();
-
         public bool isManager = false;
 
-        public formWelcome()
+        public FormWelcome()
         {
             InitializeComponent();
         }
 
         private void Welcome_Load(object sender, EventArgs e)
         {
-            Animals.Add("Dog");
-            Animals.Add("Cat");
-            Animals.Add("Lion");
-            Animals.Add("Platypus");
-            Animals.Add("Dinosaur");
-            Animals.Add("Snail");
-            Animals.Add("Monkey");
-
-            Colors.Add("Red");
-            Colors.Add("Blue");
-            Colors.Add("Green");
-            Colors.Add("Yellow");
-
-            Random randColor = new Random();
-            Random randAnimal = new Random();
-            int randomColorIndex = randColor.Next(Colors.Count);
-            int randomAnimalIndex = randColor.Next(Colors.Count);
-            string userName = "Welcome, " + Colors[randomColorIndex] + Animals[randomAnimalIndex];
-            labelWelcome.Text = userName;
-
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if(checkBoxManager.Checked == true)
-            {
-                postButton.Enabled = false;
-                buttonPostLeft.Enabled = false;
-                buttonPostCenter.Enabled = false;
-                buttonPostRight.Enabled = false;
-
-
-            }
-            if (checkBoxManager.Checked == false)
-            {
-                postButton.Enabled = true;
-            }
-        }
-
-        private void postButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void viewTopIssuesButton_Click(object sender, EventArgs e)
+        private void ViewTopIssuesButton_Click(object sender, EventArgs e)
         {
             formIssueBoard form1 = new formIssueBoard();
             form1.Show();
         }
 
-        private void buttonPostLeft_Click(object sender, EventArgs e)
+        private void ButtonPost_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void buttonPostCenter_Click(object sender, EventArgs e)
+        private void ButtonGenerateReport_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void buttonPostRight_Click(object sender, EventArgs e)
+        private void CheckBoxManager_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBoxManager.Checked == true)
+            {
+                buttonPost.Enabled = false;
+                buttonPost.Enabled = false;
+            }
+            if (checkBoxManager.Checked == false)
+            {
+                buttonPost.Enabled = true;
+            }
         }
     }
 }

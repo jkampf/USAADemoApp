@@ -15,11 +15,6 @@ namespace USAADemoApp
 
         }
 
-        private void ViewTopIssuesButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ButtonPost_Click(object sender, EventArgs e)
         {
 
@@ -42,6 +37,11 @@ namespace USAADemoApp
                 buttonPost.Enabled = true;
                 buttonGenerateReport.Enabled = false;
             }
+        }
+
+        private void ButtonViewPosts_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

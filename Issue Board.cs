@@ -5,13 +5,10 @@ namespace USAADemoApp
 {
     public partial class formIssueBoard : Form
     {
-        public bool upVote = false;
-        public bool downVote = false;
+        private bool upVote = false;
+        private bool downVote = false;
 
-        public formIssueBoard()
-        {
-            InitializeComponent();
-        }
+        public formIssueBoard() => InitializeComponent();
 
         private void ButtonComment_Click(object sender, EventArgs e)
         {

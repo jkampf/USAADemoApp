@@ -5,8 +5,6 @@ namespace USAADemoApp
 {
     public partial class FormWelcome : Form
     {
-        public bool isManager = false;
-
         public FormWelcome()
         {
             InitializeComponent();
@@ -19,8 +17,7 @@ namespace USAADemoApp
 
         private void ViewTopIssuesButton_Click(object sender, EventArgs e)
         {
-            formIssueBoard form1 = new formIssueBoard();
-            form1.Show();
+
         }
 
         private void ButtonPost_Click(object sender, EventArgs e)
@@ -38,11 +35,12 @@ namespace USAADemoApp
             if (checkBoxManager.Checked == true)
             {
                 buttonPost.Enabled = false;
-                buttonPost.Enabled = false;
+                buttonGenerateReport.Enabled = true;
             }
-            if (checkBoxManager.Checked == false)
+            else
             {
                 buttonPost.Enabled = true;
+                buttonGenerateReport.Enabled = false;
             }
         }
     }

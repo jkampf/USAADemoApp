@@ -43,7 +43,7 @@
             // 
             // buttonComment
             // 
-            this.buttonComment.Location = new System.Drawing.Point(248, 176);
+            this.buttonComment.Location = new System.Drawing.Point(207, 235);
             this.buttonComment.Margin = new System.Windows.Forms.Padding(1);
             this.buttonComment.Name = "buttonComment";
             this.buttonComment.Size = new System.Drawing.Size(81, 20);
@@ -54,7 +54,7 @@
             // 
             // textBoxIssue
             // 
-            this.textBoxIssue.Location = new System.Drawing.Point(85, 98);
+            this.textBoxIssue.Location = new System.Drawing.Point(85, 60);
             this.textBoxIssue.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxIssue.Multiline = true;
             this.textBoxIssue.Name = "textBoxIssue";
@@ -67,7 +67,7 @@
             // 
             this.pictureBoxDownvote.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxDownvote.BackgroundImage")));
             this.pictureBoxDownvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxDownvote.Location = new System.Drawing.Point(55, 104);
+            this.pictureBoxDownvote.Location = new System.Drawing.Point(53, 60);
             this.pictureBoxDownvote.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBoxDownvote.Name = "pictureBoxDownvote";
             this.pictureBoxDownvote.Size = new System.Drawing.Size(20, 36);
@@ -79,7 +79,7 @@
             // 
             this.pictureBoxUpvote.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxUpvote.BackgroundImage")));
             this.pictureBoxUpvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxUpvote.Location = new System.Drawing.Point(16, 104);
+            this.pictureBoxUpvote.Location = new System.Drawing.Point(10, 60);
             this.pictureBoxUpvote.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBoxUpvote.Name = "pictureBoxUpvote";
             this.pictureBoxUpvote.Size = new System.Drawing.Size(20, 36);
@@ -90,7 +90,7 @@
             // labelCount
             // 
             this.labelCount.AutoSize = true;
-            this.labelCount.Location = new System.Drawing.Point(37, 118);
+            this.labelCount.Location = new System.Drawing.Point(32, 63);
             this.labelCount.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelCount.Name = "labelCount";
             this.labelCount.Size = new System.Drawing.Size(19, 13);
@@ -111,7 +111,7 @@
             this.labelSkills.AutoSize = true;
             this.labelSkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSkills.ForeColor = System.Drawing.Color.Black;
-            this.labelSkills.Location = new System.Drawing.Point(14, 51);
+            this.labelSkills.Location = new System.Drawing.Point(80, 15);
             this.labelSkills.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelSkills.Name = "labelSkills";
             this.labelSkills.Size = new System.Drawing.Size(337, 29);
@@ -121,7 +121,7 @@
             // listComment
             // 
             this.listComment.FormattingEnabled = true;
-            this.listComment.Location = new System.Drawing.Point(85, 202);
+            this.listComment.Location = new System.Drawing.Point(85, 159);
             this.listComment.Margin = new System.Windows.Forms.Padding(1);
             this.listComment.Name = "listComment";
             this.listComment.Size = new System.Drawing.Size(366, 56);
@@ -131,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 301);
+            this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.listComment);
             this.Controls.Add(this.labelSkills);
             this.Controls.Add(this.welcomeLabel);

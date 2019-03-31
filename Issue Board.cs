@@ -3,12 +3,12 @@ using System.Windows.Forms;
 
 namespace USAADemoApp
 {
-    public partial class formIssueBoard : Form
+    public partial class formIndividualPost : Form
     {
         private bool upVote = false;
         private bool downVote = false;
 
-        public formIssueBoard() => InitializeComponent();
+        public formIndividualPost() => InitializeComponent();
 
         private void ButtonComment_Click(object sender, EventArgs e)
         {

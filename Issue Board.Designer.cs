@@ -1,6 +1,6 @@
 ﻿namespace USAADemoApp
 {
-    partial class formIssueBoard
+    partial class formIndividualPost
     {
         /// <summary>
         /// Required designer variable.
@@ -28,29 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formIssueBoard));
-            this.buttonComment = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formIndividualPost));
+            this.buttonSubmit = new System.Windows.Forms.Button();
             this.textBoxIssue = new System.Windows.Forms.TextBox();
             this.pictureBoxDownvote = new System.Windows.Forms.PictureBox();
             this.pictureBoxUpvote = new System.Windows.Forms.PictureBox();
             this.labelCount = new System.Windows.Forms.Label();
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.labelSkills = new System.Windows.Forms.Label();
-            this.listComment = new System.Windows.Forms.ListBox();
+            this.listComments = new System.Windows.Forms.ListBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelComment = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonComment
+            // buttonSubmit
             // 
-            this.buttonComment.Location = new System.Drawing.Point(207, 235);
-            this.buttonComment.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonComment.Name = "buttonComment";
-            this.buttonComment.Size = new System.Drawing.Size(81, 20);
-            this.buttonComment.TabIndex = 0;
-            this.buttonComment.Text = "Comment";
-            this.buttonComment.UseVisualStyleBackColor = true;
-            this.buttonComment.Click += new System.EventHandler(this.ButtonComment_Click);
+            this.buttonSubmit.Location = new System.Drawing.Point(206, 455);
+            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(1);
+            this.buttonSubmit.Name = "buttonSubmit";
+            this.buttonSubmit.Size = new System.Drawing.Size(81, 20);
+            this.buttonSubmit.TabIndex = 0;
+            this.buttonSubmit.Text = "Comment";
+            this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Click += new System.EventHandler(this.ButtonComment_Click);
             // 
             // textBoxIssue
             // 
@@ -118,31 +121,60 @@
             this.labelSkills.TabIndex = 9;
             this.labelSkills.Text = "No time for skills development";
             // 
-            // listComment
+            // listComments
             // 
-            this.listComment.FormattingEnabled = true;
-            this.listComment.Location = new System.Drawing.Point(85, 159);
-            this.listComment.Margin = new System.Windows.Forms.Padding(1);
-            this.listComment.Name = "listComment";
-            this.listComment.Size = new System.Drawing.Size(366, 56);
-            this.listComment.TabIndex = 10;
+            this.listComments.FormattingEnabled = true;
+            this.listComments.Location = new System.Drawing.Point(17, 192);
+            this.listComments.Margin = new System.Windows.Forms.Padding(1);
+            this.listComments.Name = "listComments";
+            this.listComments.Size = new System.Drawing.Size(441, 160);
+            this.listComments.TabIndex = 10;
             // 
-            // formIssueBoard
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(77, 373);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(366, 60);
+            this.textBox1.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 166);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Comments:";
+            // 
+            // labelComment
+            // 
+            this.labelComment.AutoSize = true;
+            this.labelComment.Location = new System.Drawing.Point(17, 373);
+            this.labelComment.Name = "labelComment";
+            this.labelComment.Size = new System.Drawing.Size(54, 13);
+            this.labelComment.TabIndex = 13;
+            this.labelComment.Text = "Comment:";
+            // 
+            // formIndividualPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 267);
-            this.Controls.Add(this.listComment);
+            this.ClientSize = new System.Drawing.Size(484, 499);
+            this.Controls.Add(this.labelComment);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.listComments);
             this.Controls.Add(this.labelSkills);
             this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.labelCount);
             this.Controls.Add(this.pictureBoxUpvote);
             this.Controls.Add(this.pictureBoxDownvote);
             this.Controls.Add(this.textBoxIssue);
-            this.Controls.Add(this.buttonComment);
+            this.Controls.Add(this.buttonSubmit);
             this.Margin = new System.Windows.Forms.Padding(1);
-            this.Name = "formIssueBoard";
-            this.Text = "Issue Board";
+            this.Name = "formIndividualPost";
+            this.Text = "Post";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).EndInit();
             this.ResumeLayout(false);
@@ -152,14 +184,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonComment;
+        private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.TextBox textBoxIssue;
         private System.Windows.Forms.PictureBox pictureBoxDownvote;
         private System.Windows.Forms.PictureBox pictureBoxUpvote;
         private System.Windows.Forms.Label labelCount;
         private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.Label labelSkills;
-        private System.Windows.Forms.ListBox listComment;
+        private System.Windows.Forms.ListBox listComments;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelComment;
     }
 }
 

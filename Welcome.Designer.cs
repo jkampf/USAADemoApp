@@ -182,7 +182,7 @@
             // 
             // buttonViewPosts
             // 
-            this.buttonViewPosts.Location = new System.Drawing.Point(88, 468);
+            this.buttonViewPosts.Location = new System.Drawing.Point(113, 468);
             this.buttonViewPosts.Name = "buttonViewPosts";
             this.buttonViewPosts.Size = new System.Drawing.Size(75, 23);
             this.buttonViewPosts.TabIndex = 35;

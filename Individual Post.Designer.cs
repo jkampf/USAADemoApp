@@ -1,6 +1,6 @@
 ﻿namespace USAADemoApp
 {
-    partial class formIndividualPost
+    partial class IndividualPost
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formIndividualPost));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IndividualPost));
             this.buttonSubmitNewComment = new System.Windows.Forms.Button();
             this.textBoxPostBody = new System.Windows.Forms.TextBox();
             this.pictureBoxDownvote = new System.Windows.Forms.PictureBox();

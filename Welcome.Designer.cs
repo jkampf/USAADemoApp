@@ -1,6 +1,6 @@
 ﻿namespace USAADemoApp
 {
-    partial class FormWelcome
+    partial class Welcome
     {
         /// <summary>
         /// Required designer variable.
@@ -33,9 +33,9 @@
             this.labelEmployeeFeedbackApp = new System.Windows.Forms.Label();
             this.buttonPost = new System.Windows.Forms.Button();
             this.groupBoxFeedbackType = new System.Windows.Forms.GroupBox();
-            this.buttonSuggestions = new System.Windows.Forms.RadioButton();
-            this.buttonIssues = new System.Windows.Forms.RadioButton();
-            this.buttonImplementation = new System.Windows.Forms.RadioButton();
+            this.radioButtonSuggestions = new System.Windows.Forms.RadioButton();
+            this.radioButtonIssues = new System.Windows.Forms.RadioButton();
+            this.radioButtonImplementation = new System.Windows.Forms.RadioButton();
             this.textBoxPostTitle = new System.Windows.Forms.TextBox();
             this.labelPostTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -93,9 +93,9 @@
             // 
             // groupBoxFeedbackType
             // 
-            this.groupBoxFeedbackType.Controls.Add(this.buttonSuggestions);
-            this.groupBoxFeedbackType.Controls.Add(this.buttonIssues);
-            this.groupBoxFeedbackType.Controls.Add(this.buttonImplementation);
+            this.groupBoxFeedbackType.Controls.Add(this.radioButtonSuggestions);
+            this.groupBoxFeedbackType.Controls.Add(this.radioButtonIssues);
+            this.groupBoxFeedbackType.Controls.Add(this.radioButtonImplementation);
             this.groupBoxFeedbackType.Location = new System.Drawing.Point(193, 70);
             this.groupBoxFeedbackType.Name = "groupBoxFeedbackType";
             this.groupBoxFeedbackType.Size = new System.Drawing.Size(124, 99);
@@ -103,38 +103,38 @@
             this.groupBoxFeedbackType.TabStop = false;
             this.groupBoxFeedbackType.Text = "Feedback Type:";
             // 
-            // buttonSuggestions
+            // radioButtonSuggestions
             // 
-            this.buttonSuggestions.AutoSize = true;
-            this.buttonSuggestions.Location = new System.Drawing.Point(6, 65);
-            this.buttonSuggestions.Name = "buttonSuggestions";
-            this.buttonSuggestions.Size = new System.Drawing.Size(83, 17);
-            this.buttonSuggestions.TabIndex = 4;
-            this.buttonSuggestions.TabStop = true;
-            this.buttonSuggestions.Text = "Suggestions";
-            this.buttonSuggestions.UseVisualStyleBackColor = true;
+            this.radioButtonSuggestions.AutoSize = true;
+            this.radioButtonSuggestions.Location = new System.Drawing.Point(6, 65);
+            this.radioButtonSuggestions.Name = "radioButtonSuggestions";
+            this.radioButtonSuggestions.Size = new System.Drawing.Size(83, 17);
+            this.radioButtonSuggestions.TabIndex = 4;
+            this.radioButtonSuggestions.TabStop = true;
+            this.radioButtonSuggestions.Text = "Suggestions";
+            this.radioButtonSuggestions.UseVisualStyleBackColor = true;
             // 
-            // buttonIssues
+            // radioButtonIssues
             // 
-            this.buttonIssues.AutoSize = true;
-            this.buttonIssues.Location = new System.Drawing.Point(6, 42);
-            this.buttonIssues.Name = "buttonIssues";
-            this.buttonIssues.Size = new System.Drawing.Size(55, 17);
-            this.buttonIssues.TabIndex = 3;
-            this.buttonIssues.TabStop = true;
-            this.buttonIssues.Text = "Issues";
-            this.buttonIssues.UseVisualStyleBackColor = true;
+            this.radioButtonIssues.AutoSize = true;
+            this.radioButtonIssues.Location = new System.Drawing.Point(6, 42);
+            this.radioButtonIssues.Name = "radioButtonIssues";
+            this.radioButtonIssues.Size = new System.Drawing.Size(55, 17);
+            this.radioButtonIssues.TabIndex = 3;
+            this.radioButtonIssues.TabStop = true;
+            this.radioButtonIssues.Text = "Issues";
+            this.radioButtonIssues.UseVisualStyleBackColor = true;
             // 
-            // buttonImplementation
+            // radioButtonImplementation
             // 
-            this.buttonImplementation.AutoSize = true;
-            this.buttonImplementation.Location = new System.Drawing.Point(6, 19);
-            this.buttonImplementation.Name = "buttonImplementation";
-            this.buttonImplementation.Size = new System.Drawing.Size(96, 17);
-            this.buttonImplementation.TabIndex = 2;
-            this.buttonImplementation.TabStop = true;
-            this.buttonImplementation.Text = "Implementation";
-            this.buttonImplementation.UseVisualStyleBackColor = true;
+            this.radioButtonImplementation.AutoSize = true;
+            this.radioButtonImplementation.Location = new System.Drawing.Point(6, 19);
+            this.radioButtonImplementation.Name = "radioButtonImplementation";
+            this.radioButtonImplementation.Size = new System.Drawing.Size(96, 17);
+            this.radioButtonImplementation.TabIndex = 2;
+            this.radioButtonImplementation.TabStop = true;
+            this.radioButtonImplementation.Text = "Implementation";
+            this.radioButtonImplementation.UseVisualStyleBackColor = true;
             // 
             // textBoxPostTitle
             // 
@@ -190,7 +190,7 @@
             this.buttonViewPosts.UseVisualStyleBackColor = true;
             this.buttonViewPosts.Click += new System.EventHandler(this.ButtonViewPosts_Click);
             // 
-            // FormWelcome
+            // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -203,7 +203,7 @@
             this.Controls.Add(this.buttonGenerateReport);
             this.Controls.Add(this.checkBoxManager);
             this.Margin = new System.Windows.Forms.Padding(1);
-            this.Name = "FormWelcome";
+            this.Name = "Welcome";
             this.Text = "Welcome";
             this.groupBoxFeedbackType.ResumeLayout(false);
             this.groupBoxFeedbackType.PerformLayout();
@@ -220,9 +220,9 @@
         private System.Windows.Forms.Label labelEmployeeFeedbackApp;
         private System.Windows.Forms.Button buttonPost;
         private System.Windows.Forms.GroupBox groupBoxFeedbackType;
-        private System.Windows.Forms.RadioButton buttonSuggestions;
-        private System.Windows.Forms.RadioButton buttonIssues;
-        private System.Windows.Forms.RadioButton buttonImplementation;
+        private System.Windows.Forms.RadioButton radioButtonSuggestions;
+        private System.Windows.Forms.RadioButton radioButtonIssues;
+        private System.Windows.Forms.RadioButton radioButtonImplementation;
         private System.Windows.Forms.TextBox textBoxPostTitle;
         private System.Windows.Forms.Label labelPostTitle;
         private System.Windows.Forms.Panel panel1;

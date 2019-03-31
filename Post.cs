@@ -1,11 +1,20 @@
 ﻿namespace USAADemoApp
 {
-    class Post
+    public class Post
     {
-        public string PostTitle { get; set; }
-        public string PostContent { get; set; }
-        public string[] PostComments { get; set; }
-        public int PostCategory { get; set; }
-        public int VoteRank { get; set; }
+        private string postTitle;
+        private string postContent;
+        private int postCategory;
+
+        public string PostTitle { get => postTitle; set => postTitle = value; }
+        public string PostContent { get => postContent; set => postContent = value; }
+        public int PostCategory { get => postCategory; set => postCategory = value; }
+
+        public Post(string postTitle, string postContent, int postCategory)
+        {
+            this.postTitle = postTitle;
+            this.postContent = postContent;
+            this.postCategory = postCategory;
+        }
     }
 }

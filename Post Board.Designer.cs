@@ -1,6 +1,6 @@
 ﻿namespace USAADemoApp
 {
-    partial class Posts
+    partial class PostBoard
     {
         /// <summary>
         /// Required designer variable.
@@ -62,7 +62,7 @@
             this.labelPostCategory.TabIndex = 2;
             this.labelPostCategory.Text = "Post Category:";
             // 
-            // Posts
+            // formPostBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -70,7 +70,7 @@
             this.Controls.Add(this.labelPostCategory);
             this.Controls.Add(this.comboBoxPostCategory);
             this.Controls.Add(this.listBoxPosts);
-            this.Name = "Posts";
+            this.Name = "formPostBoard";
             this.Text = "Post Board";
             this.ResumeLayout(false);
             this.PerformLayout();

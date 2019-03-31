@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.listBoxPosts = new System.Windows.Forms.ListBox();
-            this.comboBoxCategory = new System.Windows.Forms.ComboBox();
-            this.labelCategory = new System.Windows.Forms.Label();
+            this.comboBoxPostCategory = new System.Windows.Forms.ComboBox();
+            this.labelPostCategory = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listBoxPosts
@@ -41,33 +41,37 @@
             this.listBoxPosts.Size = new System.Drawing.Size(397, 329);
             this.listBoxPosts.TabIndex = 0;
             // 
-            // comboBoxCategory
+            // comboBoxPostCategory
             // 
-            this.comboBoxCategory.FormattingEnabled = true;
-            this.comboBoxCategory.Location = new System.Drawing.Point(70, 25);
-            this.comboBoxCategory.Name = "comboBoxCategory";
-            this.comboBoxCategory.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxCategory.TabIndex = 1;
+            this.comboBoxPostCategory.FormattingEnabled = true;
+            this.comboBoxPostCategory.Items.AddRange(new object[] {
+            "Implementation",
+            "Issues",
+            "Suggestions"});
+            this.comboBoxPostCategory.Location = new System.Drawing.Point(94, 25);
+            this.comboBoxPostCategory.Name = "comboBoxPostCategory";
+            this.comboBoxPostCategory.Size = new System.Drawing.Size(143, 21);
+            this.comboBoxPostCategory.TabIndex = 1;
             // 
-            // labelCategory
+            // labelPostCategory
             // 
-            this.labelCategory.AutoSize = true;
-            this.labelCategory.Location = new System.Drawing.Point(12, 25);
-            this.labelCategory.Name = "labelCategory";
-            this.labelCategory.Size = new System.Drawing.Size(52, 13);
-            this.labelCategory.TabIndex = 2;
-            this.labelCategory.Text = "Category:";
+            this.labelPostCategory.AutoSize = true;
+            this.labelPostCategory.Location = new System.Drawing.Point(12, 25);
+            this.labelPostCategory.Name = "labelPostCategory";
+            this.labelPostCategory.Size = new System.Drawing.Size(76, 13);
+            this.labelPostCategory.TabIndex = 2;
+            this.labelPostCategory.Text = "Post Category:";
             // 
             // Posts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(437, 429);
-            this.Controls.Add(this.labelCategory);
-            this.Controls.Add(this.comboBoxCategory);
+            this.Controls.Add(this.labelPostCategory);
+            this.Controls.Add(this.comboBoxPostCategory);
             this.Controls.Add(this.listBoxPosts);
             this.Name = "Posts";
-            this.Text = "Posts";
+            this.Text = "Post Board";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -76,7 +80,7 @@
         #endregion
 
         private System.Windows.Forms.ListBox listBoxPosts;
-        private System.Windows.Forms.ComboBox comboBoxCategory;
-        private System.Windows.Forms.Label labelCategory;
+        private System.Windows.Forms.ComboBox comboBoxPostCategory;
+        private System.Windows.Forms.Label labelPostCategory;
     }
 }

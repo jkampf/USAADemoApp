@@ -30,17 +30,17 @@
         {
             this.checkBoxManager = new System.Windows.Forms.CheckBox();
             this.buttonGenerateReport = new System.Windows.Forms.Button();
-            this.labelEmployeeFeedback = new System.Windows.Forms.Label();
+            this.labelEmployeeFeedbackApp = new System.Windows.Forms.Label();
             this.buttonPost = new System.Windows.Forms.Button();
             this.groupBoxFeedbackType = new System.Windows.Forms.GroupBox();
             this.buttonSuggestions = new System.Windows.Forms.RadioButton();
             this.buttonIssues = new System.Windows.Forms.RadioButton();
             this.buttonImplementation = new System.Windows.Forms.RadioButton();
-            this.textBoxTitle = new System.Windows.Forms.TextBox();
-            this.labelTitle = new System.Windows.Forms.Label();
+            this.textBoxPostTitle = new System.Windows.Forms.TextBox();
+            this.labelPostTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBoxBody = new System.Windows.Forms.TextBox();
-            this.labelBody = new System.Windows.Forms.Label();
+            this.textBoxPostBody = new System.Windows.Forms.TextBox();
+            this.labelPostBody = new System.Windows.Forms.Label();
             this.buttonViewPosts = new System.Windows.Forms.Button();
             this.groupBoxFeedbackType.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -70,16 +70,16 @@
             this.buttonGenerateReport.UseVisualStyleBackColor = true;
             this.buttonGenerateReport.Click += new System.EventHandler(this.ButtonGenerateReport_Click);
             // 
-            // labelEmployeeFeedback
+            // labelEmployeeFeedbackApp
             // 
-            this.labelEmployeeFeedback.AutoSize = true;
-            this.labelEmployeeFeedback.Font = new System.Drawing.Font("Ebrima", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmployeeFeedback.Location = new System.Drawing.Point(81, 9);
-            this.labelEmployeeFeedback.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelEmployeeFeedback.Name = "labelEmployeeFeedback";
-            this.labelEmployeeFeedback.Size = new System.Drawing.Size(331, 40);
-            this.labelEmployeeFeedback.TabIndex = 9;
-            this.labelEmployeeFeedback.Text = "Employee Feedback App";
+            this.labelEmployeeFeedbackApp.AutoSize = true;
+            this.labelEmployeeFeedbackApp.Font = new System.Drawing.Font("Ebrima", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmployeeFeedbackApp.Location = new System.Drawing.Point(81, 9);
+            this.labelEmployeeFeedbackApp.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.labelEmployeeFeedbackApp.Name = "labelEmployeeFeedbackApp";
+            this.labelEmployeeFeedbackApp.Size = new System.Drawing.Size(331, 40);
+            this.labelEmployeeFeedbackApp.TabIndex = 9;
+            this.labelEmployeeFeedbackApp.Text = "Employee Feedback App";
             // 
             // buttonPost
             // 
@@ -136,49 +136,49 @@
             this.buttonImplementation.Text = "Implementation";
             this.buttonImplementation.UseVisualStyleBackColor = true;
             // 
-            // textBoxTitle
+            // textBoxPostTitle
             // 
-            this.textBoxTitle.Location = new System.Drawing.Point(51, 19);
-            this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(425, 20);
-            this.textBoxTitle.TabIndex = 5;
+            this.textBoxPostTitle.Location = new System.Drawing.Point(51, 19);
+            this.textBoxPostTitle.Name = "textBoxPostTitle";
+            this.textBoxPostTitle.Size = new System.Drawing.Size(425, 20);
+            this.textBoxPostTitle.TabIndex = 5;
             // 
-            // labelTitle
+            // labelPostTitle
             // 
-            this.labelTitle.AutoSize = true;
-            this.labelTitle.Location = new System.Drawing.Point(15, 19);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(30, 13);
-            this.labelTitle.TabIndex = 11;
-            this.labelTitle.Text = "Title:";
+            this.labelPostTitle.AutoSize = true;
+            this.labelPostTitle.Location = new System.Drawing.Point(15, 19);
+            this.labelPostTitle.Name = "labelPostTitle";
+            this.labelPostTitle.Size = new System.Drawing.Size(30, 13);
+            this.labelPostTitle.TabIndex = 11;
+            this.labelPostTitle.Text = "Title:";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBoxBody);
-            this.panel1.Controls.Add(this.labelBody);
-            this.panel1.Controls.Add(this.textBoxTitle);
-            this.panel1.Controls.Add(this.labelTitle);
+            this.panel1.Controls.Add(this.textBoxPostBody);
+            this.panel1.Controls.Add(this.labelPostBody);
+            this.panel1.Controls.Add(this.textBoxPostTitle);
+            this.panel1.Controls.Add(this.labelPostTitle);
             this.panel1.Location = new System.Drawing.Point(29, 197);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(493, 229);
             this.panel1.TabIndex = 34;
             // 
-            // textBoxBody
+            // textBoxPostBody
             // 
-            this.textBoxBody.Location = new System.Drawing.Point(51, 56);
-            this.textBoxBody.Multiline = true;
-            this.textBoxBody.Name = "textBoxBody";
-            this.textBoxBody.Size = new System.Drawing.Size(425, 156);
-            this.textBoxBody.TabIndex = 6;
+            this.textBoxPostBody.Location = new System.Drawing.Point(51, 56);
+            this.textBoxPostBody.Multiline = true;
+            this.textBoxPostBody.Name = "textBoxPostBody";
+            this.textBoxPostBody.Size = new System.Drawing.Size(425, 156);
+            this.textBoxPostBody.TabIndex = 6;
             // 
-            // labelBody
+            // labelPostBody
             // 
-            this.labelBody.AutoSize = true;
-            this.labelBody.Location = new System.Drawing.Point(15, 56);
-            this.labelBody.Name = "labelBody";
-            this.labelBody.Size = new System.Drawing.Size(34, 13);
-            this.labelBody.TabIndex = 12;
-            this.labelBody.Text = "Body:";
+            this.labelPostBody.AutoSize = true;
+            this.labelPostBody.Location = new System.Drawing.Point(15, 56);
+            this.labelPostBody.Name = "labelPostBody";
+            this.labelPostBody.Size = new System.Drawing.Size(34, 13);
+            this.labelPostBody.TabIndex = 12;
+            this.labelPostBody.Text = "Body:";
             // 
             // buttonViewPosts
             // 
@@ -199,7 +199,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBoxFeedbackType);
             this.Controls.Add(this.buttonPost);
-            this.Controls.Add(this.labelEmployeeFeedback);
+            this.Controls.Add(this.labelEmployeeFeedbackApp);
             this.Controls.Add(this.buttonGenerateReport);
             this.Controls.Add(this.checkBoxManager);
             this.Margin = new System.Windows.Forms.Padding(1);
@@ -217,17 +217,17 @@
         #endregion
         private System.Windows.Forms.CheckBox checkBoxManager;
         private System.Windows.Forms.Button buttonGenerateReport;
-        private System.Windows.Forms.Label labelEmployeeFeedback;
+        private System.Windows.Forms.Label labelEmployeeFeedbackApp;
         private System.Windows.Forms.Button buttonPost;
         private System.Windows.Forms.GroupBox groupBoxFeedbackType;
         private System.Windows.Forms.RadioButton buttonSuggestions;
         private System.Windows.Forms.RadioButton buttonIssues;
         private System.Windows.Forms.RadioButton buttonImplementation;
-        private System.Windows.Forms.TextBox textBoxTitle;
-        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.TextBox textBoxPostTitle;
+        private System.Windows.Forms.Label labelPostTitle;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label labelBody;
-        private System.Windows.Forms.TextBox textBoxBody;
+        private System.Windows.Forms.Label labelPostBody;
+        private System.Windows.Forms.TextBox textBoxPostBody;
         private System.Windows.Forms.Button buttonViewPosts;
     }
 }

@@ -39,10 +39,11 @@
             this.listBoxPosts.Location = new System.Drawing.Point(15, 67);
             this.listBoxPosts.Name = "listBoxPosts";
             this.listBoxPosts.Size = new System.Drawing.Size(397, 329);
-            this.listBoxPosts.TabIndex = 0;
+            this.listBoxPosts.TabIndex = 2;
             // 
             // comboBoxPostCategory
             // 
+            this.comboBoxPostCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPostCategory.FormattingEnabled = true;
             this.comboBoxPostCategory.Items.AddRange(new object[] {
             "Implementation",
@@ -59,18 +60,18 @@
             this.labelPostCategory.Location = new System.Drawing.Point(12, 25);
             this.labelPostCategory.Name = "labelPostCategory";
             this.labelPostCategory.Size = new System.Drawing.Size(76, 13);
-            this.labelPostCategory.TabIndex = 2;
+            this.labelPostCategory.TabIndex = 3;
             this.labelPostCategory.Text = "Post Category:";
             // 
-            // formPostBoard
+            // PostBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 429);
+            this.ClientSize = new System.Drawing.Size(434, 411);
             this.Controls.Add(this.labelPostCategory);
             this.Controls.Add(this.comboBoxPostCategory);
             this.Controls.Add(this.listBoxPosts);
-            this.Name = "formPostBoard";
+            this.Name = "PostBoard";
             this.Text = "Post Board";
             this.ResumeLayout(false);
             this.PerformLayout();

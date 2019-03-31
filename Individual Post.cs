@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using static System.Convert;
 
 namespace USAADemoApp
 {
@@ -10,25 +11,25 @@ namespace USAADemoApp
 
         public IndividualPost() => InitializeComponent();
 
-        private void ButtonSubmitNewComment_Click(object sender, EventArgs e)
+        private void ButtonSubmitComment_Click(object sender, EventArgs e)
         {
 
         }
 
         private void PictureBoxUpvote_Click(object sender, EventArgs e)
         {
-            int voteCount = Convert.ToInt32(labelCount.Text);
+            int voteCount = ToInt32(labelCount.Text);
 
             if (downVote == true)
             {
-                voteCount = voteCount + 2;
+                voteCount += 2;
                 labelCount.Text = Convert.ToString(voteCount);
                 downVote = false;
                 pictureBoxUpvote.BackgroundImage = Properties.Resources.downArrowBase;
             }
             else if (downVote == false)
             {
-                voteCount = voteCount - 1;
+                voteCount -= 1;
                 labelCount.Text = Convert.ToString(voteCount);
                 downVote = true;
                 upVote = false;
@@ -40,18 +41,18 @@ namespace USAADemoApp
 
         private void PictureBoxDownvote_Click(object sender, EventArgs e)
         {
-            int voteCount = Convert.ToInt32(labelCount.Text);
+            int voteCount = ToInt32(labelCount.Text);
             if (upVote == true)
             {
-                voteCount = voteCount - 1;
+                voteCount -= 1;
                 labelCount.Text = Convert.ToString(voteCount);
                 upVote = false;
                 pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowBasae;
 
             }
-            else if (upVote == false)
+            else
             {
-                voteCount = voteCount + 1;
+                voteCount += 1;
                 labelCount.Text = Convert.ToString(voteCount);
                 upVote = true;
                 downVote = false;

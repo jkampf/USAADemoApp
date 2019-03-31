@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IndividualPost));
-            this.buttonSubmitNewComment = new System.Windows.Forms.Button();
+            this.buttonSubmitComment = new System.Windows.Forms.Button();
             this.textBoxPostBody = new System.Windows.Forms.TextBox();
             this.pictureBoxDownvote = new System.Windows.Forms.PictureBox();
             this.pictureBoxUpvote = new System.Windows.Forms.PictureBox();
@@ -38,21 +38,21 @@
             this.labelPostTitle = new System.Windows.Forms.Label();
             this.listPostComments = new System.Windows.Forms.ListBox();
             this.textBoxBody = new System.Windows.Forms.TextBox();
-            this.labelPostComments = new System.Windows.Forms.Label();
+            this.labelComments = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonSubmitNewComment
+            // buttonSubmitComment
             // 
-            this.buttonSubmitNewComment.Location = new System.Drawing.Point(171, 444);
-            this.buttonSubmitNewComment.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonSubmitNewComment.Name = "buttonSubmitNewComment";
-            this.buttonSubmitNewComment.Size = new System.Drawing.Size(141, 20);
-            this.buttonSubmitNewComment.TabIndex = 0;
-            this.buttonSubmitNewComment.Text = "Submit New Comment";
-            this.buttonSubmitNewComment.UseVisualStyleBackColor = true;
-            this.buttonSubmitNewComment.Click += new System.EventHandler(this.ButtonSubmitNewComment_Click);
+            this.buttonSubmitComment.Location = new System.Drawing.Point(171, 444);
+            this.buttonSubmitComment.Margin = new System.Windows.Forms.Padding(1);
+            this.buttonSubmitComment.Name = "buttonSubmitComment";
+            this.buttonSubmitComment.Size = new System.Drawing.Size(141, 20);
+            this.buttonSubmitComment.TabIndex = 0;
+            this.buttonSubmitComment.Text = "Submit Comment";
+            this.buttonSubmitComment.UseVisualStyleBackColor = true;
+            this.buttonSubmitComment.Click += new System.EventHandler(this.ButtonSubmitComment_Click);
             // 
             // textBoxPostBody
             // 
@@ -113,7 +113,7 @@
             this.labelPostTitle.AutoSize = true;
             this.labelPostTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPostTitle.ForeColor = System.Drawing.Color.Black;
-            this.labelPostTitle.Location = new System.Drawing.Point(89, 15);
+            this.labelPostTitle.Location = new System.Drawing.Point(80, 15);
             this.labelPostTitle.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelPostTitle.Name = "labelPostTitle";
             this.labelPostTitle.Size = new System.Drawing.Size(115, 29);
@@ -137,21 +137,21 @@
             this.textBoxBody.Size = new System.Drawing.Size(434, 78);
             this.textBoxBody.TabIndex = 11;
             // 
-            // labelPostComments
+            // labelComments
             // 
-            this.labelPostComments.AutoSize = true;
-            this.labelPostComments.Location = new System.Drawing.Point(14, 153);
-            this.labelPostComments.Name = "labelPostComments";
-            this.labelPostComments.Size = new System.Drawing.Size(83, 13);
-            this.labelPostComments.TabIndex = 12;
-            this.labelPostComments.Text = "Post Comments:";
+            this.labelComments.AutoSize = true;
+            this.labelComments.Location = new System.Drawing.Point(14, 153);
+            this.labelComments.Name = "labelComments";
+            this.labelComments.Size = new System.Drawing.Size(59, 13);
+            this.labelComments.TabIndex = 12;
+            this.labelComments.Text = "Comments:";
             // 
-            // formIndividualPost
+            // IndividualPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 486);
-            this.Controls.Add(this.labelPostComments);
+            this.ClientSize = new System.Drawing.Size(504, 481);
+            this.Controls.Add(this.labelComments);
             this.Controls.Add(this.textBoxBody);
             this.Controls.Add(this.listPostComments);
             this.Controls.Add(this.labelPostTitle);
@@ -160,9 +160,9 @@
             this.Controls.Add(this.pictureBoxUpvote);
             this.Controls.Add(this.pictureBoxDownvote);
             this.Controls.Add(this.textBoxPostBody);
-            this.Controls.Add(this.buttonSubmitNewComment);
+            this.Controls.Add(this.buttonSubmitComment);
             this.Margin = new System.Windows.Forms.Padding(1);
-            this.Name = "formIndividualPost";
+            this.Name = "IndividualPost";
             this.Text = "Post";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).EndInit();
@@ -173,7 +173,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonSubmitNewComment;
+        private System.Windows.Forms.Button buttonSubmitComment;
         private System.Windows.Forms.TextBox textBoxPostBody;
         private System.Windows.Forms.PictureBox pictureBoxDownvote;
         private System.Windows.Forms.PictureBox pictureBoxUpvote;
@@ -182,7 +182,7 @@
         private System.Windows.Forms.Label labelPostTitle;
         private System.Windows.Forms.ListBox listPostComments;
         private System.Windows.Forms.TextBox textBoxBody;
-        private System.Windows.Forms.Label labelPostComments;
+        private System.Windows.Forms.Label labelComments;
     }
 }
 

@@ -17,11 +17,6 @@ namespace USAADemoApp
             InitializeComponent();
         }
 
-        private void Welcome_Load(object sender, EventArgs e)
-        {
-  
-        }
-
         private void ButtonPost_Click(object sender, EventArgs e)
         {
             if (textBoxPostTitle.Text == Empty || textBoxPostBody.Text == Empty)
@@ -72,15 +67,18 @@ namespace USAADemoApp
             }
         }
 
-        private void ButtonViewPosts_Click(object sender, EventArgs e)
+        private void ButtonViewBoard_Click(object sender, EventArgs e)
         {
-
+            postBoardForm = new PostBoard();
+            postBoardForm.PopulateData(listOfPosts);
+            postBoardForm.ShowDialog();
         }
 
         private void ClearInputs()
         {
             textBoxPostTitle.Text = "";
             textBoxPostBody.Text = "";
+            radioButtonImplementation.Checked = true;
         }
     }
 }

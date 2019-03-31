@@ -33,12 +33,23 @@
             this.buttonGenerateReport = new System.Windows.Forms.Button();
             this.labelEmployeeFeedback = new System.Windows.Forms.Label();
             this.buttonPost = new System.Windows.Forms.Button();
+            this.groupBoxFeedbackType = new System.Windows.Forms.GroupBox();
+            this.buttonImplementation = new System.Windows.Forms.RadioButton();
+            this.buttonIssues = new System.Windows.Forms.RadioButton();
+            this.buttonSuggestions = new System.Windows.Forms.RadioButton();
+            this.textBoxTitle = new System.Windows.Forms.TextBox();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelBody = new System.Windows.Forms.Label();
+            this.textBoxBody = new System.Windows.Forms.TextBox();
+            this.groupBoxFeedbackType.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // checkBoxManager
             // 
             this.checkBoxManager.AutoSize = true;
-            this.checkBoxManager.Location = new System.Drawing.Point(414, 29);
+            this.checkBoxManager.Location = new System.Drawing.Point(431, 29);
             this.checkBoxManager.Margin = new System.Windows.Forms.Padding(1);
             this.checkBoxManager.Name = "checkBoxManager";
             this.checkBoxManager.Size = new System.Drawing.Size(74, 17);
@@ -74,7 +85,7 @@
             // 
             this.labelEmployeeFeedback.AutoSize = true;
             this.labelEmployeeFeedback.Font = new System.Drawing.Font("Ebrima", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmployeeFeedback.Location = new System.Drawing.Point(68, 9);
+            this.labelEmployeeFeedback.Location = new System.Drawing.Point(81, 9);
             this.labelEmployeeFeedback.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelEmployeeFeedback.Name = "labelEmployeeFeedback";
             this.labelEmployeeFeedback.Size = new System.Drawing.Size(331, 40);
@@ -83,7 +94,7 @@
             // 
             // buttonPost
             // 
-            this.buttonPost.Location = new System.Drawing.Point(200, 468);
+            this.buttonPost.Location = new System.Drawing.Point(231, 468);
             this.buttonPost.Name = "buttonPost";
             this.buttonPost.Size = new System.Drawing.Size(75, 23);
             this.buttonPost.TabIndex = 30;
@@ -91,11 +102,102 @@
             this.buttonPost.UseVisualStyleBackColor = true;
             this.buttonPost.Click += new System.EventHandler(this.ButtonPost_Click);
             // 
+            // groupBoxFeedbackType
+            // 
+            this.groupBoxFeedbackType.Controls.Add(this.buttonSuggestions);
+            this.groupBoxFeedbackType.Controls.Add(this.buttonIssues);
+            this.groupBoxFeedbackType.Controls.Add(this.buttonImplementation);
+            this.groupBoxFeedbackType.Location = new System.Drawing.Point(193, 70);
+            this.groupBoxFeedbackType.Name = "groupBoxFeedbackType";
+            this.groupBoxFeedbackType.Size = new System.Drawing.Size(124, 99);
+            this.groupBoxFeedbackType.TabIndex = 31;
+            this.groupBoxFeedbackType.TabStop = false;
+            this.groupBoxFeedbackType.Text = "Feedback Type:";
+            // 
+            // buttonImplementation
+            // 
+            this.buttonImplementation.AutoSize = true;
+            this.buttonImplementation.Location = new System.Drawing.Point(6, 19);
+            this.buttonImplementation.Name = "buttonImplementation";
+            this.buttonImplementation.Size = new System.Drawing.Size(96, 17);
+            this.buttonImplementation.TabIndex = 0;
+            this.buttonImplementation.TabStop = true;
+            this.buttonImplementation.Text = "Implementation";
+            this.buttonImplementation.UseVisualStyleBackColor = true;
+            // 
+            // buttonIssues
+            // 
+            this.buttonIssues.AutoSize = true;
+            this.buttonIssues.Location = new System.Drawing.Point(6, 42);
+            this.buttonIssues.Name = "buttonIssues";
+            this.buttonIssues.Size = new System.Drawing.Size(55, 17);
+            this.buttonIssues.TabIndex = 1;
+            this.buttonIssues.TabStop = true;
+            this.buttonIssues.Text = "Issues";
+            this.buttonIssues.UseVisualStyleBackColor = true;
+            // 
+            // buttonSuggestions
+            // 
+            this.buttonSuggestions.AutoSize = true;
+            this.buttonSuggestions.Location = new System.Drawing.Point(6, 65);
+            this.buttonSuggestions.Name = "buttonSuggestions";
+            this.buttonSuggestions.Size = new System.Drawing.Size(83, 17);
+            this.buttonSuggestions.TabIndex = 2;
+            this.buttonSuggestions.TabStop = true;
+            this.buttonSuggestions.Text = "Suggestions";
+            this.buttonSuggestions.UseVisualStyleBackColor = true;
+            // 
+            // textBoxTitle
+            // 
+            this.textBoxTitle.Location = new System.Drawing.Point(51, 19);
+            this.textBoxTitle.Name = "textBoxTitle";
+            this.textBoxTitle.Size = new System.Drawing.Size(425, 20);
+            this.textBoxTitle.TabIndex = 32;
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Location = new System.Drawing.Point(15, 19);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(30, 13);
+            this.labelTitle.TabIndex = 33;
+            this.labelTitle.Text = "Title:";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.textBoxBody);
+            this.panel1.Controls.Add(this.labelBody);
+            this.panel1.Controls.Add(this.textBoxTitle);
+            this.panel1.Controls.Add(this.labelTitle);
+            this.panel1.Location = new System.Drawing.Point(29, 197);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(493, 229);
+            this.panel1.TabIndex = 34;
+            // 
+            // labelBody
+            // 
+            this.labelBody.AutoSize = true;
+            this.labelBody.Location = new System.Drawing.Point(15, 56);
+            this.labelBody.Name = "labelBody";
+            this.labelBody.Size = new System.Drawing.Size(34, 13);
+            this.labelBody.TabIndex = 34;
+            this.labelBody.Text = "Body:";
+            // 
+            // textBoxBody
+            // 
+            this.textBoxBody.Location = new System.Drawing.Point(51, 56);
+            this.textBoxBody.Multiline = true;
+            this.textBoxBody.Name = "textBoxBody";
+            this.textBoxBody.Size = new System.Drawing.Size(425, 156);
+            this.textBoxBody.TabIndex = 35;
+            // 
             // FormWelcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 511);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.groupBoxFeedbackType);
             this.Controls.Add(this.buttonPost);
             this.Controls.Add(this.labelEmployeeFeedback);
             this.Controls.Add(this.buttonGenerateReport);
@@ -104,6 +206,10 @@
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "FormWelcome";
             this.Text = "Welcome";
+            this.groupBoxFeedbackType.ResumeLayout(false);
+            this.groupBoxFeedbackType.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,5 +221,14 @@
         private System.Windows.Forms.Button buttonGenerateReport;
         private System.Windows.Forms.Label labelEmployeeFeedback;
         private System.Windows.Forms.Button buttonPost;
+        private System.Windows.Forms.GroupBox groupBoxFeedbackType;
+        private System.Windows.Forms.RadioButton buttonSuggestions;
+        private System.Windows.Forms.RadioButton buttonIssues;
+        private System.Windows.Forms.RadioButton buttonImplementation;
+        private System.Windows.Forms.TextBox textBoxTitle;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label labelBody;
+        private System.Windows.Forms.TextBox textBoxBody;
     }
 }

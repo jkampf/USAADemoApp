@@ -4,10 +4,7 @@ namespace USAADemoApp
 {
     public partial class PostBoard : Form
     {
-        public PostBoard()
-        {
-            InitializeComponent();
-        }
+        public PostBoard() => InitializeComponent();
 
         private void ButtonNewPost_Click(object sender, System.EventArgs e)
         {

@@ -6,10 +6,10 @@ namespace USAADemoApp
 {
     public partial class IndividualPost : Form
     {
+        public IndividualPost() => InitializeComponent();
+
         private bool upVote = false;
         private bool downVote = false;
-
-        public IndividualPost() => InitializeComponent();
 
         private void ButtonSubmitComment_Click(object sender, EventArgs e)
         {

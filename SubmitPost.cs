@@ -6,10 +6,7 @@ namespace USAADemoApp
 {
     public partial class SubmitPost : Form
     {
-        public SubmitPost()
-        {
-            InitializeComponent();
-        }
+        public SubmitPost() => InitializeComponent();
 
         private void ButtonPost_Click(object sender, EventArgs e)
         {

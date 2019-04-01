@@ -16,10 +16,5 @@
             this.postContent = postContent;
             this.postCategory = postCategory;
         }
-
-        public override string ToString()
-        {
-            return postTitle;
-        }
     }
 }

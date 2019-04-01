@@ -44,7 +44,7 @@
             this.listBoxPosts.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxPosts.Name = "listBoxPosts";
             this.listBoxPosts.Size = new System.Drawing.Size(528, 404);
-            this.listBoxPosts.TabIndex = 2;
+            this.listBoxPosts.TabIndex = 5;
             // 
             // comboBoxPostCategory
             // 
@@ -67,7 +67,7 @@
             this.labelPostCategory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPostCategory.Name = "labelPostCategory";
             this.labelPostCategory.Size = new System.Drawing.Size(101, 17);
-            this.labelPostCategory.TabIndex = 3;
+            this.labelPostCategory.TabIndex = 7;
             this.labelPostCategory.Text = "Post Category:";
             // 
             // buttonNewPost
@@ -75,7 +75,7 @@
             this.buttonNewPost.Location = new System.Drawing.Point(241, 517);
             this.buttonNewPost.Name = "buttonNewPost";
             this.buttonNewPost.Size = new System.Drawing.Size(75, 23);
-            this.buttonNewPost.TabIndex = 4;
+            this.buttonNewPost.TabIndex = 3;
             this.buttonNewPost.Text = "New Post";
             this.buttonNewPost.UseVisualStyleBackColor = true;
             this.buttonNewPost.Click += new System.EventHandler(this.ButtonNewPost_Click);
@@ -86,16 +86,17 @@
             this.checkBoxIsManager.Location = new System.Drawing.Point(454, 34);
             this.checkBoxIsManager.Name = "checkBoxIsManager";
             this.checkBoxIsManager.Size = new System.Drawing.Size(94, 21);
-            this.checkBoxIsManager.TabIndex = 5;
+            this.checkBoxIsManager.TabIndex = 2;
             this.checkBoxIsManager.Text = "Manager?";
             this.checkBoxIsManager.UseVisualStyleBackColor = true;
             // 
             // buttonGenerateReport
             // 
+            this.buttonGenerateReport.Enabled = false;
             this.buttonGenerateReport.Location = new System.Drawing.Point(419, 517);
             this.buttonGenerateReport.Name = "buttonGenerateReport";
             this.buttonGenerateReport.Size = new System.Drawing.Size(129, 23);
-            this.buttonGenerateReport.TabIndex = 6;
+            this.buttonGenerateReport.TabIndex = 4;
             this.buttonGenerateReport.Text = "Generate Report";
             this.buttonGenerateReport.UseVisualStyleBackColor = true;
             this.buttonGenerateReport.Click += new System.EventHandler(this.ButtonGenerateReport_Click);

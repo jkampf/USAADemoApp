@@ -140,7 +140,6 @@
             this.labelEmployeeFeedbackApp.Size = new System.Drawing.Size(169, 17);
             this.labelEmployeeFeedbackApp.TabIndex = 13;
             this.labelEmployeeFeedbackApp.Text = "Employee Feedback App ";
-            this.labelEmployeeFeedbackApp.Click += new System.EventHandler(this.label4_Click);
             // 
             // PostBoard
             // 

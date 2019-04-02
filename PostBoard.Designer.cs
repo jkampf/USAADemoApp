@@ -43,18 +43,17 @@
             // listBoxImplementations
             // 
             this.listBoxImplementations.FormattingEnabled = true;
-            this.listBoxImplementations.ItemHeight = 16;
-            this.listBoxImplementations.Location = new System.Drawing.Point(11, 82);
-            this.listBoxImplementations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxImplementations.Location = new System.Drawing.Point(8, 67);
             this.listBoxImplementations.Name = "listBoxImplementations";
-            this.listBoxImplementations.Size = new System.Drawing.Size(320, 404);
+            this.listBoxImplementations.Size = new System.Drawing.Size(241, 329);
             this.listBoxImplementations.TabIndex = 5;
             // 
             // buttonNewPost
             // 
-            this.buttonNewPost.Location = new System.Drawing.Point(496, 515);
+            this.buttonNewPost.Location = new System.Drawing.Point(372, 418);
+            this.buttonNewPost.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonNewPost.Name = "buttonNewPost";
-            this.buttonNewPost.Size = new System.Drawing.Size(75, 23);
+            this.buttonNewPost.Size = new System.Drawing.Size(56, 19);
             this.buttonNewPost.TabIndex = 3;
             this.buttonNewPost.Text = "New Post";
             this.buttonNewPost.UseVisualStyleBackColor = true;
@@ -63,9 +62,10 @@
             // checkBoxIsManager
             // 
             this.checkBoxIsManager.AutoSize = true;
-            this.checkBoxIsManager.Location = new System.Drawing.Point(796, 21);
+            this.checkBoxIsManager.Location = new System.Drawing.Point(597, 17);
+            this.checkBoxIsManager.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBoxIsManager.Name = "checkBoxIsManager";
-            this.checkBoxIsManager.Size = new System.Drawing.Size(94, 21);
+            this.checkBoxIsManager.Size = new System.Drawing.Size(74, 17);
             this.checkBoxIsManager.TabIndex = 2;
             this.checkBoxIsManager.Text = "Manager?";
             this.checkBoxIsManager.UseVisualStyleBackColor = true;
@@ -73,9 +73,10 @@
             // buttonGenerateReport
             // 
             this.buttonGenerateReport.Enabled = false;
-            this.buttonGenerateReport.Location = new System.Drawing.Point(896, 21);
+            this.buttonGenerateReport.Location = new System.Drawing.Point(672, 17);
+            this.buttonGenerateReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonGenerateReport.Name = "buttonGenerateReport";
-            this.buttonGenerateReport.Size = new System.Drawing.Size(129, 23);
+            this.buttonGenerateReport.Size = new System.Drawing.Size(97, 19);
             this.buttonGenerateReport.TabIndex = 4;
             this.buttonGenerateReport.Text = "Generate Report";
             this.buttonGenerateReport.UseVisualStyleBackColor = true;
@@ -84,68 +85,61 @@
             // listBoxIssues
             // 
             this.listBoxIssues.FormattingEnabled = true;
-            this.listBoxIssues.ItemHeight = 16;
-            this.listBoxIssues.Location = new System.Drawing.Point(367, 82);
-            this.listBoxIssues.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxIssues.Location = new System.Drawing.Point(275, 67);
             this.listBoxIssues.Name = "listBoxIssues";
-            this.listBoxIssues.Size = new System.Drawing.Size(320, 404);
+            this.listBoxIssues.Size = new System.Drawing.Size(241, 329);
             this.listBoxIssues.TabIndex = 8;
             // 
             // listBoxSuggestions
             // 
             this.listBoxSuggestions.FormattingEnabled = true;
-            this.listBoxSuggestions.ItemHeight = 16;
-            this.listBoxSuggestions.Location = new System.Drawing.Point(722, 82);
-            this.listBoxSuggestions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxSuggestions.Location = new System.Drawing.Point(542, 67);
             this.listBoxSuggestions.Name = "listBoxSuggestions";
-            this.listBoxSuggestions.Size = new System.Drawing.Size(320, 404);
+            this.listBoxSuggestions.Size = new System.Drawing.Size(241, 329);
             this.listBoxSuggestions.TabIndex = 9;
             // 
             // labelImplementations
             // 
             this.labelImplementations.AutoSize = true;
-            this.labelImplementations.Location = new System.Drawing.Point(67, 61);
-            this.labelImplementations.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelImplementations.Location = new System.Drawing.Point(50, 50);
             this.labelImplementations.Name = "labelImplementations";
-            this.labelImplementations.Size = new System.Drawing.Size(169, 17);
+            this.labelImplementations.Size = new System.Drawing.Size(127, 13);
             this.labelImplementations.TabIndex = 10;
             this.labelImplementations.Text = "Previous Implementations";
             // 
             // labelIssues
             // 
             this.labelIssues.AutoSize = true;
-            this.labelIssues.Location = new System.Drawing.Point(431, 61);
-            this.labelIssues.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelIssues.Location = new System.Drawing.Point(323, 50);
             this.labelIssues.Name = "labelIssues";
-            this.labelIssues.Size = new System.Drawing.Size(188, 17);
+            this.labelIssues.Size = new System.Drawing.Size(140, 13);
             this.labelIssues.TabIndex = 11;
             this.labelIssues.Text = "Current Departmental Issues";
             // 
             // labelSuggestions
             // 
             this.labelSuggestions.AutoSize = true;
-            this.labelSuggestions.Location = new System.Drawing.Point(803, 61);
-            this.labelSuggestions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSuggestions.Location = new System.Drawing.Point(602, 50);
             this.labelSuggestions.Name = "labelSuggestions";
-            this.labelSuggestions.Size = new System.Drawing.Size(175, 17);
+            this.labelSuggestions.Size = new System.Drawing.Size(131, 13);
             this.labelSuggestions.TabIndex = 12;
             this.labelSuggestions.Text = "Departmental Suggestions";
             // 
             // labelEmployeeFeedbackApp
             // 
             this.labelEmployeeFeedbackApp.AutoSize = true;
-            this.labelEmployeeFeedbackApp.Location = new System.Drawing.Point(432, 19);
+            this.labelEmployeeFeedbackApp.Location = new System.Drawing.Point(324, 15);
             this.labelEmployeeFeedbackApp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEmployeeFeedbackApp.Name = "labelEmployeeFeedbackApp";
-            this.labelEmployeeFeedbackApp.Size = new System.Drawing.Size(169, 17);
+            this.labelEmployeeFeedbackApp.Size = new System.Drawing.Size(129, 13);
             this.labelEmployeeFeedbackApp.TabIndex = 13;
             this.labelEmployeeFeedbackApp.Text = "Employee Feedback App ";
             // 
             // PostBoard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 569);
+            this.ClientSize = new System.Drawing.Size(789, 462);
             this.Controls.Add(this.labelEmployeeFeedbackApp);
             this.Controls.Add(this.labelSuggestions);
             this.Controls.Add(this.labelIssues);
@@ -156,7 +150,6 @@
             this.Controls.Add(this.checkBoxIsManager);
             this.Controls.Add(this.buttonNewPost);
             this.Controls.Add(this.listBoxImplementations);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PostBoard";
             this.Text = "Post Board";
             this.Load += new System.EventHandler(this.PostBoard_Load);

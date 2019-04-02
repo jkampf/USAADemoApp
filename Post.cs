@@ -3,17 +3,17 @@
     public class Post
     {
         private string postTitle;
-        private string postContent;
+        private string postBody;
         private int postCategory;
 
         public string PostTitle { get => postTitle; set => postTitle = value; }
-        public string PostContent { get => postContent; set => postContent = value; }
+        public string PostBody { get => postBody; set => postBody = value; }
         public int PostCategory { get => postCategory; set => postCategory = value; }
 
-        public Post(string postTitle, string postContent, int postCategory)
+        public Post(string postTitle, string postBody, int postCategory)
         {
             this.postTitle = postTitle;
-            this.postContent = postContent;
+            this.postBody = postBody;
             this.postCategory = postCategory;
         }
     }

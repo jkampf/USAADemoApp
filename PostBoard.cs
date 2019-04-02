@@ -15,5 +15,15 @@ namespace USAADemoApp
         {
 
         }
+
+        private void PostBoard_Load(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

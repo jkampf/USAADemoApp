@@ -45,7 +45,7 @@
             this.listBoxPosts.FormattingEnabled = true;
             this.listBoxPosts.ItemHeight = 24;
             this.listBoxPosts.Location = new System.Drawing.Point(15, 123);
-            this.listBoxPosts.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.listBoxPosts.Margin = new System.Windows.Forms.Padding(6);
             this.listBoxPosts.Name = "listBoxPosts";
             this.listBoxPosts.Size = new System.Drawing.Size(438, 604);
             this.listBoxPosts.TabIndex = 5;
@@ -53,7 +53,7 @@
             // buttonNewPost
             // 
             this.buttonNewPost.Location = new System.Drawing.Point(682, 772);
-            this.buttonNewPost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonNewPost.Margin = new System.Windows.Forms.Padding(4);
             this.buttonNewPost.Name = "buttonNewPost";
             this.buttonNewPost.Size = new System.Drawing.Size(103, 34);
             this.buttonNewPost.TabIndex = 3;
@@ -65,7 +65,7 @@
             // 
             this.checkBoxIsManager.AutoSize = true;
             this.checkBoxIsManager.Location = new System.Drawing.Point(1218, 13);
-            this.checkBoxIsManager.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxIsManager.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxIsManager.Name = "checkBoxIsManager";
             this.checkBoxIsManager.Size = new System.Drawing.Size(127, 29);
             this.checkBoxIsManager.TabIndex = 2;
@@ -76,7 +76,7 @@
             // 
             this.buttonGenerateReport.Enabled = false;
             this.buttonGenerateReport.Location = new System.Drawing.Point(1218, 50);
-            this.buttonGenerateReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonGenerateReport.Margin = new System.Windows.Forms.Padding(4);
             this.buttonGenerateReport.Name = "buttonGenerateReport";
             this.buttonGenerateReport.Size = new System.Drawing.Size(177, 34);
             this.buttonGenerateReport.TabIndex = 4;
@@ -137,7 +137,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(602, 37);
+            this.label4.Location = new System.Drawing.Point(593, 28);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(237, 25);
             this.label4.TabIndex = 13;
@@ -159,7 +159,7 @@
             this.Controls.Add(this.checkBoxIsManager);
             this.Controls.Add(this.buttonNewPost);
             this.Controls.Add(this.listBoxPosts);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "PostBoard";
             this.Text = "Post Board";
             this.Load += new System.EventHandler(this.PostBoard_Load);

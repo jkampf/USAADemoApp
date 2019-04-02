@@ -6,13 +6,14 @@ namespace USAADemoApp
 
     public partial class PostBoard : Form
     {
+        SubmitPost submitPost;
+
         public PostBoard() => InitializeComponent();
 
-
         private void ButtonNewPost_Click(object sender, System.EventArgs e)
-        {   
-            
-
+        {
+            submitPost = new SubmitPost();
+            submitPost.ShowDialog();
         }
 
         private void ButtonGenerateReport_Click(object sender, System.EventArgs e)
@@ -34,11 +35,9 @@ namespace USAADemoApp
             //add data 
             previousImplementationsSheet.Cells[1, 1] = "";
             previousImplementationsSheet.Cells[1, 2] = "Previous Implementation Issues";
-
             previousImplementationsSheet.Cells[2, 1] = "Issue 1";
             previousImplementationsSheet.Cells[2, 2] = "100";
             
-
             previousImplementationsSheet.Cells[3, 1] = "Issue 2";
             previousImplementationsSheet.Cells[3, 2] = "88";
       
@@ -92,7 +91,6 @@ namespace USAADemoApp
             Excel.Range departmentRange;
             Excel.Range departmentSuggestRange;
 
-
             Excel.ChartObjects xlCharts = (Excel.ChartObjects)previousImplementationsSheet.ChartObjects();
             Excel.ChartObjects departmentCharts = (Excel.ChartObjects)departmentalIssuesSheet.ChartObjects();
             Excel.ChartObjects departmentSuggestCharts = (Excel.ChartObjects)departmentalSuggestionsSheet.ChartObjects();
@@ -106,7 +104,6 @@ namespace USAADemoApp
             Excel.Chart departPage = departChart.Chart;
 
             Excel.Chart departSugPage = departSugChart.Chart;
-
 
             chartRange = previousImplementationsSheet.get_Range("A1", "b6");
             departmentRange = departmentalIssuesSheet.get_Range("A1", "b6");
@@ -124,8 +121,6 @@ namespace USAADemoApp
 
             xlWorkBook.SaveAs("ManagerReport.xls", Excel.XlFileFormat.xlWorkbookNormal, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
             //System.Diagnostics.Process.Start(@"C:\Users\russe\Documents\ManagerReport.xls");
-
-
         }
 
         private void PostBoard_Load(object sender, System.EventArgs e)
@@ -138,7 +133,6 @@ namespace USAADemoApp
             if(checkBoxIsManager.Checked == true)
             {
                 buttonGenerateReport.Visible = true;
-
             }
             else
             {

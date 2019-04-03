@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Data;
-using System.Data.SqlClient;
 namespace USAADemoApp
 {
     public delegate void PostEventHandler(object sender, Post p);
@@ -32,6 +30,7 @@ namespace USAADemoApp
             if (labelPostTitle.Text != null || labelPostBody.Text != null)
             {
                 Post tmpPost = new Post(labelPostTitle.Text, labelPostBody.Text, postCategory);
+                PostAdded(this, tmpPost);
             }
             else
             {

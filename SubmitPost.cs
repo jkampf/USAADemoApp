@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using static System.String;
 namespace USAADemoApp
 {
     public delegate void PostEventHandler(object sender, Post p);
@@ -27,7 +28,7 @@ namespace USAADemoApp
                 postCategory = 3;
             }
 
-            if (labelPostTitle.Text != null || labelPostBody.Text != null)
+            if (textBoxPostTitle.Text != Empty && textBoxPostBody.Text != Empty)
             {
                 Post tmpPost = new Post(textBoxPostTitle.Text, textBoxPostBody.Text, postCategory);
                 PostAdded(this, tmpPost);

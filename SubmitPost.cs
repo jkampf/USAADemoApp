@@ -23,14 +23,17 @@ namespace USAADemoApp
             {
                 tmpPost.PostCategory = 3;
             }
-            if (labelPostTitle.Text != null && labelPostBody.Text != null)
+
+            if (labelPostTitle.Text != null || labelPostBody.Text != null)
             {
                 tmpPost.PostTitle = textBoxPostTitle.Text;
                 tmpPost.PostBody = textBoxPostBody.Text;
+                tmpPost = new Post();
             }
             else
             {
-                MessageBox.Show("Invalid user input.");
+                MessageBox.Show("Enter all data fields.");
+                return;
             }
         }
     }

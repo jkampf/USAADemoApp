@@ -11,7 +11,6 @@ namespace USAADemoApp
 
         private void ButtonNewPost_Click(object sender, System.EventArgs e)
         {   
-            
 
         }
 
@@ -167,8 +166,6 @@ namespace USAADemoApp
 
             xlWorkBook.SaveAs("ManagerReport.xls", Excel.XlFileFormat.xlWorkbookNormal, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
             //System.Diagnostics.Process.Start(@"C:\Users\russe\Documents\ManagerReport.xls");
-
-
         }
 
         private void PostBoard_Load(object sender, System.EventArgs e)
@@ -176,12 +173,11 @@ namespace USAADemoApp
 
         }
 
-        private void checkBoxIsManager_CheckedChanged(object sender, System.EventArgs e)
+        private void CheckBoxIsManager_CheckedChanged(object sender, System.EventArgs e)
         {
             if(checkBoxIsManager.Checked == true)
             {
                 buttonGenerateReport.Visible = true;
-
             }
             else
             {

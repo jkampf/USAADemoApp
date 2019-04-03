@@ -69,7 +69,7 @@
             this.checkBoxIsManager.TabIndex = 2;
             this.checkBoxIsManager.Text = "Manager?";
             this.checkBoxIsManager.UseVisualStyleBackColor = true;
-            this.checkBoxIsManager.CheckedChanged += new System.EventHandler(this.checkBoxIsManager_CheckedChanged);
+            this.checkBoxIsManager.CheckedChanged += new System.EventHandler(this.CheckBoxIsManager_CheckedChanged);
             // 
             // buttonGenerateReport
             // 

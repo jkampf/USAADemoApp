@@ -3,7 +3,6 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace USAADemoApp
 {
-
     public partial class PostBoard : Form
     {
         public PostBoard() => InitializeComponent();
@@ -39,30 +38,25 @@ namespace USAADemoApp
 
             previousImplementationsSheet.Cells[2, 3] = "Full Issue 1 Information (body)";
 
-
             previousImplementationsSheet.Cells[3, 1] = "Issue 2";
             previousImplementationsSheet.Cells[3, 2] = "88";
 
             previousImplementationsSheet.Cells[3, 3] = "Full Issue 2 Information (body)";
-
 
             previousImplementationsSheet.Cells[4, 1] = "Issue 3";
             previousImplementationsSheet.Cells[4, 2] = "44";
 
             previousImplementationsSheet.Cells[4, 3] = "Full Issue 3 Information (body)";
 
-
             previousImplementationsSheet.Cells[5, 1] = "Issue 4";
             previousImplementationsSheet.Cells[5, 2] = "30";
 
             previousImplementationsSheet.Cells[5, 3] = "Full Issue 4 Information (body)";
 
-
             previousImplementationsSheet.Cells[6, 1] = "Issue 5";
             previousImplementationsSheet.Cells[6, 2] = "12";
 
             previousImplementationsSheet.Cells[6, 3] = "Full Issue 5 Information (body)";
-
 
             departmentalIssuesSheet.Cells[1, 1] = "";
             departmentalIssuesSheet.Cells[1, 2] = "Departmental Issues";
@@ -72,30 +66,25 @@ namespace USAADemoApp
 
             departmentalIssuesSheet.Cells[2, 3] = "Full Issue 1 Information (body)";
 
-
             departmentalIssuesSheet.Cells[3, 1] = "Issue 2";
             departmentalIssuesSheet.Cells[3, 2] = "32";
 
             departmentalIssuesSheet.Cells[3, 3] = "Full Issue 2 Information (body)";
-
 
             departmentalIssuesSheet.Cells[4, 1] = "Issue 3";
             departmentalIssuesSheet.Cells[4, 2] = "10";
 
             departmentalIssuesSheet.Cells[4, 3] = "Full Issue 3 Information (body)";
 
-
             departmentalIssuesSheet.Cells[5, 1] = "Issue 4";
             departmentalIssuesSheet.Cells[5, 2] = "8";
 
             departmentalIssuesSheet.Cells[5, 3] = "Full Issue 4 Information (body)";
 
-
             departmentalIssuesSheet.Cells[6, 1] = "Issue 5";
             departmentalIssuesSheet.Cells[6, 2] = "4";
 
             departmentalIssuesSheet.Cells[6, 3] = "Full Issue 5 Information (body)";
-
 
             departmentalSuggestionsSheet.Cells[1, 1] = "";
             departmentalSuggestionsSheet.Cells[1, 2] = "Departmental Suggestions";
@@ -105,35 +94,29 @@ namespace USAADemoApp
 
             departmentalSuggestionsSheet.Cells[2, 3] = "Full Issue 1 Information (body)";
 
-
             departmentalSuggestionsSheet.Cells[3, 1] = "Issue 2";
             departmentalSuggestionsSheet.Cells[3, 2] = "85";
 
             departmentalSuggestionsSheet.Cells[3, 3] = "Full Issue 2 Information (body)";
-
 
             departmentalSuggestionsSheet.Cells[4, 1] = "Issue 3";
             departmentalSuggestionsSheet.Cells[4, 2] = "70";
 
             departmentalSuggestionsSheet.Cells[4, 3] = "Full Issue 3 Information (body)";
 
-
             departmentalSuggestionsSheet.Cells[5, 1] = "Issue 4";
             departmentalSuggestionsSheet.Cells[5, 2] = "36";
 
             departmentalSuggestionsSheet.Cells[5, 3] = "Full Issue 4 Information (body)";
-
 
             departmentalSuggestionsSheet.Cells[6, 1] = "Issue 5";
             departmentalSuggestionsSheet.Cells[6, 2] = "22";
 
             departmentalSuggestionsSheet.Cells[6, 3] = "Full Issue 1 Information (body)";
 
-
             Excel.Range chartRange;
             Excel.Range departmentRange;
             Excel.Range departmentSuggestRange;
-
 
             Excel.ChartObjects xlCharts = (Excel.ChartObjects)previousImplementationsSheet.ChartObjects();
             Excel.ChartObjects departmentCharts = (Excel.ChartObjects)departmentalIssuesSheet.ChartObjects();
@@ -148,7 +131,6 @@ namespace USAADemoApp
             Excel.Chart departPage = departChart.Chart;
 
             Excel.Chart departSugPage = departSugChart.Chart;
-
 
             chartRange = previousImplementationsSheet.get_Range("A1", "b6");
             departmentRange = departmentalIssuesSheet.get_Range("A1", "b6");
@@ -175,7 +157,7 @@ namespace USAADemoApp
 
         private void CheckBoxIsManager_CheckedChanged(object sender, System.EventArgs e)
         {
-            if(checkBoxIsManager.Checked == true)
+            if (checkBoxIsManager.Checked == true)
             {
                 buttonGenerateReport.Visible = true;
             }

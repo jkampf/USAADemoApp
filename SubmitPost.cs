@@ -7,28 +7,26 @@ namespace USAADemoApp
     {
         public SubmitPost() => InitializeComponent();
 
-        Post tmpPost;
-
         private void ButtonSubmit_Click(object sender, EventArgs e)
         {
+            int postCategory = 0;
+
             if (radioButtonImplementation.Checked == true)
             {
-                tmpPost.PostCategory = 1;
+                postCategory = 1;
             }
             else if (radioButtonIssues.Checked == true)
             {
-                tmpPost.PostCategory = 2;
+                postCategory = 2;
             }
             else
             {
-                tmpPost.PostCategory = 3;
+                postCategory = 3;
             }
 
             if (labelPostTitle.Text != null || labelPostBody.Text != null)
             {
-                tmpPost.PostTitle = textBoxPostTitle.Text;
-                tmpPost.PostBody = textBoxPostBody.Text;
-                tmpPost = new Post();
+                Post tmpPost = new Post(labelPostTitle.Text, labelPostBody.Text, postCategory);
             }
             else
             {

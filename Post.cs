@@ -10,7 +10,7 @@
         public string PostBody { get => postBody; set => postBody = value; }
         public int PostCategory { get => postCategory; set => postCategory = value; }
 
-        public Post()
+        public Post(string postTitle, string postBody, int postContent)
         {
 
         }

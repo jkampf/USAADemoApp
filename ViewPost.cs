@@ -11,11 +11,6 @@ namespace USAADemoApp
         private bool upVote = false;
         private bool downVote = false;
 
-        private void ButtonSubmitComment_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void PictureBoxUpvote_Click(object sender, EventArgs e)
         {
             int voteCount = ToInt32(labelCount.Text);

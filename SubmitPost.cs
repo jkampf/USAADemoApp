@@ -32,6 +32,13 @@ namespace USAADemoApp
             {
                 Post tmpPost = new Post(textBoxPostTitle.Text, textBoxPostBody.Text, postCategory);
                 PostAdded(this, tmpPost);
+
+                radioButtonImplementation.Checked = false;
+                radioButtonIssues.Checked = false;
+                radioButtonSuggestions.Checked = false;
+                textBoxPostTitle.Text = Empty;
+                textBoxPostBody.Text = Empty;
+                postCategory = 0;
             }
             else
             {

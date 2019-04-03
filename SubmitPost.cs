@@ -5,8 +5,12 @@ using System.Data.SqlClient;
 
 namespace USAADemoApp
 {
+    public delegate void PostEventHandler(object sender, Post p);
+
     public partial class SubmitPost : Form
     {
+        public event PostEventHandler PostAdded;
+
         public SubmitPost() => InitializeComponent();
 
         private void ButtonSubmit_Click(object sender, EventArgs e)

@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using System.ComponentModel;
 using Excel = Microsoft.Office.Interop.Excel;
 
 namespace USAADemoApp
@@ -9,6 +10,10 @@ namespace USAADemoApp
 
         SubmitPost submitPost;
         ViewPost viewPost;
+
+        BindingList<Post> listOfImplementationPosts;
+        BindingList<Post> listOfIssuePosts;
+        BindingList<Post> listOfSuggestionPosts;
 
         private void ButtonNewPost_Click(object sender, System.EventArgs e)
         {

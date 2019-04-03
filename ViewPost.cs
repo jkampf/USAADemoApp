@@ -4,9 +4,9 @@ using static System.Convert;
 
 namespace USAADemoApp
 {
-    public partial class IndividualPost : Form
+    public partial class ViewPost : Form
     {
-        public IndividualPost() => InitializeComponent();
+        public ViewPost() => InitializeComponent();
 
         private bool upVote = false;
         private bool downVote = false;

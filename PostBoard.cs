@@ -18,7 +18,7 @@ namespace USAADemoApp
         private void ButtonNewPost_Click(object sender, System.EventArgs e)
         {
             submitPost = new SubmitPost();
-            submitPost.Show();
+            submitPost.ShowDialog();
         }
 
         private void ButtonGenerateReport_Click(object sender, System.EventArgs e)
@@ -160,7 +160,12 @@ namespace USAADemoApp
 
         private void PostBoard_Load(object sender, System.EventArgs e)
         {
-
+            listOfImplementationPosts = new BindingList<Post>();
+            listBoxImplementations.DataSource = listOfImplementationPosts;
+            listOfIssuePosts = new BindingList<Post>();
+            listBoxImplementations.DataSource = listOfIssuePosts;
+            listOfSuggestionPosts = new BindingList<Post>();
+            listBoxSuggestions.DataSource = listOfSuggestionPosts;
         }
 
         private void CheckBoxIsManager_CheckedChanged(object sender, System.EventArgs e)

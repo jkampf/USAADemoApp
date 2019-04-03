@@ -10,9 +10,11 @@
         public string PostBody { get => postBody; set => postBody = value; }
         public int PostCategory { get => postCategory; set => postCategory = value; }
 
-        public Post(string postTitle, string postBody, int postContent)
+        public Post(string postTitle, string postBody, int postCategory)
         {
-
+            this.postTitle = postTitle;
+            this.postBody = postBody;
+            this.postCategory = postCategory;
         }
     }
 }

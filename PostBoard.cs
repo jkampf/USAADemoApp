@@ -7,12 +7,13 @@ namespace USAADemoApp
     {
         public PostBoard() => InitializeComponent();
 
+        SubmitPost submitPost;
         ViewPost viewPost;
 
         private void ButtonNewPost_Click(object sender, System.EventArgs e)
         {
-            viewPost = new ViewPost();
-            viewPost.ShowDialog();
+            submitPost = new SubmitPost();
+            submitPost.Show();
         }
 
         private void ButtonGenerateReport_Click(object sender, System.EventArgs e)

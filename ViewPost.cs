@@ -8,6 +8,8 @@ namespace USAADemoApp
     {
         public ViewPost() => InitializeComponent();
 
+        private Post currentPost;
+
         private bool upVote = false;
         private bool downVote = false;
 
@@ -43,7 +45,6 @@ namespace USAADemoApp
                 labelCount.Text = Convert.ToString(voteCount);
                 upVote = false;
                 pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowBasae;
-
             }
             else
             {
@@ -54,6 +55,13 @@ namespace USAADemoApp
                 pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowVoted;
                 pictureBoxUpvote.BackgroundImage = Properties.Resources.downArrowBase;
             }
+        }
+
+        public void PopulateData(Post post)
+        {
+            currentPost = post;
+            labelPostTitle.Text = post.PostTitle;
+            textBoxPostBody.Text = post.PostBody;
         }
     }
 }

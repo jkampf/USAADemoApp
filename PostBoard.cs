@@ -8,6 +8,7 @@ namespace USAADemoApp
     {
         public PostBoard() => InitializeComponent();
 
+        Post selectedPost;
         SubmitPost submitPost;
         ViewPost viewPost;
 
@@ -150,9 +151,9 @@ namespace USAADemoApp
             Excel.ChartObjects departmentCharts = (Excel.ChartObjects)departmentalIssuesSheet.ChartObjects();
             Excel.ChartObjects departmentSuggestCharts = (Excel.ChartObjects)departmentalSuggestionsSheet.ChartObjects();
 
-            Excel.ChartObject myChart = (Excel.ChartObject)xlCharts.Add(10, 120, 350, 250);
-            Excel.ChartObject departChart = (Excel.ChartObject)departmentCharts.Add(10, 120, 350, 250);
-            Excel.ChartObject departSugChart = (Excel.ChartObject)departmentSuggestCharts.Add(10, 120, 350, 250);
+            Excel.ChartObject myChart = xlCharts.Add(10, 120, 350, 250);
+            Excel.ChartObject departChart = departmentCharts.Add(10, 120, 350, 250);
+            Excel.ChartObject departSugChart = departmentSuggestCharts.Add(10, 120, 350, 250);
 
             Excel.Chart chartPage = myChart.Chart;
 
@@ -198,6 +199,35 @@ namespace USAADemoApp
             {
                 buttonGenerateReport.Visible = false;
             }
+        }
+
+        private void ListBoxImplementations_DoubleClick(object sender, System.EventArgs e)
+        {
+            LBHandler(listBoxImplementations);
+        }
+
+        private void ListBoxIssues_DoubleClick(object sender, System.EventArgs e)
+        {
+            LBHandler(listBoxIssues);
+        }
+
+        private void ListBoxSuggestions_DoubleClick(object sender, System.EventArgs e)
+        {
+            LBHandler(listBoxSuggestions);
+        }
+
+        private void LBHandler(ListBox listBox)
+        {
+            if (listBox.SelectedItem == null)
+            {
+                return;
+            }
+
+            selectedPost = (Post)listBox.SelectedItem;
+
+            viewPost = new ViewPost();
+            viewPost.PopulateData(selectedPost);
+            viewPost.ShowDialog();
         }
     }
 }

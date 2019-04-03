@@ -36,8 +36,8 @@ namespace USAADemoApp
                 radioButtonImplementation.Checked = false;
                 radioButtonIssues.Checked = false;
                 radioButtonSuggestions.Checked = false;
-                textBoxPostTitle.Text = Empty;
-                textBoxPostBody.Text = Empty;
+                textBoxPostTitle.Clear();
+                textBoxPostBody.Clear();
                 postCategory = 0;
             }
             else

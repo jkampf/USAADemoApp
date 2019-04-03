@@ -29,7 +29,7 @@ namespace USAADemoApp
 
             if (labelPostTitle.Text != null || labelPostBody.Text != null)
             {
-                Post tmpPost = new Post(labelPostTitle.Text, labelPostBody.Text, postCategory);
+                Post tmpPost = new Post(textBoxPostTitle.Text, textBoxPostBody.Text, postCategory);
                 PostAdded(this, tmpPost);
             }
             else

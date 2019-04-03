@@ -16,5 +16,10 @@
             this.postBody = postBody;
             this.postCategory = postCategory;
         }
+
+        public override string ToString()
+        {
+            return postTitle;
+        }
     }
 }

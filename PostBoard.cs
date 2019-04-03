@@ -18,7 +18,27 @@ namespace USAADemoApp
         private void ButtonNewPost_Click(object sender, System.EventArgs e)
         {
             submitPost = new SubmitPost();
+            submitPost.PostAdded += new PostEventHandler(AddPost_PostAdded);
             submitPost.ShowDialog();
+        }
+
+        private void AddPost_PostAdded(object sender, Post p)
+        {
+            if (p.PostCategory == 1)
+            {
+                listOfImplementationPosts.Add(p);
+                listBoxImplementations.DataSource = listOfImplementationPosts;
+            }
+            else if (p.PostCategory == 2)
+            {
+                listOfIssuePosts.Add(p);
+                listBoxIssues.DataSource = listOfIssuePosts;
+            }
+            else
+            {
+                listOfSuggestionPosts.Add(p);
+                listBoxSuggestions.DataSource = listOfSuggestionPosts;
+            }
         }
 
         private void ButtonGenerateReport_Click(object sender, System.EventArgs e)
@@ -163,7 +183,7 @@ namespace USAADemoApp
             listOfImplementationPosts = new BindingList<Post>();
             listBoxImplementations.DataSource = listOfImplementationPosts;
             listOfIssuePosts = new BindingList<Post>();
-            listBoxImplementations.DataSource = listOfIssuePosts;
+            listBoxIssues.DataSource = listOfIssuePosts;
             listOfSuggestionPosts = new BindingList<Post>();
             listBoxSuggestions.DataSource = listOfSuggestionPosts;
         }

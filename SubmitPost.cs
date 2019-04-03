@@ -23,12 +23,12 @@ namespace USAADemoApp
             {
                 postCategory = 2;
             }
-            else
+            else if (radioButtonSuggestions.Checked == true)
             {
                 postCategory = 3;
             }
 
-            if (textBoxPostTitle.Text != Empty && textBoxPostBody.Text != Empty)
+            if (textBoxPostTitle.Text != Empty && textBoxPostBody.Text != Empty && postCategory != 0)
             {
                 Post tmpPost = new Post(textBoxPostTitle.Text, textBoxPostBody.Text, postCategory);
                 PostAdded(this, tmpPost);

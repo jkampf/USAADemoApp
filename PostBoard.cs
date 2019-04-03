@@ -34,7 +34,7 @@ namespace USAADemoApp
                 listOfIssuePosts.Add(p);
                 listBoxIssues.DataSource = listOfIssuePosts;
             }
-            else
+            else if (p.PostCategory == 3)
             {
                 listOfSuggestionPosts.Add(p);
                 listBoxSuggestions.DataSource = listOfSuggestionPosts;

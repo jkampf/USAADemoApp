@@ -17,6 +17,7 @@
             this.postTitle = postTitle;
             this.postBody = postBody;
             this.postCategory = postCategory;
+            this.PostVotes = PostVotes;
         }
 
         public override string ToString()

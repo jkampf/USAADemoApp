@@ -108,6 +108,7 @@
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "ViewPost";
             this.Text = "Post";
+            this.Load += new System.EventHandler(this.ViewPost_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).EndInit();
             this.ResumeLayout(false);

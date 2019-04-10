@@ -42,6 +42,7 @@
             // 
             // listBoxImplementations
             // 
+            this.listBoxImplementations.BackColor = System.Drawing.SystemColors.Menu;
             this.listBoxImplementations.FormattingEnabled = true;
             this.listBoxImplementations.Location = new System.Drawing.Point(8, 67);
             this.listBoxImplementations.Name = "listBoxImplementations";
@@ -51,13 +52,15 @@
             // 
             // buttonNewPost
             // 
-            this.buttonNewPost.Location = new System.Drawing.Point(355, 418);
+            this.buttonNewPost.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonNewPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNewPost.Location = new System.Drawing.Point(351, 402);
             this.buttonNewPost.Margin = new System.Windows.Forms.Padding(2);
             this.buttonNewPost.Name = "buttonNewPost";
-            this.buttonNewPost.Size = new System.Drawing.Size(79, 19);
+            this.buttonNewPost.Size = new System.Drawing.Size(94, 37);
             this.buttonNewPost.TabIndex = 3;
             this.buttonNewPost.Text = "New Post";
-            this.buttonNewPost.UseVisualStyleBackColor = true;
+            this.buttonNewPost.UseVisualStyleBackColor = false;
             this.buttonNewPost.Click += new System.EventHandler(this.ButtonNewPost_Click);
             // 
             // checkBoxIsManager
@@ -89,6 +92,7 @@
             // 
             // listBoxIssues
             // 
+            this.listBoxIssues.BackColor = System.Drawing.SystemColors.Menu;
             this.listBoxIssues.FormattingEnabled = true;
             this.listBoxIssues.Location = new System.Drawing.Point(275, 67);
             this.listBoxIssues.Name = "listBoxIssues";
@@ -98,6 +102,7 @@
             // 
             // listBoxSuggestions
             // 
+            this.listBoxSuggestions.BackColor = System.Drawing.SystemColors.Menu;
             this.listBoxSuggestions.FormattingEnabled = true;
             this.listBoxSuggestions.Location = new System.Drawing.Point(542, 67);
             this.listBoxSuggestions.Name = "listBoxSuggestions";
@@ -150,6 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(803, 450);
             this.Controls.Add(this.labelEmployeeFeedbackApp);
             this.Controls.Add(this.labelSuggestions);

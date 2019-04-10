@@ -40,6 +40,7 @@
             // 
             // textBoxPostBody
             // 
+            this.textBoxPostBody.BackColor = System.Drawing.SystemColors.Menu;
             this.textBoxPostBody.Location = new System.Drawing.Point(85, 60);
             this.textBoxPostBody.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxPostBody.Multiline = true;
@@ -76,22 +77,23 @@
             // labelCount
             // 
             this.labelCount.AutoSize = true;
+            this.labelCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCount.Location = new System.Drawing.Point(32, 63);
             this.labelCount.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelCount.Name = "labelCount";
-            this.labelCount.Size = new System.Drawing.Size(19, 13);
+            this.labelCount.Size = new System.Drawing.Size(23, 15);
             this.labelCount.TabIndex = 5;
             this.labelCount.Text = "23";
             // 
             // labelPostTitle
             // 
             this.labelPostTitle.AutoSize = true;
-            this.labelPostTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPostTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPostTitle.ForeColor = System.Drawing.Color.Black;
             this.labelPostTitle.Location = new System.Drawing.Point(80, 15);
             this.labelPostTitle.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelPostTitle.Name = "labelPostTitle";
-            this.labelPostTitle.Size = new System.Drawing.Size(115, 29);
+            this.labelPostTitle.Size = new System.Drawing.Size(125, 29);
             this.labelPostTitle.TabIndex = 9;
             this.labelPostTitle.Text = "Post Title";
             // 
@@ -99,6 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(477, 167);
             this.Controls.Add(this.labelPostTitle);
             this.Controls.Add(this.labelCount);

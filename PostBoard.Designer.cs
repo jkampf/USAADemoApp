@@ -63,10 +63,11 @@
             // checkBoxIsManager
             // 
             this.checkBoxIsManager.AutoSize = true;
+            this.checkBoxIsManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxIsManager.Location = new System.Drawing.Point(597, 17);
             this.checkBoxIsManager.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxIsManager.Name = "checkBoxIsManager";
-            this.checkBoxIsManager.Size = new System.Drawing.Size(74, 17);
+            this.checkBoxIsManager.Size = new System.Drawing.Size(82, 17);
             this.checkBoxIsManager.TabIndex = 2;
             this.checkBoxIsManager.Text = "Manager?";
             this.checkBoxIsManager.UseVisualStyleBackColor = true;
@@ -74,7 +75,7 @@
             // 
             // buttonGenerateReport
             // 
-            this.buttonGenerateReport.Location = new System.Drawing.Point(672, 17);
+            this.buttonGenerateReport.Location = new System.Drawing.Point(686, 11);
             this.buttonGenerateReport.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGenerateReport.Name = "buttonGenerateReport";
             this.buttonGenerateReport.Size = new System.Drawing.Size(97, 19);
@@ -105,37 +106,41 @@
             // labelImplementations
             // 
             this.labelImplementations.AutoSize = true;
+            this.labelImplementations.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelImplementations.Location = new System.Drawing.Point(50, 50);
             this.labelImplementations.Name = "labelImplementations";
-            this.labelImplementations.Size = new System.Drawing.Size(127, 13);
+            this.labelImplementations.Size = new System.Drawing.Size(151, 13);
             this.labelImplementations.TabIndex = 10;
             this.labelImplementations.Text = "Previous Implementations";
             // 
             // labelIssues
             // 
             this.labelIssues.AutoSize = true;
+            this.labelIssues.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIssues.Location = new System.Drawing.Point(323, 50);
             this.labelIssues.Name = "labelIssues";
-            this.labelIssues.Size = new System.Drawing.Size(140, 13);
+            this.labelIssues.Size = new System.Drawing.Size(167, 13);
             this.labelIssues.TabIndex = 11;
             this.labelIssues.Text = "Current Departmental Issues";
             // 
             // labelSuggestions
             // 
             this.labelSuggestions.AutoSize = true;
+            this.labelSuggestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSuggestions.Location = new System.Drawing.Point(602, 50);
             this.labelSuggestions.Name = "labelSuggestions";
-            this.labelSuggestions.Size = new System.Drawing.Size(131, 13);
+            this.labelSuggestions.Size = new System.Drawing.Size(155, 13);
             this.labelSuggestions.TabIndex = 12;
             this.labelSuggestions.Text = "Departmental Suggestions";
             // 
             // labelEmployeeFeedbackApp
             // 
             this.labelEmployeeFeedbackApp.AutoSize = true;
-            this.labelEmployeeFeedbackApp.Location = new System.Drawing.Point(324, 15);
+            this.labelEmployeeFeedbackApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmployeeFeedbackApp.Location = new System.Drawing.Point(270, 11);
             this.labelEmployeeFeedbackApp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEmployeeFeedbackApp.Name = "labelEmployeeFeedbackApp";
-            this.labelEmployeeFeedbackApp.Size = new System.Drawing.Size(129, 13);
+            this.labelEmployeeFeedbackApp.Size = new System.Drawing.Size(259, 25);
             this.labelEmployeeFeedbackApp.TabIndex = 13;
             this.labelEmployeeFeedbackApp.Text = "Employee Feedback App ";
             // 

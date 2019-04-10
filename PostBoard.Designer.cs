@@ -64,7 +64,7 @@
             // 
             this.checkBoxIsManager.AutoSize = true;
             this.checkBoxIsManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxIsManager.Location = new System.Drawing.Point(597, 17);
+            this.checkBoxIsManager.Location = new System.Drawing.Point(580, 19);
             this.checkBoxIsManager.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxIsManager.Name = "checkBoxIsManager";
             this.checkBoxIsManager.Size = new System.Drawing.Size(82, 17);
@@ -75,13 +75,15 @@
             // 
             // buttonGenerateReport
             // 
-            this.buttonGenerateReport.Location = new System.Drawing.Point(686, 11);
+            this.buttonGenerateReport.BackColor = System.Drawing.Color.Green;
+            this.buttonGenerateReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGenerateReport.Location = new System.Drawing.Point(666, 11);
             this.buttonGenerateReport.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGenerateReport.Name = "buttonGenerateReport";
-            this.buttonGenerateReport.Size = new System.Drawing.Size(97, 19);
+            this.buttonGenerateReport.Size = new System.Drawing.Size(117, 37);
             this.buttonGenerateReport.TabIndex = 4;
             this.buttonGenerateReport.Text = "Generate Report";
-            this.buttonGenerateReport.UseVisualStyleBackColor = true;
+            this.buttonGenerateReport.UseVisualStyleBackColor = false;
             this.buttonGenerateReport.Visible = false;
             this.buttonGenerateReport.Click += new System.EventHandler(this.ButtonGenerateReport_Click);
             // 

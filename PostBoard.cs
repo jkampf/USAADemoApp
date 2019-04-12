@@ -13,7 +13,7 @@ namespace USAADemoApp
         Post currentPost;
         SubmitPost submitPost;
         ViewPost viewPost;
-        ListBox ListBox;
+     ListBox ListBox;  
 
         BindingList<Post> listOfImplementationPosts;
         BindingList<Post> listOfIssuePosts;
@@ -267,7 +267,7 @@ namespace USAADemoApp
 
         private void pictureBoxUpvote_Click_1(object sender, System.EventArgs e)
         {
-             currentPost = (Post)ListBox.SelectedItem;
+            currentPost = (Post)ListBox.SelectedItem;
             int voteCount = ToInt32(labelCount.Text);
             voteCount = ToInt32(labelCount.Text);
 

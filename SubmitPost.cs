@@ -98,5 +98,10 @@ namespace USAADemoApp
                 return;
             }
         }
+
+        private void SubmitPost_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

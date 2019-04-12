@@ -12,6 +12,7 @@ namespace USAADemoApp
         Post selectedPost;
         SubmitPost submitPost;
         ViewPost viewPost;
+        ListBox ListBox;
 
         BindingList<Post> listOfImplementationPosts;
         BindingList<Post> listOfIssuePosts;
@@ -20,6 +21,7 @@ namespace USAADemoApp
         private bool upVote = false;
         private bool downVote = false;
         private int voteCount;
+        private object listBox;
 
         private void ButtonNewPost_Click(object sender, System.EventArgs e)
         {
@@ -235,31 +237,85 @@ namespace USAADemoApp
             viewPost.ShowDialog();
         }
 
-        private void pictureBoxUpvote_Click(object sender, System.EventArgs e)
+        //private void pictureBoxUpvote_Click(object sender, System.EventArgs e)
+        //{
+        //    if (downVote == true)
+        //    {
+        //        voteCount += 1;
+        //        downVote = false;
+
+        //    }
+        //}
+
+        //private void pictureBoxDownvote_Click(object sender, System.EventArgs e)
+        //{
+        //    if (downVote == true)
+        //    {
+        //        voteCount -= 1;
+        //        upVote = false;
+        //        downVote = true;
+        //    }
+
+        //    else
+        //    {
+        //        voteCount += 1;
+        //        upVote = true;
+
+        //    }
+        //}
+
+        private void pictureBoxUpvote_Click_1(object sender, System.EventArgs e)
         {
+            Post currentPost = (Post)ListBox.SelectedItem;
+            int voteCount = ToInt32(labelCount.Text);
+            voteCount = ToInt32(labelCount.Text);
+
             if (downVote == true)
             {
+                voteCount += 2;
                 voteCount += 1;
+                labelCount.Text = System.Convert.ToString(voteCount);
                 downVote = false;
-
+                pictureBoxUpvote.BackgroundImage = Properties.Resources.downArrowBase;
             }
+
+            else if (downVote == false)
+            {
+                voteCount -= 1;
+                labelCount.Text = System.Convert.ToString(voteCount);
+                downVote = true;
+                upVote = false;
+
+                pictureBoxUpvote.BackgroundImage = Properties.Resources.downArrowVoted;
+                pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowBasae;
+            }
+
+           currentPost.PostVotes = voteCount;
+
         }
 
         private void pictureBoxDownvote_Click(object sender, System.EventArgs e)
         {
+            Post currentPost = (Post)ListBox.SelectedItem;
+            int voteCount = ToInt32(labelCount.Text);
+            if (upVote == true)
+                voteCount = ToInt32(labelCount.Text);
             if (downVote == true)
             {
                 voteCount -= 1;
+                labelCount.Text = System.Convert.ToString(voteCount);
                 upVote = false;
-                downVote = true;
+                pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowBasae;
             }
 
             else
             {
                 voteCount += 1;
-                upVote = true;
+                pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowVoted;
+            pictureBoxUpvote.BackgroundImage = Properties.Resources.downArrowBase;
+        }
 
-            }
+    currentPost.PostVotes = voteCount;
         }
     }
 }

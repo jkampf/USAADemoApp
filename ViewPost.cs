@@ -1,12 +1,12 @@
-﻿using System;
-using System.Windows.Forms;
-using static System.Convert;
+﻿using System.Windows.Forms;
 
 namespace USAADemoApp
 {
     public partial class ViewPost : Form
     {
-        Post currentPost;
+        public ViewPost() => InitializeComponent();
+
+        private Post currentPost;
 
         public void PopulateData(Post post)
         {

@@ -168,7 +168,7 @@
             this.pictureBoxDownvote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDownvote.TabIndex = 14;
             this.pictureBoxDownvote.TabStop = false;
-            this.pictureBoxDownvote.Click += new System.EventHandler(this.pictureBoxDownvote_Click);
+            this.pictureBoxDownvote.Click += new System.EventHandler(this.PictureBoxDownvote_Click);
             // 
             // labelCount
             // 
@@ -195,7 +195,7 @@
             this.pictureBoxUpvote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxUpvote.TabIndex = 16;
             this.pictureBoxUpvote.TabStop = false;
-            this.pictureBoxUpvote.Click += new System.EventHandler(this.pictureBoxUpvote_Click_1);
+            this.pictureBoxUpvote.Click += new System.EventHandler(this.PictureBoxUpvote_Click);
             // 
             // PostBoard
             // 

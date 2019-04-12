@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PostBoard));
             this.listBoxImplementations = new System.Windows.Forms.ListBox();
             this.buttonNewPost = new System.Windows.Forms.Button();
             this.checkBoxIsManager = new System.Windows.Forms.CheckBox();
@@ -39,42 +38,39 @@
             this.labelIssues = new System.Windows.Forms.Label();
             this.labelSuggestions = new System.Windows.Forms.Label();
             this.labelEmployeeFeedbackApp = new System.Windows.Forms.Label();
-            this.pictureBoxUpvote = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDownvote = new System.Windows.Forms.PictureBox();
-            this.labelCount = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).BeginInit();
             this.SuspendLayout();
             // 
             // listBoxImplementations
             // 
+            this.listBoxImplementations.BackColor = System.Drawing.SystemColors.Menu;
             this.listBoxImplementations.FormattingEnabled = true;
-            this.listBoxImplementations.ItemHeight = 16;
-            this.listBoxImplementations.Location = new System.Drawing.Point(11, 82);
-            this.listBoxImplementations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxImplementations.Location = new System.Drawing.Point(8, 67);
             this.listBoxImplementations.Name = "listBoxImplementations";
-            this.listBoxImplementations.Size = new System.Drawing.Size(320, 404);
+            this.listBoxImplementations.Size = new System.Drawing.Size(241, 329);
             this.listBoxImplementations.TabIndex = 5;
             this.listBoxImplementations.DoubleClick += new System.EventHandler(this.ListBoxImplementations_DoubleClick);
             // 
             // buttonNewPost
             // 
-            this.buttonNewPost.Location = new System.Drawing.Point(473, 514);
-            this.buttonNewPost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonNewPost.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonNewPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNewPost.Location = new System.Drawing.Point(351, 402);
+            this.buttonNewPost.Margin = new System.Windows.Forms.Padding(2);
             this.buttonNewPost.Name = "buttonNewPost";
-            this.buttonNewPost.Size = new System.Drawing.Size(105, 23);
+            this.buttonNewPost.Size = new System.Drawing.Size(94, 37);
             this.buttonNewPost.TabIndex = 3;
             this.buttonNewPost.Text = "New Post";
-            this.buttonNewPost.UseVisualStyleBackColor = true;
+            this.buttonNewPost.UseVisualStyleBackColor = false;
             this.buttonNewPost.Click += new System.EventHandler(this.ButtonNewPost_Click);
             // 
             // checkBoxIsManager
             // 
             this.checkBoxIsManager.AutoSize = true;
-            this.checkBoxIsManager.Location = new System.Drawing.Point(796, 21);
-            this.checkBoxIsManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBoxIsManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxIsManager.Location = new System.Drawing.Point(580, 19);
+            this.checkBoxIsManager.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxIsManager.Name = "checkBoxIsManager";
-            this.checkBoxIsManager.Size = new System.Drawing.Size(94, 21);
+            this.checkBoxIsManager.Size = new System.Drawing.Size(82, 17);
             this.checkBoxIsManager.TabIndex = 2;
             this.checkBoxIsManager.Text = "Manager?";
             this.checkBoxIsManager.UseVisualStyleBackColor = true;
@@ -82,119 +78,85 @@
             // 
             // buttonGenerateReport
             // 
-            this.buttonGenerateReport.Location = new System.Drawing.Point(896, 21);
-            this.buttonGenerateReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonGenerateReport.BackColor = System.Drawing.Color.Green;
+            this.buttonGenerateReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGenerateReport.Location = new System.Drawing.Point(666, 11);
+            this.buttonGenerateReport.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGenerateReport.Name = "buttonGenerateReport";
-            this.buttonGenerateReport.Size = new System.Drawing.Size(129, 23);
+            this.buttonGenerateReport.Size = new System.Drawing.Size(117, 37);
             this.buttonGenerateReport.TabIndex = 4;
             this.buttonGenerateReport.Text = "Generate Report";
-            this.buttonGenerateReport.UseVisualStyleBackColor = true;
+            this.buttonGenerateReport.UseVisualStyleBackColor = false;
             this.buttonGenerateReport.Visible = false;
             this.buttonGenerateReport.Click += new System.EventHandler(this.ButtonGenerateReport_Click);
             // 
             // listBoxIssues
             // 
+            this.listBoxIssues.BackColor = System.Drawing.SystemColors.Menu;
             this.listBoxIssues.FormattingEnabled = true;
-            this.listBoxIssues.ItemHeight = 16;
-            this.listBoxIssues.Location = new System.Drawing.Point(367, 82);
-            this.listBoxIssues.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxIssues.Location = new System.Drawing.Point(275, 67);
             this.listBoxIssues.Name = "listBoxIssues";
-            this.listBoxIssues.Size = new System.Drawing.Size(320, 404);
+            this.listBoxIssues.Size = new System.Drawing.Size(241, 329);
             this.listBoxIssues.TabIndex = 8;
             this.listBoxIssues.DoubleClick += new System.EventHandler(this.ListBoxIssues_DoubleClick);
             // 
             // listBoxSuggestions
             // 
+            this.listBoxSuggestions.BackColor = System.Drawing.SystemColors.Menu;
             this.listBoxSuggestions.FormattingEnabled = true;
-            this.listBoxSuggestions.ItemHeight = 16;
-            this.listBoxSuggestions.Location = new System.Drawing.Point(723, 82);
-            this.listBoxSuggestions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxSuggestions.Location = new System.Drawing.Point(542, 67);
             this.listBoxSuggestions.Name = "listBoxSuggestions";
-            this.listBoxSuggestions.Size = new System.Drawing.Size(320, 404);
+            this.listBoxSuggestions.Size = new System.Drawing.Size(241, 329);
             this.listBoxSuggestions.TabIndex = 9;
             this.listBoxSuggestions.DoubleClick += new System.EventHandler(this.ListBoxSuggestions_DoubleClick);
             // 
             // labelImplementations
             // 
             this.labelImplementations.AutoSize = true;
-            this.labelImplementations.Location = new System.Drawing.Point(67, 62);
-            this.labelImplementations.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelImplementations.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelImplementations.Location = new System.Drawing.Point(50, 50);
             this.labelImplementations.Name = "labelImplementations";
-            this.labelImplementations.Size = new System.Drawing.Size(169, 17);
+            this.labelImplementations.Size = new System.Drawing.Size(151, 13);
             this.labelImplementations.TabIndex = 10;
             this.labelImplementations.Text = "Previous Implementations";
             // 
             // labelIssues
             // 
             this.labelIssues.AutoSize = true;
-            this.labelIssues.Location = new System.Drawing.Point(431, 62);
-            this.labelIssues.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelIssues.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIssues.Location = new System.Drawing.Point(323, 50);
             this.labelIssues.Name = "labelIssues";
-            this.labelIssues.Size = new System.Drawing.Size(188, 17);
+            this.labelIssues.Size = new System.Drawing.Size(167, 13);
             this.labelIssues.TabIndex = 11;
             this.labelIssues.Text = "Current Departmental Issues";
             // 
             // labelSuggestions
             // 
             this.labelSuggestions.AutoSize = true;
-            this.labelSuggestions.Location = new System.Drawing.Point(803, 62);
-            this.labelSuggestions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSuggestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSuggestions.Location = new System.Drawing.Point(602, 50);
             this.labelSuggestions.Name = "labelSuggestions";
-            this.labelSuggestions.Size = new System.Drawing.Size(175, 17);
+            this.labelSuggestions.Size = new System.Drawing.Size(155, 13);
             this.labelSuggestions.TabIndex = 12;
             this.labelSuggestions.Text = "Departmental Suggestions";
             // 
             // labelEmployeeFeedbackApp
             // 
             this.labelEmployeeFeedbackApp.AutoSize = true;
-            this.labelEmployeeFeedbackApp.Location = new System.Drawing.Point(432, 18);
+            this.labelEmployeeFeedbackApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmployeeFeedbackApp.Location = new System.Drawing.Point(270, 11);
+            this.labelEmployeeFeedbackApp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEmployeeFeedbackApp.Name = "labelEmployeeFeedbackApp";
-            this.labelEmployeeFeedbackApp.Size = new System.Drawing.Size(169, 17);
+            this.labelEmployeeFeedbackApp.Size = new System.Drawing.Size(259, 25);
             this.labelEmployeeFeedbackApp.TabIndex = 13;
             this.labelEmployeeFeedbackApp.Text = "Employee Feedback App ";
             // 
-            // pictureBoxUpvote
-            // 
-            this.pictureBoxUpvote.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxUpvote.BackgroundImage")));
-            this.pictureBoxUpvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxUpvote.Location = new System.Drawing.Point(249, 18);
-            this.pictureBoxUpvote.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBoxUpvote.Name = "pictureBoxUpvote";
-            this.pictureBoxUpvote.Size = new System.Drawing.Size(27, 44);
-            this.pictureBoxUpvote.TabIndex = 14;
-            this.pictureBoxUpvote.TabStop = false;
-            this.pictureBoxUpvote.Click += new System.EventHandler(this.pictureBoxUpvote_Click);
-            // 
-            // pictureBoxDownvote
-            // 
-            this.pictureBoxDownvote.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxDownvote.BackgroundImage")));
-            this.pictureBoxDownvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxDownvote.Location = new System.Drawing.Point(304, 18);
-            this.pictureBoxDownvote.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBoxDownvote.Name = "pictureBoxDownvote";
-            this.pictureBoxDownvote.Size = new System.Drawing.Size(27, 44);
-            this.pictureBoxDownvote.TabIndex = 15;
-            this.pictureBoxDownvote.TabStop = false;
-            this.pictureBoxDownvote.Click += new System.EventHandler(this.pictureBoxDownvote_Click);
-            // 
-            // labelCount
-            // 
-            this.labelCount.AutoSize = true;
-            this.labelCount.Location = new System.Drawing.Point(278, 27);
-            this.labelCount.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelCount.Name = "labelCount";
-            this.labelCount.Size = new System.Drawing.Size(16, 17);
-            this.labelCount.TabIndex = 16;
-            this.labelCount.Text = "0";
-            // 
             // PostBoard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 554);
-            this.Controls.Add(this.labelCount);
-            this.Controls.Add(this.pictureBoxDownvote);
-            this.Controls.Add(this.pictureBoxUpvote);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(803, 450);
             this.Controls.Add(this.labelEmployeeFeedbackApp);
             this.Controls.Add(this.labelSuggestions);
             this.Controls.Add(this.labelIssues);
@@ -205,12 +167,9 @@
             this.Controls.Add(this.checkBoxIsManager);
             this.Controls.Add(this.buttonNewPost);
             this.Controls.Add(this.listBoxImplementations);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PostBoard";
             this.Text = "Post Board";
             this.Load += new System.EventHandler(this.PostBoard_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,8 +187,5 @@
         private System.Windows.Forms.Label labelIssues;
         private System.Windows.Forms.Label labelSuggestions;
         private System.Windows.Forms.Label labelEmployeeFeedbackApp;
-        private System.Windows.Forms.PictureBox pictureBoxUpvote;
-        private System.Windows.Forms.PictureBox pictureBoxDownvote;
-        private System.Windows.Forms.Label labelCount;
     }
 }

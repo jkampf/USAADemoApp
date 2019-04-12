@@ -5,7 +5,7 @@
         private string postTitle;
         private string postBody;
         private int postCategory;
-        private int postVotes;
+        private int postVotes = 0;
 
         public string PostTitle { get => postTitle; set => postTitle = value; }
         public string PostBody { get => postBody; set => postBody = value; }
@@ -17,7 +17,11 @@
             this.postTitle = postTitle;
             this.postBody = postBody;
             this.postCategory = postCategory;
-            this.PostVotes = PostVotes;
+        }
+
+        public Post(int postVote)
+        {
+            this.postVotes = postVote;
         }
 
         public override string ToString()

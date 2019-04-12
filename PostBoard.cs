@@ -232,21 +232,51 @@ namespace USAADemoApp
             viewPost.ShowDialog();
         }
 
+        private void LBHandlerVotes(ListBox listBox)
+        {
+            pictureBoxUpvote.Enabled = true;
+            pictureBoxDownvote.Enabled = true;
+            labelCount.Enabled = true;
+
+            if (listBox.SelectedItem == null)
+            {
+                return;
+            }
+
+            selectedPost = (Post)(listBox.SelectedItem);
+            labelCount.Text = selectedPost.PostVotes.ToString();
+
+            if (selectedPost.PostVotes == 1)
+            {
+                pictureBoxUpvote.Image = Properties.Resources.upArrowVoted;
+                pictureBoxDownvote.Image = Properties.Resources.downArrowBase;
+            }
+            else if (selectedPost.PostVotes == 0 )
+            {
+                pictureBoxUpvote.Image = Properties.Resources.upArrowBase;
+                pictureBoxDownvote.Image = Properties.Resources.downArrowBase;
+            }
+            else
+            {
+                pictureBoxUpvote.Image = Properties.Resources.upArrowBase;
+                pictureBoxDownvote.Image = Properties.Resources.downArrowVoted;
+            }
+        }
+
         private void PictureBoxUpvote_Click(object sender, EventArgs e)
         {
-            int voteCount = ToInt32(labelCount.Text);
             pictureBoxDownvote.Image = Properties.Resources.downArrowBase;
 
-            if (voteCount < 1)
+            if (selectedPost.PostVotes < 1)
             {
-                voteCount = 1;
-                labelCount.Text = Convert.ToString(voteCount);
+                selectedPost.PostVotes = 1;
+                labelCount.Text = Convert.ToString(selectedPost.PostVotes);
                 pictureBoxUpvote.Image = Properties.Resources.upArrowVoted;
             }
             else
             {
-                voteCount = 0;
-                labelCount.Text = Convert.ToString(voteCount);
+                selectedPost.PostVotes = 0;
+                labelCount.Text = Convert.ToString(selectedPost.PostVotes);
                 pictureBoxUpvote.Image = Properties.Resources.upArrowBase;
             }
         }
@@ -258,16 +288,31 @@ namespace USAADemoApp
 
             if (voteCount >= 0)
             {
-                voteCount = -1;
-                labelCount.Text = Convert.ToString(voteCount);
+                selectedPost.PostVotes = -1;
+                labelCount.Text = Convert.ToString(selectedPost.PostVotes);
                 pictureBoxDownvote.Image = Properties.Resources.downArrowVoted;
             }
             else
             {
-                voteCount = 0;
-                labelCount.Text = Convert.ToString(voteCount);
+                selectedPost.PostVotes = 0;
+                labelCount.Text = Convert.ToString(selectedPost.PostVotes);
                 pictureBoxDownvote.Image = Properties.Resources.downArrowBase;
             }
+        }
+
+        private void ListBoxImplementations_SelectedValueChanged(object sender, EventArgs e)
+        {
+            LBHandlerVotes(listBoxImplementations);
+        }
+
+        private void ListBoxIssues_SelectedValueChanged(object sender, EventArgs e)
+        {
+            LBHandlerVotes(listBoxIssues);
+        }
+
+        private void ListBoxSuggestions_SelectedValueChanged(object sender, EventArgs e)
+        {
+            LBHandlerVotes(listBoxSuggestions);
         }
     }
 }

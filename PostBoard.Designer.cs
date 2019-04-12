@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PostBoard));
             this.listBoxImplementations = new System.Windows.Forms.ListBox();
             this.buttonNewPost = new System.Windows.Forms.Button();
             this.checkBoxIsManager = new System.Windows.Forms.CheckBox();
@@ -53,6 +54,7 @@
             this.listBoxImplementations.Name = "listBoxImplementations";
             this.listBoxImplementations.Size = new System.Drawing.Size(241, 329);
             this.listBoxImplementations.TabIndex = 5;
+            this.listBoxImplementations.SelectedValueChanged += new System.EventHandler(this.ListBoxImplementations_SelectedValueChanged);
             this.listBoxImplementations.DoubleClick += new System.EventHandler(this.ListBoxImplementations_DoubleClick);
             // 
             // buttonNewPost
@@ -103,6 +105,7 @@
             this.listBoxIssues.Name = "listBoxIssues";
             this.listBoxIssues.Size = new System.Drawing.Size(241, 329);
             this.listBoxIssues.TabIndex = 8;
+            this.listBoxIssues.SelectedValueChanged += new System.EventHandler(this.ListBoxIssues_SelectedValueChanged);
             this.listBoxIssues.DoubleClick += new System.EventHandler(this.ListBoxIssues_DoubleClick);
             // 
             // listBoxSuggestions
@@ -113,6 +116,7 @@
             this.listBoxSuggestions.Name = "listBoxSuggestions";
             this.listBoxSuggestions.Size = new System.Drawing.Size(241, 329);
             this.listBoxSuggestions.TabIndex = 9;
+            this.listBoxSuggestions.SelectedValueChanged += new System.EventHandler(this.ListBoxSuggestions_SelectedValueChanged);
             this.listBoxSuggestions.DoubleClick += new System.EventHandler(this.ListBoxSuggestions_DoubleClick);
             // 
             // labelImplementations
@@ -160,6 +164,7 @@
             // 
             this.labelCount.AutoSize = true;
             this.labelCount.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelCount.Enabled = false;
             this.labelCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCount.Location = new System.Drawing.Point(41, 21);
             this.labelCount.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
@@ -171,6 +176,7 @@
             // pictureBoxUpvote
             // 
             this.pictureBoxUpvote.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBoxUpvote.Enabled = false;
             this.pictureBoxUpvote.Image = global::USAADemoApp.Properties.Resources.upArrowBase;
             this.pictureBoxUpvote.Location = new System.Drawing.Point(12, 11);
             this.pictureBoxUpvote.Name = "pictureBoxUpvote";
@@ -182,7 +188,8 @@
             // 
             // pictureBoxDownvote
             // 
-            this.pictureBoxDownvote.Image = global::USAADemoApp.Properties.Resources.downArrowBase;
+            this.pictureBoxDownvote.Enabled = false;
+            this.pictureBoxDownvote.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxDownvote.Image")));
             this.pictureBoxDownvote.Location = new System.Drawing.Point(60, 10);
             this.pictureBoxDownvote.Name = "pictureBoxDownvote";
             this.pictureBoxDownvote.Size = new System.Drawing.Size(25, 37);

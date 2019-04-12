@@ -166,17 +166,21 @@
             // 
             // pictureBoxDownvote
             // 
+            this.pictureBoxDownvote.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBoxDownvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxDownvote.Image = global::USAADemoApp.Properties.Resources.downArrowBase;
             this.pictureBoxDownvote.Location = new System.Drawing.Point(888, 163);
             this.pictureBoxDownvote.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBoxDownvote.Name = "pictureBoxDownvote";
-            this.pictureBoxDownvote.Size = new System.Drawing.Size(27, 44);
+            this.pictureBoxDownvote.Size = new System.Drawing.Size(53, 96);
+            this.pictureBoxDownvote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDownvote.TabIndex = 14;
             this.pictureBoxDownvote.TabStop = false;
             // 
             // labelCount
             // 
             this.labelCount.AutoSize = true;
+            this.labelCount.BackColor = System.Drawing.SystemColors.Control;
             this.labelCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCount.Location = new System.Drawing.Point(900, 260);
             this.labelCount.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
@@ -187,11 +191,15 @@
             // 
             // pictureBoxUpvote
             // 
+            this.pictureBoxUpvote.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBoxUpvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxUpvote.Location = new System.Drawing.Point(817, 163);
+            this.pictureBoxUpvote.Image = global::USAADemoApp.Properties.Resources.upArrowBasae;
+            this.pictureBoxUpvote.InitialImage = global::USAADemoApp.Properties.Resources.upArrowBasae;
+            this.pictureBoxUpvote.Location = new System.Drawing.Point(828, 211);
             this.pictureBoxUpvote.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBoxUpvote.Name = "pictureBoxUpvote";
-            this.pictureBoxUpvote.Size = new System.Drawing.Size(27, 44);
+            this.pictureBoxUpvote.Size = new System.Drawing.Size(47, 93);
+            this.pictureBoxUpvote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxUpvote.TabIndex = 16;
             this.pictureBoxUpvote.TabStop = false;
             // 

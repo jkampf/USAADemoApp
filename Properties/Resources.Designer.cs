@@ -85,7 +85,7 @@ namespace USAADemoApp.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap upArrowBase {
             get {
-                object obj = ResourceManager.GetObject("upArrowBasae", resourceCulture);
+                object obj = ResourceManager.GetObject("upArrowBase", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +96,16 @@ namespace USAADemoApp.Properties {
         internal static System.Drawing.Bitmap upArrowVoted {
             get {
                 object obj = ResourceManager.GetObject("upArrowVoted", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap upVoteBase {
+            get {
+                object obj = ResourceManager.GetObject("upVoteBase", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

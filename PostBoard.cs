@@ -232,7 +232,7 @@ namespace USAADemoApp
             viewPost.ShowDialog();
         }
 
-        private void PictureBoxUpvote_Click(object sender, System.EventArgs e)
+        private void PictureBoxUpvote_Click(object sender, EventArgs e)
         {
             int voteCount = ToInt32(labelCount.Text);
             pictureBoxDownvote.Image = Properties.Resources.downArrowBase;
@@ -251,10 +251,10 @@ namespace USAADemoApp
             }
         }
 
-        private void PictureBoxDownvote_Click(object sender, System.EventArgs e)
+        private void PictureBoxDownvote_Click(object sender, EventArgs e)
         {
             int voteCount = ToInt32(labelCount.Text);
-            pictureBoxUpvote.Image = Properties.Resources.upArrowBase;        
+            pictureBoxUpvote.Image = Properties.Resources.upArrowBase;
 
             if (voteCount >= 0)
             {
@@ -268,5 +268,6 @@ namespace USAADemoApp
                 labelCount.Text = Convert.ToString(voteCount);
                 pictureBoxDownvote.Image = Properties.Resources.downArrowBase;
             }
-    }   }
+        }
+    }
 }

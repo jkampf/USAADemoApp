@@ -124,8 +124,8 @@
   <data name="downArrowVoted" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\downArrowVoted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="upArrowBase" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\upArrowBase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="upArrowBasae" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upArrowBasae.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="upArrowVoted" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\upArrowVoted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

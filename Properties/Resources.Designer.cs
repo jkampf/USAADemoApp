@@ -85,7 +85,7 @@ namespace USAADemoApp.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap upArrowBase {
             get {
-                object obj = ResourceManager.GetObject("upArrowBase", resourceCulture);
+                object obj = ResourceManager.GetObject("upArrowBasae", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

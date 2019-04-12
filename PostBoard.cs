@@ -1,19 +1,18 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Windows.Forms;
-using Excel = Microsoft.Office.Interop.Excel;
 using static System.Convert;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace USAADemoApp
 {
-    public partial class PostBoard : Form
+    public partial class PostBoard : Form 
     {
         public PostBoard() => InitializeComponent();
 
         Post selectedPost;
-        Post currentPost;
         SubmitPost submitPost;
         ViewPost viewPost;
-        ListBox ListBox;  
 
         BindingList<Post> listOfImplementationPosts;
         BindingList<Post> listOfIssuePosts;
@@ -21,7 +20,6 @@ namespace USAADemoApp
 
         private bool upVote = false;
         private bool downVote = false;
-        private int voteCount;
 
         private void ButtonNewPost_Click(object sender, System.EventArgs e)
         {
@@ -239,13 +237,37 @@ namespace USAADemoApp
 
         private void PictureBoxUpvote_Click(object sender, System.EventArgs e)
         {
+            int voteCount = ToInt32(labelCount.Text);
 
+            if (upVote == false)
+            {
+                voteCount += 1;
+                labelCount.Text = Convert.ToString(voteCount);
+            }
+            else
+            {
+                return;
+            }
+
+            upVote = true;
+            pictureBoxUpvote.Image = Properties.Resources.upArrowVoted;
         }
 
         private void PictureBoxDownvote_Click(object sender, System.EventArgs e)
         {
+            int voteCount = ToInt32(labelCount.Text);
 
-        }
+            if (downVote == false)
+            {
+                voteCount -= 1;
+                labelCount.Text = Convert.ToString(voteCount);
+            }
+            else
+            {
+                return;
+            }
 
-    }
+            downVote = true;
+            pictureBoxDownvote.Image = Properties.Resources.downArrowVoted;
+    }   }
 }

@@ -60,7 +60,7 @@
             this.buttonNewPost.BackColor = System.Drawing.SystemColors.ControlLight;
             this.buttonNewPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNewPost.Location = new System.Drawing.Point(351, 402);
-            this.buttonNewPost.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonNewPost.Margin = new System.Windows.Forms.Padding(2);
             this.buttonNewPost.Name = "buttonNewPost";
             this.buttonNewPost.Size = new System.Drawing.Size(94, 37);
             this.buttonNewPost.TabIndex = 3;
@@ -73,7 +73,7 @@
             this.checkBoxIsManager.AutoSize = true;
             this.checkBoxIsManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxIsManager.Location = new System.Drawing.Point(580, 19);
-            this.checkBoxIsManager.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxIsManager.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxIsManager.Name = "checkBoxIsManager";
             this.checkBoxIsManager.Size = new System.Drawing.Size(82, 17);
             this.checkBoxIsManager.TabIndex = 2;
@@ -86,7 +86,7 @@
             this.buttonGenerateReport.BackColor = System.Drawing.Color.Green;
             this.buttonGenerateReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGenerateReport.Location = new System.Drawing.Point(666, 11);
-            this.buttonGenerateReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonGenerateReport.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGenerateReport.Name = "buttonGenerateReport";
             this.buttonGenerateReport.Size = new System.Drawing.Size(117, 37);
             this.buttonGenerateReport.TabIndex = 4;
@@ -161,6 +161,7 @@
             this.pictureBoxDownvote.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pictureBoxDownvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxDownvote.Image = global::USAADemoApp.Properties.Resources.downArrowBase;
+            this.pictureBoxDownvote.InitialImage = null;
             this.pictureBoxDownvote.Location = new System.Drawing.Point(58, 7);
             this.pictureBoxDownvote.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBoxDownvote.Name = "pictureBoxDownvote";
@@ -187,7 +188,7 @@
             this.pictureBoxUpvote.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pictureBoxUpvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxUpvote.Image = global::USAADemoApp.Properties.Resources.upArrowBasae;
-            this.pictureBoxUpvote.InitialImage = global::USAADemoApp.Properties.Resources.upArrowBasae;
+            this.pictureBoxUpvote.InitialImage = null;
             this.pictureBoxUpvote.Location = new System.Drawing.Point(10, 7);
             this.pictureBoxUpvote.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBoxUpvote.Name = "pictureBoxUpvote";

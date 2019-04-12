@@ -267,6 +267,7 @@ namespace USAADemoApp
                 voteCount += 1;
                 labelCount.Text = System.Convert.ToString(voteCount);
                 upVote = true;
+
                 pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowVoted;
             }
         }

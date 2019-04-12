@@ -187,7 +187,7 @@
             // 
             this.pictureBoxUpvote.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pictureBoxUpvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxUpvote.Image = global::USAADemoApp.Properties.Resources.upArrowBase;
+            this.pictureBoxUpvote.Image = global::USAADemoApp.Properties.Resources.upArrowBasae;
             this.pictureBoxUpvote.InitialImage = null;
             this.pictureBoxUpvote.Location = new System.Drawing.Point(10, 7);
             this.pictureBoxUpvote.Margin = new System.Windows.Forms.Padding(1);

@@ -302,17 +302,26 @@ namespace USAADemoApp
 
         private void ListBoxImplementations_SelectedValueChanged(object sender, EventArgs e)
         {
+            listBoxImplementations.SelectionMode = SelectionMode.One;
             LBHandlerVotes(listBoxImplementations);
+            listBoxIssues.SelectionMode = SelectionMode.None;
+            listBoxSuggestions.SelectionMode = SelectionMode.None;
         }
 
         private void ListBoxIssues_SelectedValueChanged(object sender, EventArgs e)
         {
+            listBoxIssues.SelectionMode = SelectionMode.One;
             LBHandlerVotes(listBoxIssues);
+            listBoxImplementations.SelectionMode = SelectionMode.None;
+            listBoxSuggestions.SelectionMode = SelectionMode.None;
         }
 
         private void ListBoxSuggestions_SelectedValueChanged(object sender, EventArgs e)
         {
+            listBoxSuggestions.SelectionMode = SelectionMode.One;
             LBHandlerVotes(listBoxSuggestions);
+            listBoxImplementations.SelectionMode = SelectionMode.None;
+            listBoxIssues.SelectionMode = SelectionMode.None;
         }
     }
 }

@@ -189,6 +189,9 @@ namespace USAADemoApp
             listBoxIssues.DataSource = listOfIssuePosts;
             listOfSuggestionPosts = new BindingList<Post>();
             listBoxSuggestions.DataSource = listOfSuggestionPosts;
+            pictureBoxUpvote.Hide();
+            pictureBoxDownvote.Hide();
+            labelCount.Hide();
         }
 
         private void CheckBoxIsManager_CheckedChanged(object sender, System.EventArgs e)

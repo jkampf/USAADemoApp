@@ -60,7 +60,6 @@
             this.pictureBoxDownvote.Size = new System.Drawing.Size(20, 36);
             this.pictureBoxDownvote.TabIndex = 3;
             this.pictureBoxDownvote.TabStop = false;
-            this.pictureBoxDownvote.Click += new System.EventHandler(this.PictureBoxDownvote_Click);
             // 
             // pictureBoxUpvote
             // 
@@ -72,7 +71,6 @@
             this.pictureBoxUpvote.Size = new System.Drawing.Size(20, 36);
             this.pictureBoxUpvote.TabIndex = 4;
             this.pictureBoxUpvote.TabStop = false;
-            this.pictureBoxUpvote.Click += new System.EventHandler(this.PictureBoxUpvote_Click);
             // 
             // labelCount
             // 
@@ -111,7 +109,6 @@
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "ViewPost";
             this.Text = "Post";
-            this.Load += new System.EventHandler(this.ViewPost_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).EndInit();
             this.ResumeLayout(false);

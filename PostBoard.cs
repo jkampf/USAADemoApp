@@ -237,38 +237,28 @@ namespace USAADemoApp
 
         private void pictureBoxUpvote_Click(object sender, System.EventArgs e)
         {
-            voteCount = ToInt32(labelCount.Text);
-
             if (downVote == true)
             {
                 voteCount += 1;
-                labelCount.Text = System.Convert.ToString(voteCount);
                 downVote = false;
-                pictureBoxUpvote.BackgroundImage = Properties.Resources.downArrowBase;
 
             }
         }
 
         private void pictureBoxDownvote_Click(object sender, System.EventArgs e)
         {
-            voteCount = ToInt32(labelCount.Text);
             if (downVote == true)
             {
                 voteCount -= 1;
-                labelCount.Text = System.Convert.ToString(voteCount);
                 upVote = false;
                 downVote = true;
-                pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowBasae;
-                pictureBoxUpvote.BackgroundImage = Properties.Resources.downArrowBase;
             }
 
             else
             {
                 voteCount += 1;
-                labelCount.Text = System.Convert.ToString(voteCount);
                 upVote = true;
 
-                pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowVoted;
             }
         }
     }

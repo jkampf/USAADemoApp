@@ -238,36 +238,18 @@ namespace USAADemoApp
             viewPost.ShowDialog();
         }
 
-        //private void pictureBoxUpvote_Click(object sender, System.EventArgs e)
-        //{
-        //    if (downVote == true)
-        //    {
-        //        voteCount += 1;
-        //        downVote = false;
-
-        //    }
-        //}
-
-        //private void pictureBoxDownvote_Click(object sender, System.EventArgs e)
-        //{
-        //    if (downVote == true)
-        //    {
-        //        voteCount -= 1;
-        //        upVote = false;
-        //        downVote = true;
-        //    }
-
-        //    else
-        //    {
-        //        voteCount += 1;
-        //        upVote = true;
-
-        //    }
-        //}
+        private void pictureBoxUpvote_Click(object sender, System.EventArgs e)
+        {
+            if (downVote == true)
+            {
+                voteCount += 1;
+                downVote = false;
+            }
+        }
 
         private void pictureBoxUpvote_Click_1(object sender, System.EventArgs e)
         {
-             currentPost = (Post)ListBox.SelectedItem;
+            currentPost = (Post)ListBox.SelectedItem;
             int voteCount = ToInt32(labelCount.Text);
             voteCount = ToInt32(labelCount.Text);
 
@@ -292,7 +274,6 @@ namespace USAADemoApp
             }
 
            currentPost.PostVotes = voteCount;
-
         }
 
         private void pictureBoxDownvote_Click(object sender, System.EventArgs e)
@@ -313,10 +294,10 @@ namespace USAADemoApp
             {
                 voteCount += 1;
                 pictureBoxDownvote.BackgroundImage = Properties.Resources.upArrowVoted;
-            pictureBoxUpvote.BackgroundImage = Properties.Resources.downArrowBase;
+                pictureBoxUpvote.BackgroundImage = Properties.Resources.downArrowBase;
         }
 
-    currentPost.PostVotes = voteCount;
+            currentPost.PostVotes = voteCount;
         }
     }
 }

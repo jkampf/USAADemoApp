@@ -18,9 +18,6 @@ namespace USAADemoApp
         BindingList<Post> listOfIssuePosts;
         BindingList<Post> listOfSuggestionPosts;
 
-        private bool upVote = false;
-        private bool downVote = false;
-
         private void ButtonNewPost_Click(object sender, System.EventArgs e)
         {
             submitPost = new SubmitPost();

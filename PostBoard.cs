@@ -13,7 +13,7 @@ namespace USAADemoApp
         Post currentPost;
         SubmitPost submitPost;
         ViewPost viewPost;
-        ListBox ListBox;
+     ListBox ListBox;  
 
         BindingList<Post> listOfImplementationPosts;
         BindingList<Post> listOfIssuePosts;

@@ -10,6 +10,7 @@ namespace USAADemoApp
         public PostBoard() => InitializeComponent();
 
         Post selectedPost;
+        Post currentPost;
         SubmitPost submitPost;
         ViewPost viewPost;
         ListBox ListBox;
@@ -266,7 +267,7 @@ namespace USAADemoApp
 
         private void pictureBoxUpvote_Click_1(object sender, System.EventArgs e)
         {
-            Post currentPost = (Post)ListBox.SelectedItem;
+             currentPost = (Post)ListBox.SelectedItem;
             int voteCount = ToInt32(labelCount.Text);
             voteCount = ToInt32(labelCount.Text);
 
@@ -296,7 +297,7 @@ namespace USAADemoApp
 
         private void pictureBoxDownvote_Click(object sender, System.EventArgs e)
         {
-            Post currentPost = (Post)ListBox.SelectedItem;
+            currentPost = (Post)ListBox.SelectedItem;
             int voteCount = ToInt32(labelCount.Text);
             if (upVote == true)
                 voteCount = ToInt32(labelCount.Text);

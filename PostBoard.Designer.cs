@@ -38,11 +38,9 @@
             this.labelIssues = new System.Windows.Forms.Label();
             this.labelSuggestions = new System.Windows.Forms.Label();
             this.labelEmployeeFeedbackApp = new System.Windows.Forms.Label();
-            this.pictureBoxDownvote = new System.Windows.Forms.PictureBox();
             this.labelCount = new System.Windows.Forms.Label();
-            this.pictureBoxUpvote = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // listBoxImplementations
@@ -156,21 +154,6 @@
             this.labelEmployeeFeedbackApp.TabIndex = 13;
             this.labelEmployeeFeedbackApp.Text = "Employee Feedback App ";
             // 
-            // pictureBoxDownvote
-            // 
-            this.pictureBoxDownvote.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBoxDownvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxDownvote.Image = global::USAADemoApp.Properties.Resources.downArrowBase;
-            this.pictureBoxDownvote.InitialImage = null;
-            this.pictureBoxDownvote.Location = new System.Drawing.Point(58, 7);
-            this.pictureBoxDownvote.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBoxDownvote.Name = "pictureBoxDownvote";
-            this.pictureBoxDownvote.Size = new System.Drawing.Size(23, 41);
-            this.pictureBoxDownvote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxDownvote.TabIndex = 14;
-            this.pictureBoxDownvote.TabStop = false;
-            this.pictureBoxDownvote.Click += new System.EventHandler(this.PictureBoxDownvote_Click);
-            // 
             // labelCount
             // 
             this.labelCount.AutoSize = true;
@@ -183,20 +166,13 @@
             this.labelCount.TabIndex = 15;
             this.labelCount.Text = "0";
             // 
-            // pictureBoxUpvote
+            // pictureBox1
             // 
-            this.pictureBoxUpvote.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBoxUpvote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxUpvote.Image = global::USAADemoApp.Properties.Resources.upArrowBase;
-            this.pictureBoxUpvote.InitialImage = null;
-            this.pictureBoxUpvote.Location = new System.Drawing.Point(10, 7);
-            this.pictureBoxUpvote.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBoxUpvote.Name = "pictureBoxUpvote";
-            this.pictureBoxUpvote.Size = new System.Drawing.Size(29, 41);
-            this.pictureBoxUpvote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxUpvote.TabIndex = 16;
-            this.pictureBoxUpvote.TabStop = false;
-            this.pictureBoxUpvote.Click += new System.EventHandler(this.PictureBoxUpvote_Click);
+            this.pictureBox1.Location = new System.Drawing.Point(162, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // PostBoard
             // 
@@ -204,9 +180,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(803, 450);
-            this.Controls.Add(this.pictureBoxUpvote);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelCount);
-            this.Controls.Add(this.pictureBoxDownvote);
             this.Controls.Add(this.labelEmployeeFeedbackApp);
             this.Controls.Add(this.labelSuggestions);
             this.Controls.Add(this.labelIssues);
@@ -220,8 +195,7 @@
             this.Name = "PostBoard";
             this.Text = "Post Board";
             this.Load += new System.EventHandler(this.PostBoard_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,8 +213,7 @@
         private System.Windows.Forms.Label labelIssues;
         private System.Windows.Forms.Label labelSuggestions;
         private System.Windows.Forms.Label labelEmployeeFeedbackApp;
-        private System.Windows.Forms.PictureBox pictureBoxDownvote;
         private System.Windows.Forms.Label labelCount;
-        private System.Windows.Forms.PictureBox pictureBoxUpvote;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

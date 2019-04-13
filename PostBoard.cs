@@ -189,6 +189,8 @@ namespace USAADemoApp
             listBoxIssues.DataSource = listOfIssuePosts;
             listOfSuggestionPosts = new BindingList<Post>();
             listBoxSuggestions.DataSource = listOfSuggestionPosts;
+            voteStatusLabel.Visible = false;
+            timer1.Interval = 1000;
         }
 
         private void CheckBoxIsManager_CheckedChanged(object sender, System.EventArgs e)
@@ -279,6 +281,10 @@ namespace USAADemoApp
                 labelCount.Text = Convert.ToString(selectedPost.PostVotes);
                 pictureBoxUpvote.Image = Properties.Resources.upArrowBase;
             }
+            
+            timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            voteStatusLabel.Visible = true;
+            timer1.Start();
         }
 
         private void PictureBoxDownvote_Click(object sender, EventArgs e)
@@ -298,6 +304,9 @@ namespace USAADemoApp
                 labelCount.Text = Convert.ToString(selectedPost.PostVotes);
                 pictureBoxDownvote.Image = Properties.Resources.downArrowBase;
             }
+            timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            voteStatusLabel.Visible = true;
+            timer1.Start();
         }
 
         private void ListBoxImplementations_SelectedValueChanged(object sender, EventArgs e)
@@ -322,6 +331,13 @@ namespace USAADemoApp
             LBHandlerVotes(listBoxSuggestions);
             listBoxImplementations.SelectionMode = SelectionMode.None;
             listBoxIssues.SelectionMode = SelectionMode.None;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            voteStatusLabel.Visible = false;
+
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PostBoard));
             this.listBoxImplementations = new System.Windows.Forms.ListBox();
             this.buttonNewPost = new System.Windows.Forms.Button();
@@ -42,6 +43,8 @@
             this.labelCount = new System.Windows.Forms.Label();
             this.pictureBoxUpvote = new System.Windows.Forms.PictureBox();
             this.pictureBoxDownvote = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.voteStatusLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpvote)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDownvote)).BeginInit();
             this.SuspendLayout();
@@ -198,12 +201,28 @@
             this.pictureBoxDownvote.TabStop = false;
             this.pictureBoxDownvote.Click += new System.EventHandler(this.PictureBoxDownvote_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // voteStatusLabel
+            // 
+            this.voteStatusLabel.AutoSize = true;
+            this.voteStatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voteStatusLabel.ForeColor = System.Drawing.Color.Red;
+            this.voteStatusLabel.Location = new System.Drawing.Point(91, 16);
+            this.voteStatusLabel.Name = "voteStatusLabel";
+            this.voteStatusLabel.Size = new System.Drawing.Size(176, 17);
+            this.voteStatusLabel.TabIndex = 18;
+            this.voteStatusLabel.Text = "Your Vote Is Recorded!";
+            // 
             // PostBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(803, 450);
+            this.Controls.Add(this.voteStatusLabel);
             this.Controls.Add(this.pictureBoxDownvote);
             this.Controls.Add(this.pictureBoxUpvote);
             this.Controls.Add(this.labelCount);
@@ -242,5 +261,7 @@
         private System.Windows.Forms.Label labelCount;
         private System.Windows.Forms.PictureBox pictureBoxUpvote;
         private System.Windows.Forms.PictureBox pictureBoxDownvote;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label voteStatusLabel;
     }
 }

@@ -65,6 +65,7 @@
             this.Controls.Add(this.labelPostTitle);
             this.Controls.Add(this.textBoxPostBody);
             this.Margin = new System.Windows.Forms.Padding(1);
+            this.MaximizeBox = false;
             this.Name = "ViewPost";
             this.Text = "Post";
             this.ResumeLayout(false);

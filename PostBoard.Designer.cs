@@ -53,9 +53,11 @@
             // 
             this.listBoxImplementations.BackColor = System.Drawing.SystemColors.Menu;
             this.listBoxImplementations.FormattingEnabled = true;
-            this.listBoxImplementations.Location = new System.Drawing.Point(8, 67);
+            this.listBoxImplementations.ItemHeight = 16;
+            this.listBoxImplementations.Location = new System.Drawing.Point(11, 82);
+            this.listBoxImplementations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxImplementations.Name = "listBoxImplementations";
-            this.listBoxImplementations.Size = new System.Drawing.Size(241, 329);
+            this.listBoxImplementations.Size = new System.Drawing.Size(320, 404);
             this.listBoxImplementations.TabIndex = 5;
             this.listBoxImplementations.SelectedValueChanged += new System.EventHandler(this.ListBoxImplementations_SelectedValueChanged);
             this.listBoxImplementations.DoubleClick += new System.EventHandler(this.ListBoxImplementations_DoubleClick);
@@ -64,10 +66,10 @@
             // 
             this.buttonNewPost.BackColor = System.Drawing.SystemColors.ControlLight;
             this.buttonNewPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNewPost.Location = new System.Drawing.Point(351, 402);
-            this.buttonNewPost.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonNewPost.Location = new System.Drawing.Point(468, 495);
+            this.buttonNewPost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonNewPost.Name = "buttonNewPost";
-            this.buttonNewPost.Size = new System.Drawing.Size(94, 37);
+            this.buttonNewPost.Size = new System.Drawing.Size(125, 46);
             this.buttonNewPost.TabIndex = 3;
             this.buttonNewPost.Text = "New Post";
             this.buttonNewPost.UseVisualStyleBackColor = false;
@@ -77,10 +79,10 @@
             // 
             this.checkBoxIsManager.AutoSize = true;
             this.checkBoxIsManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxIsManager.Location = new System.Drawing.Point(580, 19);
-            this.checkBoxIsManager.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBoxIsManager.Location = new System.Drawing.Point(773, 23);
+            this.checkBoxIsManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBoxIsManager.Name = "checkBoxIsManager";
-            this.checkBoxIsManager.Size = new System.Drawing.Size(82, 17);
+            this.checkBoxIsManager.Size = new System.Drawing.Size(102, 21);
             this.checkBoxIsManager.TabIndex = 2;
             this.checkBoxIsManager.Text = "Manager?";
             this.checkBoxIsManager.UseVisualStyleBackColor = true;
@@ -90,10 +92,10 @@
             // 
             this.buttonGenerateReport.BackColor = System.Drawing.Color.Green;
             this.buttonGenerateReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGenerateReport.Location = new System.Drawing.Point(666, 11);
-            this.buttonGenerateReport.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonGenerateReport.Location = new System.Drawing.Point(888, 14);
+            this.buttonGenerateReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonGenerateReport.Name = "buttonGenerateReport";
-            this.buttonGenerateReport.Size = new System.Drawing.Size(117, 37);
+            this.buttonGenerateReport.Size = new System.Drawing.Size(156, 46);
             this.buttonGenerateReport.TabIndex = 4;
             this.buttonGenerateReport.Text = "Generate Report";
             this.buttonGenerateReport.UseVisualStyleBackColor = false;
@@ -104,9 +106,11 @@
             // 
             this.listBoxIssues.BackColor = System.Drawing.SystemColors.Menu;
             this.listBoxIssues.FormattingEnabled = true;
-            this.listBoxIssues.Location = new System.Drawing.Point(275, 67);
+            this.listBoxIssues.ItemHeight = 16;
+            this.listBoxIssues.Location = new System.Drawing.Point(367, 82);
+            this.listBoxIssues.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxIssues.Name = "listBoxIssues";
-            this.listBoxIssues.Size = new System.Drawing.Size(241, 329);
+            this.listBoxIssues.Size = new System.Drawing.Size(320, 404);
             this.listBoxIssues.TabIndex = 8;
             this.listBoxIssues.SelectedValueChanged += new System.EventHandler(this.ListBoxIssues_SelectedValueChanged);
             this.listBoxIssues.DoubleClick += new System.EventHandler(this.ListBoxIssues_DoubleClick);
@@ -115,9 +119,11 @@
             // 
             this.listBoxSuggestions.BackColor = System.Drawing.SystemColors.Menu;
             this.listBoxSuggestions.FormattingEnabled = true;
-            this.listBoxSuggestions.Location = new System.Drawing.Point(550, 67);
+            this.listBoxSuggestions.ItemHeight = 16;
+            this.listBoxSuggestions.Location = new System.Drawing.Point(733, 82);
+            this.listBoxSuggestions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxSuggestions.Name = "listBoxSuggestions";
-            this.listBoxSuggestions.Size = new System.Drawing.Size(241, 329);
+            this.listBoxSuggestions.Size = new System.Drawing.Size(320, 404);
             this.listBoxSuggestions.TabIndex = 9;
             this.listBoxSuggestions.SelectedValueChanged += new System.EventHandler(this.ListBoxSuggestions_SelectedValueChanged);
             this.listBoxSuggestions.DoubleClick += new System.EventHandler(this.ListBoxSuggestions_DoubleClick);
@@ -126,9 +132,10 @@
             // 
             this.labelImplementations.AutoSize = true;
             this.labelImplementations.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelImplementations.Location = new System.Drawing.Point(50, 50);
+            this.labelImplementations.Location = new System.Drawing.Point(67, 62);
+            this.labelImplementations.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelImplementations.Name = "labelImplementations";
-            this.labelImplementations.Size = new System.Drawing.Size(151, 13);
+            this.labelImplementations.Size = new System.Drawing.Size(193, 17);
             this.labelImplementations.TabIndex = 10;
             this.labelImplementations.Text = "Previous Implementations";
             // 
@@ -136,9 +143,10 @@
             // 
             this.labelIssues.AutoSize = true;
             this.labelIssues.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIssues.Location = new System.Drawing.Point(323, 50);
+            this.labelIssues.Location = new System.Drawing.Point(431, 62);
+            this.labelIssues.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelIssues.Name = "labelIssues";
-            this.labelIssues.Size = new System.Drawing.Size(167, 13);
+            this.labelIssues.Size = new System.Drawing.Size(215, 17);
             this.labelIssues.TabIndex = 11;
             this.labelIssues.Text = "Current Departmental Issues";
             // 
@@ -146,9 +154,10 @@
             // 
             this.labelSuggestions.AutoSize = true;
             this.labelSuggestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSuggestions.Location = new System.Drawing.Point(602, 50);
+            this.labelSuggestions.Location = new System.Drawing.Point(803, 62);
+            this.labelSuggestions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSuggestions.Name = "labelSuggestions";
-            this.labelSuggestions.Size = new System.Drawing.Size(155, 13);
+            this.labelSuggestions.Size = new System.Drawing.Size(199, 17);
             this.labelSuggestions.TabIndex = 12;
             this.labelSuggestions.Text = "Departmental Suggestions";
             // 
@@ -156,10 +165,9 @@
             // 
             this.labelEmployeeFeedbackApp.AutoSize = true;
             this.labelEmployeeFeedbackApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmployeeFeedbackApp.Location = new System.Drawing.Point(270, 11);
-            this.labelEmployeeFeedbackApp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelEmployeeFeedbackApp.Location = new System.Drawing.Point(360, 14);
             this.labelEmployeeFeedbackApp.Name = "labelEmployeeFeedbackApp";
-            this.labelEmployeeFeedbackApp.Size = new System.Drawing.Size(259, 25);
+            this.labelEmployeeFeedbackApp.Size = new System.Drawing.Size(326, 29);
             this.labelEmployeeFeedbackApp.TabIndex = 13;
             this.labelEmployeeFeedbackApp.Text = "Employee Feedback App ";
             // 
@@ -169,10 +177,10 @@
             this.labelCount.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.labelCount.Enabled = false;
             this.labelCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCount.Location = new System.Drawing.Point(41, 21);
+            this.labelCount.Location = new System.Drawing.Point(55, 26);
             this.labelCount.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelCount.Name = "labelCount";
-            this.labelCount.Size = new System.Drawing.Size(15, 15);
+            this.labelCount.Size = new System.Drawing.Size(17, 18);
             this.labelCount.TabIndex = 15;
             this.labelCount.Text = "0";
             // 
@@ -181,9 +189,10 @@
             this.pictureBoxUpvote.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pictureBoxUpvote.Enabled = false;
             this.pictureBoxUpvote.Image = global::USAADemoApp.Properties.Resources.upArrowBase;
-            this.pictureBoxUpvote.Location = new System.Drawing.Point(12, 11);
+            this.pictureBoxUpvote.Location = new System.Drawing.Point(16, 14);
+            this.pictureBoxUpvote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxUpvote.Name = "pictureBoxUpvote";
-            this.pictureBoxUpvote.Size = new System.Drawing.Size(25, 37);
+            this.pictureBoxUpvote.Size = new System.Drawing.Size(33, 46);
             this.pictureBoxUpvote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxUpvote.TabIndex = 16;
             this.pictureBoxUpvote.TabStop = false;
@@ -193,9 +202,10 @@
             // 
             this.pictureBoxDownvote.Enabled = false;
             this.pictureBoxDownvote.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxDownvote.Image")));
-            this.pictureBoxDownvote.Location = new System.Drawing.Point(60, 10);
+            this.pictureBoxDownvote.Location = new System.Drawing.Point(80, 12);
+            this.pictureBoxDownvote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxDownvote.Name = "pictureBoxDownvote";
-            this.pictureBoxDownvote.Size = new System.Drawing.Size(25, 37);
+            this.pictureBoxDownvote.Size = new System.Drawing.Size(33, 46);
             this.pictureBoxDownvote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDownvote.TabIndex = 17;
             this.pictureBoxDownvote.TabStop = false;
@@ -210,18 +220,19 @@
             this.voteStatusLabel.AutoSize = true;
             this.voteStatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.voteStatusLabel.ForeColor = System.Drawing.Color.Red;
-            this.voteStatusLabel.Location = new System.Drawing.Point(91, 16);
+            this.voteStatusLabel.Location = new System.Drawing.Point(121, 20);
+            this.voteStatusLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.voteStatusLabel.Name = "voteStatusLabel";
-            this.voteStatusLabel.Size = new System.Drawing.Size(176, 17);
+            this.voteStatusLabel.Size = new System.Drawing.Size(204, 20);
             this.voteStatusLabel.TabIndex = 18;
             this.voteStatusLabel.Text = "Your Vote Is Recorded!";
             // 
             // PostBoard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(803, 450);
+            this.ClientSize = new System.Drawing.Size(1071, 554);
             this.Controls.Add(this.voteStatusLabel);
             this.Controls.Add(this.pictureBoxDownvote);
             this.Controls.Add(this.pictureBoxUpvote);
@@ -236,6 +247,8 @@
             this.Controls.Add(this.checkBoxIsManager);
             this.Controls.Add(this.buttonNewPost);
             this.Controls.Add(this.listBoxImplementations);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "PostBoard";
             this.Text = "Post Board";
             this.Load += new System.EventHandler(this.PostBoard_Load);
